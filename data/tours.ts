@@ -653,6 +653,7 @@ export const tours: Tour[] = [
       { q: "Ehliyet gerekiyor mu?", a: "Özel parkurda ehliyet gerekmez, 16 yaş üzeri tek başına kullanabilir." },
     ],
     hue: "from-yellow-600 to-orange-900",
+    image: "/turlar/quad-buggy-safari.jpg",
   },
   {
     slug: "quad-buggy-rafting",
