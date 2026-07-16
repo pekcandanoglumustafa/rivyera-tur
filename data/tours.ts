@@ -63,6 +63,7 @@ export const tours: Tour[] = [
       { q: "Yanımıza ne alalım?", a: "Yedek kıyafet, havlu, suya dayanıklı ayakkabı ve güneş kremi yeterli." },
     ],
     hue: "from-cyan-600 to-blue-800",
+    image: "/turlar/koprulu-kanyon-rafting.jpg",
     popular: true,
   },
   {

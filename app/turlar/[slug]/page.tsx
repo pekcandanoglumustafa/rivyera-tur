@@ -76,8 +76,18 @@ export default async function TourPage({
       />
 
       {/* Başlık bloğu */}
-      <header className={`bg-gradient-to-br ${tour.hue} text-white`}>
-        <div className="mx-auto max-w-4xl px-4 py-16">
+      <header className={`relative overflow-hidden bg-gradient-to-br ${tour.hue} text-white`}>
+        {tour.image && (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src={tour.image}
+            alt={tour.name}
+            className="absolute inset-0 h-full w-full object-cover"
+            fetchPriority="high"
+          />
+        )}
+        {tour.image && <div className="absolute inset-0 bg-navy/55" aria-hidden />}
+        <div className="relative mx-auto max-w-4xl px-4 py-16">
           <p className="mb-3 inline-block rounded-full bg-white/15 px-4 py-1 text-sm font-bold">
             {categories[tour.category]} · {tour.duration} · {tour.days}
           </p>
