@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  /* Rivyera Tur — tasarım paleti */
+  --color-navy: #07253a; /* Akdeniz laciverti */
+  --color-deep: #0b3352;
+  --color-turq: #0ea5a4; /* Rivyera turkuazı */
+  --color-turq-soft: #d8f3f2;
+  --color-sand: #f7f3ea; /* kum beyazı */
+  --color-cta: #ff6b1a; /* turuncu ceket */
+  --color-cta-dark: #e35706;
+  --color-ink: #10222e;
+
+  --font-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Figtree", "Segoe UI", system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-ink);
+  background: var(--color-sand);
+}
+
+h1, h2, h3, .display {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+}
+
+/* Bilet kartı: kesik çizgili koçan */
+.ticket-notch {
+  position: relative;
+}
+.ticket-notch::before,
+.ticket-notch::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 9999px;
+  background: var(--color-sand);
+  top: 50%;
+  transform: translateY(-50%);
+}
+.ticket-notch::before { left: -11px; }
+.ticket-notch::after { right: -11px; }
+
+.perf {
+  border-top: 2px dashed rgba(16, 34, 46, 0.18);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

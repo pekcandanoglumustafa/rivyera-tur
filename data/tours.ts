@@ -1,0 +1,421 @@
+// ============================================================
+// RİVYERA TUR — Tur Verileri
+// Fiyatları buradan güncelle: price alanına TL rakamı yaz,
+// boş bırakırsan sitede "Fiyat Sor" görünür.
+// Fotoğraf eklemek için: public/turlar/<slug>.jpg koy,
+// image alanına "/turlar/<slug>.jpg" yaz.
+// ============================================================
+
+export type Tour = {
+  slug: string;
+  name: string;
+  tagline: string;
+  category: "macera" | "tekne" | "kultur" | "aile" | "keyif";
+  duration: string;
+  days: string;
+  price?: number;
+  oldPrice?: number;
+  description: string;
+  highlights: string[];
+  includes: string[];
+  program: { time: string; text: string }[];
+  faq: { q: string; a: string }[];
+  hue: string; // görsel yoksa kart gradyanı
+  image?: string;
+  popular?: boolean;
+};
+
+export const CONTACT = {
+  phoneDisplay: "0507 658 42 45",
+  phoneIntl: "+905076584245",
+  whatsapp: "https://wa.me/905076584245",
+  instagram: "https://instagram.com/rivyeratur",
+  email: "info@rivyeratur.com",
+  address: "Side / Manavgat, Antalya",
+};
+
+export const tours: Tour[] = [
+  {
+    slug: "koprulu-kanyon-rafting",
+    name: "Köprülü Kanyon Rafting",
+    tagline: "15 km köpüklü macera, öğle yemeği dahil",
+    category: "macera",
+    duration: "Tam gün",
+    days: "Her gün",
+    description:
+      "Köprülü Kanyon Milli Parkı'nın buz gibi sularında 15 kilometrelik rafting parkuru. Profesyonel rehberler eşliğinde, bol yüzme molalı, adrenalin dolu bir gün. Kask, can yeleği ve tüm ekipman bizden; sen sadece eğlenmeye bak.",
+    highlights: [
+      "15 km rafting parkuru",
+      "Bol yüzme molası",
+      "El değmemiş kanyon manzarası",
+      "Öğle yemeği fiyata dahil",
+    ],
+    includes: ["Otelden alma-bırakma", "Tüm rafting ekipmanı", "Profesyonel rehber", "Öğle yemeği", "Sigorta"],
+    program: [
+      { time: "08:30", text: "Otelinizden alınış" },
+      { time: "10:00", text: "Köprülü Kanyon'a varış, güvenlik eğitimi" },
+      { time: "10:30", text: "Rafting başlıyor — 15 km parkur, yüzme molaları" },
+      { time: "13:30", text: "Nehir kenarında öğle yemeği" },
+      { time: "16:30", text: "Dönüş yolculuğu" },
+    ],
+    faq: [
+      { q: "Yüzme bilmek şart mı?", a: "Hayır. Can yeleği zorunlu ve rehberler her botta. 6 yaş üzeri herkes katılabilir." },
+      { q: "Yanımıza ne alalım?", a: "Yedek kıyafet, havlu, suya dayanıklı ayakkabı ve güneş kremi yeterli." },
+    ],
+    hue: "from-cyan-600 to-blue-800",
+    popular: true,
+  },
+  {
+    slug: "super-kombo",
+    name: "Süper Kombo: Rafting + Jeep + Quad + Zipline",
+    tagline: "Dört macera tek günde — Antalya'nın en dolu turu",
+    category: "macera",
+    duration: "Tam gün",
+    days: "Her gün",
+    description:
+      "Kararsızlara son: rafting, jeep safari, quad ve zipline'ı tek pakette topladık. Toros eteklerinde tozlu yollar, kanyonda köpüklü sular, ağaçların üstünde zipline. Gün sonunda 'iyi ki' diyeceğin tur bu.",
+    highlights: ["Rafting parkuru", "Jeep safari", "Quad safari", "Zipline", "Öğle yemeği dahil"],
+    includes: ["Otelden alma-bırakma", "Tüm aktivite ekipmanları", "Rehberlik", "Öğle yemeği", "Sigorta"],
+    program: [
+      { time: "08:00", text: "Otelinizden alınış" },
+      { time: "09:30", text: "Jeep safari ile kanyona yolculuk" },
+      { time: "11:00", text: "Rafting etabı" },
+      { time: "13:00", text: "Öğle yemeği" },
+      { time: "14:00", text: "Quad parkuru" },
+      { time: "15:30", text: "Zipline ile final" },
+      { time: "17:30", text: "Dönüş" },
+    ],
+    faq: [
+      { q: "Quad kullanmak için ehliyet gerekiyor mu?", a: "Parkur özel alanda olduğu için ehliyet şartı yok, 16 yaş üzeri tek başına kullanabilir." },
+    ],
+    hue: "from-orange-500 to-rose-700",
+    popular: true,
+  },
+  {
+    slug: "yesil-kanyon-tekne-turu",
+    name: "Yeşil Kanyon (Green Canyon) Tekne Turu",
+    tagline: "Türkiye'nin en büyük kanyon barajında 3 saat",
+    category: "tekne",
+    duration: "Yarım gün",
+    days: "Her gün",
+    description:
+      "Oymapınar Barajı'nın zümrüt yeşili sularında, Toroslar'ın dev kayalıkları arasında 3 saatlik tekne keyfi. Yüzme molası, öğle yemeği ve meşrubatlar dahil. Fotoğraf makineni şarj et, burası Antalya'nın en çok paylaşılan noktası.",
+    highlights: ["3 saat tekne turu", "Zümrüt yeşili baraj gölü", "Yüzme molası", "Yemek + içecek dahil"],
+    includes: ["Otelden alma-bırakma", "3 saat tekne turu", "Öğle yemeği", "Meşrubatlar", "Sigorta"],
+    program: [
+      { time: "09:00", text: "Otelinizden alınış" },
+      { time: "10:30", text: "Oymapınar'dan tekneye biniş" },
+      { time: "11:00", text: "Kanyon içinde seyir ve yüzme molaları" },
+      { time: "13:00", text: "Teknede öğle yemeği" },
+      { time: "14:30", text: "Dönüş" },
+    ],
+    faq: [
+      { q: "Deniz tutan biri için uygun mu?", a: "Baraj gölü dalgasız ve sakindir, deniz tutması yaşanmaz." },
+    ],
+    hue: "from-emerald-500 to-teal-800",
+    popular: true,
+  },
+  {
+    slug: "korsan-teknesi",
+    name: "Korsan Teknesi Turu",
+    tagline: "Manavgat Nehri'nde çocukların bayılacağı yarım gün",
+    category: "aile",
+    duration: "Yarım gün",
+    days: "Salı ve Cumartesi",
+    description:
+      "Manavgat Nehri'nden nehir ağzına korsan temalı tekneyle yolculuk. Çocuk animasyonları, hazine avı, yüzme molası ve öğle yemeği dahil. Ailecek çıkılacak en keyifli yarım günlük tur.",
+    highlights: ["Korsan temalı tekne", "Çocuk animasyonu + hazine avı", "Yüzme molası", "Öğle yemeği dahil"],
+    includes: ["Otelden alma-bırakma", "Tekne turu", "Animasyon ekibi", "Öğle yemeği", "Sigorta"],
+    program: [
+      { time: "09:30", text: "Otelinizden alınış" },
+      { time: "10:30", text: "Korsan teknesine biniş, animasyon başlıyor" },
+      { time: "12:00", text: "Yüzme molası ve hazine avı" },
+      { time: "13:00", text: "Teknede öğle yemeği" },
+      { time: "14:30", text: "Dönüş" },
+    ],
+    faq: [
+      { q: "Kaç yaş için uygun?", a: "Her yaş için uygun; animasyonlar özellikle 3-12 yaş grubuna göre kurgulanıyor." },
+    ],
+    hue: "from-slate-600 to-slate-900",
+  },
+  {
+    slug: "manavgat-tekne-turu",
+    name: "Manavgat Nehir & Şelale Turu",
+    tagline: "Nehirde tekne, şelale ve Manavgat pazarı bir arada",
+    category: "tekne",
+    duration: "Yarım gün",
+    days: "Pazartesi ve Perşembe",
+    description:
+      "Manavgat Nehri boyunca tekne turu, yüzme molası, şelale ziyareti ve ünlü Manavgat pazarında serbest zaman. Yerel lezzetler, fotoğraf durakları ve nehir serinliğiyle sakin ama dolu dolu bir gün.",
+    highlights: ["Nehirde tekne turu", "Manavgat Şelalesi", "Pazar gezisi", "Öğle yemeği dahil"],
+    includes: ["Otelden alma-bırakma", "Tekne turu", "Öğle yemeği", "Rehberlik"],
+    program: [
+      { time: "09:00", text: "Otelinizden alınış" },
+      { time: "10:00", text: "Tekneye biniş, nehir turu" },
+      { time: "11:30", text: "Yüzme molası" },
+      { time: "12:30", text: "Öğle yemeği" },
+      { time: "13:30", text: "Şelale ve Manavgat pazarında serbest zaman" },
+      { time: "15:30", text: "Dönüş" },
+    ],
+    faq: [{ q: "Şelale girişi dahil mi?", a: "Şelale giriş ücreti ekstradır, sembolik bir tutardır." }],
+    hue: "from-sky-500 to-indigo-800",
+  },
+  {
+    slug: "dolphin-island-tekne-turu",
+    name: "Dolphin Island Tekne Turu",
+    tagline: "Yunus görme şansı, köpük partisi ve masmavi deniz",
+    category: "tekne",
+    duration: "Tam gün",
+    days: "Çarşamba ve Cuma",
+    description:
+      "Manavgat Nehri'nden denize açılıyoruz. Jesus Island'da yüzme molası, öğle yemeği ve Dolphin Island rotasında yunusları görme şansı. Görülmezse teselli büyük: teknede köpük partisi.",
+    highlights: ["Denize açılan nehir turu", "Yunus gözlem rotası", "Köpük partisi", "Öğle yemeği dahil"],
+    includes: ["Otelden alma-bırakma", "Tekne turu", "Öğle yemeği", "Animasyon"],
+    program: [
+      { time: "09:00", text: "Otelinizden alınış" },
+      { time: "10:00", text: "Manavgat Nehri'nden hareket" },
+      { time: "11:00", text: "Jesus Island yüzme molası" },
+      { time: "12:30", text: "Teknede öğle yemeği" },
+      { time: "13:30", text: "Dolphin Island rotası — yunus gözlemi" },
+      { time: "15:30", text: "Köpük partisi ve dönüş" },
+    ],
+    faq: [{ q: "Yunus görme garantisi var mı?", a: "Doğal yaşamda garanti verilmez; gözlem şansı yaklaşık %50'dir." }],
+    hue: "from-blue-500 to-cyan-700",
+  },
+  {
+    slug: "kapadokya-turu",
+    name: "Kapadokya Turu (2 Gün)",
+    tagline: "Peri bacaları, yeraltı şehri, Mevlana — her şey dahil",
+    category: "kultur",
+    duration: "2 gün 1 gece",
+    days: "Pazartesi, Perşembe, Cumartesi",
+    description:
+      "Antalya'dan hareketle Konya Mevlana Müzesi, Sultanhanı Kervansarayı, Uçhisar Kalesi, kaya kiliseleri ve yeraltı şehri. Kahvaltı, öğle ve akşam yemekleri ile tüm müze girişleri fiyata dahil. Balon turu opsiyonel eklenebilir.",
+    highlights: ["Peri bacaları ve Uçhisar", "Yeraltı şehri", "Mevlana Müzesi", "Tam pansiyon + girişler dahil"],
+    includes: ["Ulaşım (klimalı araç)", "1 gece konaklama", "Tüm öğünler", "Müze girişleri", "Rehberlik"],
+    program: [
+      { time: "1. Gün", text: "Toroslar'da kahvaltı, Konya Mevlana Müzesi, Sultanhanı, Kapadokya'ya varış" },
+      { time: "2. Gün", text: "Uçhisar Kalesi, kaya kiliseleri, yeraltı şehri, el sanatları atölyeleri, dönüş" },
+    ],
+    faq: [
+      { q: "Balon turu dahil mi?", a: "Balon turu opsiyoneldir; rezervasyon sırasında ekleyebiliriz, kontenjan sezonda hızlı doluyor." },
+    ],
+    hue: "from-amber-500 to-orange-800",
+    popular: true,
+  },
+  {
+    slug: "pamukkale-salda-turu",
+    name: "Pamukkale & Salda Gölü Turu",
+    tagline: "Türkiye'nin Maldivleri ve beyaz travertenler aynı günde",
+    category: "kultur",
+    duration: "Tam gün",
+    days: "Çarşamba ve Cumartesi",
+    description:
+      "Sabah Salda Gölü'nün bembeyaz kumsalları, öğleden sonra Pamukkale travertenleri ve Hierapolis Antik Kenti. Kahvaltı, öğle yemeği ve Pamukkale girişi fiyata dahil.",
+    highlights: ["Salda Gölü", "Pamukkale travertenleri", "Hierapolis Antik Kenti", "Yemekler + giriş dahil"],
+    includes: ["Ulaşım", "Kahvaltı ve öğle yemeği", "Pamukkale giriş ücreti", "Rehberlik"],
+    program: [
+      { time: "05:30", text: "Otelinizden alınış" },
+      { time: "09:30", text: "Salda Gölü'nde serbest zaman" },
+      { time: "12:30", text: "Öğle yemeği" },
+      { time: "14:00", text: "Pamukkale travertenleri ve Hierapolis gezisi" },
+      { time: "17:00", text: "Dönüş yolculuğu" },
+    ],
+    faq: [{ q: "Travertenlerde yüzülüyor mu?", a: "Travertenlerde yürüyebilirsiniz; Kleopatra Havuzu'nda yüzmek isterseniz giriş ekstradır." }],
+    hue: "from-stone-300 to-sky-600",
+    popular: true,
+  },
+  {
+    slug: "kartal-kanyonu-turu",
+    name: "Kartal Kanyonu (Adler Canyon) Turu",
+    tagline: "Selge Antik Kenti, Pavlus Köprüsü ve kartal manzarası",
+    category: "kultur",
+    duration: "Tam gün",
+    days: "Salı, Perşembe, Pazar",
+    description:
+      "Köprülü Kanyon'un az bilinen yüzü: Roma dönemi Pavlus Köprüsü, Selge Antik Kenti, yeraltı su kaynakları ve kartalların süzüldüğü kanyon manzarası. Alışveriş durağı yok, tamamı gezi. Yemek dahil.",
+    highlights: ["Selge Antik Kenti", "Pavlus Köprüsü", "Kartal Kanyonu manzarası", "Alışveriş molası yok"],
+    includes: ["Otelden alma-bırakma", "Öğle yemeği", "Rehberlik"],
+    program: [
+      { time: "09:00", text: "Otelinizden alınış" },
+      { time: "10:30", text: "Pavlus Köprüsü fotoğraf molası" },
+      { time: "11:30", text: "Selge Antik Kenti gezisi" },
+      { time: "13:00", text: "Köy kahvaltısı tadında öğle yemeği" },
+      { time: "14:30", text: "Kartal Kanyonu seyir noktası" },
+      { time: "16:30", text: "Dönüş" },
+    ],
+    faq: [{ q: "Yürüyüş zor mu?", a: "Orta seviye; rahat spor ayakkabı yeterli." }],
+    hue: "from-lime-600 to-emerald-900",
+  },
+  {
+    slug: "suluada-tekne-turu",
+    name: "Suluada Tekne Turu",
+    tagline: "Türkiye'nin Maldivleri: 4 koy, 4 yüzme molası",
+    category: "tekne",
+    duration: "Tam gün",
+    days: "Pazartesi ve Perşembe",
+    description:
+      "Adrasan'dan kalkan tekneyle turkuaz koylara yolculuk. 4 koyda yüzme molası, adada serbest zaman, öğle yemeği ve meyve tabağı dahil. Deniz suyunun rengi filtre değil, gerçek.",
+    highlights: ["4 koyda yüzme", "Beyaz kumlu ada", "Öğle yemeği + meyve", "Karayip mavisi deniz"],
+    includes: ["Otelden alma-bırakma", "Tekne turu", "Öğle yemeği ve meyve tabağı"],
+    program: [
+      { time: "07:30", text: "Otelinizden alınış" },
+      { time: "10:00", text: "Adrasan'dan tekneyle hareket" },
+      { time: "11:00", text: "Koylarda yüzme molaları" },
+      { time: "13:00", text: "Teknede öğle yemeği" },
+      { time: "14:00", text: "Suluada'da serbest zaman" },
+      { time: "16:00", text: "Dönüş" },
+    ],
+    faq: [{ q: "Şnorkel var mı?", a: "Teknede sınırlı sayıda var; kendi şnorkelinizi getirmenizi öneririz." }],
+    hue: "from-teal-400 to-blue-700",
+  },
+  {
+    slug: "antalya-sehir-turu",
+    name: "Antalya Şehir Turu",
+    tagline: "Kaleiçi, Düden Şelalesi ve teleferikle şehrin zirvesi",
+    category: "kultur",
+    duration: "Tam gün",
+    days: "Salı ve Cuma",
+    description:
+      "Antalya'yı bir günde özetliyoruz: Kaleiçi'nin tarihi sokakları, Düden Şelalesi, teleferikle Tünektepe manzarası ve eski şehirde serbest zaman.",
+    highlights: ["Kaleiçi turu", "Düden Şelalesi", "Teleferik", "Serbest zaman"],
+    includes: ["Ulaşım", "Rehberlik", "Öğle yemeği"],
+    program: [
+      { time: "09:00", text: "Otelinizden alınış" },
+      { time: "10:30", text: "Düden Şelalesi" },
+      { time: "12:00", text: "Öğle yemeği" },
+      { time: "13:30", text: "Kaleiçi gezisi ve serbest zaman" },
+      { time: "16:00", text: "Teleferikle Tünektepe" },
+      { time: "17:30", text: "Dönüş" },
+    ],
+    faq: [{ q: "Teleferik dahil mi?", a: "Teleferik bileti ekstradır." }],
+    hue: "from-rose-400 to-purple-800",
+  },
+  {
+    slug: "demre-myra-kekova-turu",
+    name: "Demre – Myra – Kekova Turu",
+    tagline: "Batık şehir, kaya mezarları ve Noel Baba Kilisesi",
+    category: "kultur",
+    duration: "Tam gün",
+    days: "Çarşamba ve Pazar",
+    description:
+      "Myra'nın kayaya oyulmuş mezarları, Demre'deki Aziz Nikolaos (Noel Baba) Kilisesi ve tekneyle Kekova batık şehri üzerinde seyir. Tekne turu ve öğle yemeği dahil.",
+    highlights: ["Kekova batık şehri", "Myra kaya mezarları", "Noel Baba Kilisesi", "Tekne + yemek dahil"],
+    includes: ["Ulaşım", "Tekne turu", "Öğle yemeği", "Rehberlik"],
+    program: [
+      { time: "06:30", text: "Otelinizden alınış" },
+      { time: "10:00", text: "Myra kaya mezarları" },
+      { time: "11:30", text: "Aziz Nikolaos Kilisesi" },
+      { time: "13:00", text: "Öğle yemeği" },
+      { time: "14:00", text: "Kekova tekne turu — batık şehir" },
+      { time: "16:30", text: "Dönüş" },
+    ],
+    faq: [{ q: "Kilise girişi dahil mi?", a: "Müze girişleri ekstradır; Müzekart geçerlidir." }],
+    hue: "from-indigo-500 to-blue-900",
+  },
+  {
+    slug: "land-of-legends-turu",
+    name: "Land of Legends Turu",
+    tagline: "Türkiye'nin en büyük tema parkında 6 saat",
+    category: "aile",
+    duration: "Tam gün",
+    days: "Her gün",
+    description:
+      "Belek'teki Land of Legends tema ve su parkında ailecek unutulmaz bir gün. Gidiş-dönüş transfer ve park girişi dahil, parkta 6 saat serbest zaman. Akşam ışık gösterisi seçeneği de mevcut.",
+    highlights: ["Park girişi dahil", "6 saat serbest zaman", "Su parkı + tema park", "Transfer dahil"],
+    includes: ["Gidiş-dönüş transfer", "Park giriş bileti"],
+    program: [
+      { time: "09:00", text: "Otelinizden alınış" },
+      { time: "10:00", text: "Parka giriş — serbest zaman" },
+      { time: "16:00", text: "Buluşma ve dönüş" },
+    ],
+    faq: [{ q: "Yiyecek-içecek dahil mi?", a: "Park içi harcamalar ekstradır." }],
+    hue: "from-fuchsia-500 to-violet-800",
+  },
+  {
+    slug: "yamac-parasutu-alanya",
+    name: "Yamaç Paraşütü (Alanya)",
+    tagline: "1000 metreden Kleopatra Plajı'na 25-30 dakika uçuş",
+    category: "macera",
+    duration: "Yarım gün",
+    days: "Her gün",
+    description:
+      "Alanya Yassıtepe'den (yaklaşık 1000 m) kalkış, Kleopatra Plajı'na iniş. Lisanslı tandem pilotları eşliğinde 25-30 dakikalık uçuş. Kuş gibi uçmak istiyorsan doğru adrestesin.",
+    highlights: ["25-30 dk tandem uçuş", "1000 m kalkış noktası", "Kleopatra Plajı inişi", "Lisanslı pilotlar"],
+    includes: ["Otelden alma-bırakma", "Tandem uçuş", "Tüm ekipman", "Sigorta"],
+    program: [
+      { time: "08:00", text: "Otelinizden alınış" },
+      { time: "10:00", text: "Yassıtepe'de brifing ve ekipman" },
+      { time: "10:30", text: "Uçuş — 25-30 dakika" },
+      { time: "12:00", text: "Kleopatra Plajı'nda serbest zaman ve dönüş" },
+    ],
+    faq: [
+      { q: "Video çekimi var mı?", a: "Pilotun çektiği foto/video paketi opsiyoneldir; uçuşta kendi telefonunuzu kullanmak güvenlik gereği yasaktır." },
+    ],
+    hue: "from-sky-400 to-fuchsia-600",
+  },
+  {
+    slug: "at-safari",
+    name: "At Safari (Horse Riding)",
+    tagline: "Sahilde ve çam ormanında atlı doğa yürüyüşü",
+    category: "keyif",
+    duration: "2-3 saat",
+    days: "Her gün",
+    description:
+      "Deneyim şart değil: eğitmen eşliğinde önce tanışma, sonra çam ormanı ve kumsal boyunca atlı yürüyüş. Gün batımı seansı fotoğraf için birebir.",
+    highlights: ["Deneyim gerektirmez", "Sahil + orman parkuru", "Gün batımı seansı", "Eğitmen eşliğinde"],
+    includes: ["Otelden alma-bırakma", "At ve ekipman", "Eğitmen", "Sigorta"],
+    program: [
+      { time: "Seans 1", text: "Sabah 09:00 — serin saat turu" },
+      { time: "Seans 2", text: "Gün batımı 17:00 — fotoğraf turu" },
+    ],
+    faq: [{ q: "Hiç ata binmedim, olur mu?", a: "Olur. Atlar sakin, eğitmen baştan sona yanınızda." }],
+    hue: "from-amber-600 to-stone-800",
+  },
+  {
+    slug: "turk-hamami",
+    name: "Türk Hamamı & Spa",
+    tagline: "Sauna, kese-köpük, 20 dk masaj ve yüz maskesi",
+    category: "keyif",
+    duration: "3-4 saat",
+    days: "Her gün",
+    description:
+      "Tatilin yorgunluğunu ilk günden at: sauna, buhar odası, tuz odası, kese-köpük, 20 dakikalık masaj ve yüz maskesi. Transfer dahil, program komple.",
+    highlights: ["Sauna + buhar + tuz odası", "Kese ve köpük masajı", "20 dk yağ masajı", "Yüz maskesi"],
+    includes: ["Gidiş-dönüş transfer", "Tüm hamam programı", "Havlu ve peştemal"],
+    program: [
+      { time: "Adım 1", text: "Sauna ve buhar odası" },
+      { time: "Adım 2", text: "Kese ve köpük masajı" },
+      { time: "Adım 3", text: "20 dk masaj + yüz maskesi + çay ikramı" },
+    ],
+    faq: [{ q: "Kadın-erkek ayrı mı?", a: "Tesise göre karma veya ayrı seans seçeneği var; rezervasyonda belirtmeniz yeterli." }],
+    hue: "from-teal-500 to-slate-800",
+  },
+  {
+    slug: "ozel-tekne-turu",
+    name: "Özel Tekne Turu (Private)",
+    tagline: "Tekne komple sizin: aile, kutlama veya balık avı",
+    category: "tekne",
+    duration: "Esnek",
+    days: "Her gün",
+    description:
+      "Kalabalık istemeyenlere: tekne sadece sizin grubunuza. Rota, süre ve ikramlar size göre planlanır. Doğum günü, evlilik teklifi, aile günü veya tekneden balık avı — senaryoyu siz yazın, organizasyon bizden.",
+    highlights: ["Tamamen özel tekne", "Esnek rota ve süre", "Balık avı opsiyonu", "Kutlama organizasyonu"],
+    includes: ["Tekne ve kaptan", "Yakıt", "İkramlar (pakete göre)", "Sigorta"],
+    program: [{ time: "Siz seçin", text: "Rota ve saatler grubunuza göre planlanır — WhatsApp'tan yazın, birlikte kuralım." }],
+    faq: [{ q: "Kaç kişilik?", a: "2 kişilik romantik turdan 20+ kişilik gruplara kadar farklı tekne seçeneklerimiz var." }],
+    hue: "from-blue-700 to-slate-900",
+  },
+];
+
+export const categories: Record<Tour["category"], string> = {
+  macera: "Macera",
+  tekne: "Tekne Turları",
+  kultur: "Kültür & Gezi",
+  aile: "Aile & Çocuk",
+  keyif: "Keyif & Spa",
+};
+
+export function getTour(slug: string) {
+  return tours.find((t) => t.slug === slug);
+}
