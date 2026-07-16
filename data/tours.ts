@@ -90,7 +90,6 @@ export const tours: Tour[] = [
       { q: "Quad kullanmak için ehliyet gerekiyor mu?", a: "Parkur özel alanda olduğu için ehliyet şartı yok, 16 yaş üzeri tek başına kullanabilir." },
     ],
     hue: "from-orange-500 to-rose-700",
-    popular: true,
   },
   {
     slug: "yesil-kanyon-tekne-turu",
@@ -114,7 +113,6 @@ export const tours: Tour[] = [
       { q: "Deniz tutan biri için uygun mu?", a: "Baraj gölü dalgasız ve sakindir, deniz tutması yaşanmaz." },
     ],
     hue: "from-emerald-500 to-teal-800",
-    popular: true,
   },
   {
     slug: "korsan-teknesi",
@@ -138,6 +136,7 @@ export const tours: Tour[] = [
       { q: "Kaç yaş için uygun?", a: "Her yaş için uygun; animasyonlar özellikle 3-12 yaş grubuna göre kurgulanıyor." },
     ],
     hue: "from-slate-600 to-slate-900",
+    popular: true,
   },
   {
     slug: "manavgat-tekne-turu",
@@ -160,6 +159,7 @@ export const tours: Tour[] = [
     ],
     faq: [{ q: "Şelale girişi dahil mi?", a: "Şelale giriş ücreti ekstradır, sembolik bir tutardır." }],
     hue: "from-sky-500 to-indigo-800",
+    popular: true,
   },
   {
     slug: "dolphin-island-tekne-turu",
@@ -202,7 +202,6 @@ export const tours: Tour[] = [
       { q: "Balon turu dahil mi?", a: "Balon turu opsiyoneldir; rezervasyon sırasında ekleyebiliriz, kontenjan sezonda hızlı doluyor." },
     ],
     hue: "from-amber-500 to-orange-800",
-    popular: true,
   },
   {
     slug: "pamukkale-salda-turu",
@@ -224,7 +223,6 @@ export const tours: Tour[] = [
     ],
     faq: [{ q: "Travertenlerde yüzülüyor mu?", a: "Travertenlerde yürüyebilirsiniz; Kleopatra Havuzu'nda yüzmek isterseniz giriş ekstradır." }],
     hue: "from-stone-300 to-sky-600",
-    popular: true,
   },
   {
     slug: "kartal-kanyonu-turu",
@@ -406,6 +404,7 @@ export const tours: Tour[] = [
     program: [{ time: "Siz seçin", text: "Rota ve saatler grubunuza göre planlanır — WhatsApp'tan yazın, birlikte kuralım." }],
     faq: [{ q: "Kaç kişilik?", a: "2 kişilik romantik turdan 20+ kişilik gruplara kadar farklı tekne seçeneklerimiz var." }],
     hue: "from-blue-700 to-slate-900",
+    popular: true,
   },
   {
     slug: "yunus-gosterisi-ve-yuzme",
@@ -583,6 +582,7 @@ export const tours: Tour[] = [
     program: [{ time: "Uçuşunuza göre", text: "Uçuş kodunuzu WhatsApp'tan gönderin, karşılamayı biz planlayalım." }],
     faq: [{ q: "Uçak rötar yaparsa?", a: "Uçuşunuzu sistemden takip ediyoruz; rötar ek ücret doğurmaz." }],
     hue: "from-zinc-600 to-zinc-950",
+    popular: true,
   },
   {
     slug: "rafting-kombo",
