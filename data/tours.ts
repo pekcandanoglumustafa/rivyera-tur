@@ -90,6 +90,7 @@ export const tours: Tour[] = [
       { q: "Quad kullanmak için ehliyet gerekiyor mu?", a: "Parkur özel alanda olduğu için ehliyet şartı yok, 16 yaş üzeri tek başına kullanabilir." },
     ],
     hue: "from-orange-500 to-rose-700",
+    image: "/turlar/super-kombo.jpg",
   },
   {
     slug: "yesil-kanyon-tekne-turu",
@@ -113,6 +114,7 @@ export const tours: Tour[] = [
       { q: "Deniz tutan biri için uygun mu?", a: "Baraj gölü dalgasız ve sakindir, deniz tutması yaşanmaz." },
     ],
     hue: "from-emerald-500 to-teal-800",
+    image: "/turlar/yesil-kanyon-tekne-turu.jpg",
   },
   {
     slug: "korsan-teknesi",
@@ -202,6 +204,7 @@ export const tours: Tour[] = [
       { q: "Balon turu dahil mi?", a: "Balon turu opsiyoneldir; rezervasyon sırasında ekleyebiliriz, kontenjan sezonda hızlı doluyor." },
     ],
     hue: "from-amber-500 to-orange-800",
+    image: "/turlar/kapadokya-turu.jpg",
   },
   {
     slug: "pamukkale-salda-turu",
@@ -223,6 +226,7 @@ export const tours: Tour[] = [
     ],
     faq: [{ q: "Travertenlerde yüzülüyor mu?", a: "Travertenlerde yürüyebilirsiniz; Kleopatra Havuzu'nda yüzmek isterseniz giriş ekstradır." }],
     hue: "from-stone-300 to-sky-600",
+    image: "/turlar/pamukkale-salda-turu.jpg",
   },
   {
     slug: "kartal-kanyonu-turu",
