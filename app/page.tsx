@@ -1,6 +1,7 @@
 import Link from "next/link";
 import TourCard from "@/components/TourCard";
 import Reveal from "@/components/Reveal";
+import PirateShip3D from "@/components/PirateShip3D";
 import FAQ from "@/components/FAQ";
 import { tours, CONTACT } from "@/data/tours";
 
@@ -110,6 +111,18 @@ export default function Home() {
           ))}
         </div>
       </div>
+
+      {/* 3D KORSAN GEMİSİ */}
+      <section className="relative overflow-hidden bg-navy">
+        <div className="mx-auto max-w-6xl px-4 pt-12 text-center text-white">
+          <p className="text-sm font-bold uppercase tracking-widest text-turq">İnteraktif</p>
+          <h2 className="display mt-1 text-3xl font-extrabold md:text-4xl">Dümeni Sen Tut</h2>
+          <p className="mx-auto mt-2 max-w-md text-white/70">
+            Gemiyi parmağınla sürükle, 360° döndür. Gerçeğine binmek için Korsan Teknesi turuna yaz. 🏴‍☠️
+          </p>
+        </div>
+        <PirateShip3D />
+      </section>
 
       {/* POPÜLER TURLAR */}
       <section id="populer" className="mx-auto max-w-6xl px-4 py-16">
