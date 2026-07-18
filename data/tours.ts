@@ -138,6 +138,7 @@ export const tours: Tour[] = [
       { q: "Kaç yaş için uygun?", a: "Her yaş için uygun; animasyonlar özellikle 3-12 yaş grubuna göre kurgulanıyor." },
     ],
     hue: "from-slate-600 to-slate-900",
+    image: "/turlar/korsan-teknesi.jpg",
     popular: true,
   },
   {
@@ -356,6 +357,7 @@ export const tours: Tour[] = [
       { q: "Video çekimi var mı?", a: "Pilotun çektiği foto/video paketi opsiyoneldir; uçuşta kendi telefonunuzu kullanmak güvenlik gereği yasaktır." },
     ],
     hue: "from-sky-400 to-fuchsia-600",
+    image: "/turlar/yamac-parasutu-alanya.jpg",
   },
   {
     slug: "at-safari",
