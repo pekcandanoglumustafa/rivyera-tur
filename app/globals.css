@@ -59,3 +59,14 @@ h1, h2, h3, .display {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* UI-UX Pro Max kontrol listesinden: odak görünürlüğü + yumuşak geçişler */
+a, button, summary {
+  transition: color 200ms ease, background-color 200ms ease, border-color 200ms ease, transform 200ms ease, box-shadow 200ms ease;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-turq);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
