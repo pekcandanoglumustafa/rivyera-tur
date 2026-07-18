@@ -139,3 +139,22 @@ a, button, summary {
   .reveal { opacity: 1; transform: none; }
   .blob-a, .blob-b, .gradient-text, .marquee-track, .pulse { animation: none; }
 }
+
+/* Sinematik hero: yavaş zoom (Ken Burns) */
+@keyframes kenburns {
+  from { transform: scale(1) translate(0, 0); }
+  to { transform: scale(1.14) translate(-1.5%, -1%); }
+}
+.kenburns { animation: kenburns 22s ease-in-out infinite alternate; will-change: transform; }
+
+/* Hero altında akan çift dalga */
+@keyframes wave-slide {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.wave { animation: wave-slide 14s linear infinite; }
+.wave-slow { animation: wave-slide 22s linear infinite; opacity: 0.5; }
+
+@media (prefers-reduced-motion: reduce) {
+  .kenburns, .wave, .wave-slow { animation: none; }
+}

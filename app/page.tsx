@@ -31,6 +31,17 @@ export default function Home() {
     <>
       {/* HERO */}
       <section className="relative overflow-hidden bg-navy text-white">
+        {/* Sinematik arka plan */}
+        <div className="absolute inset-0" aria-hidden>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/turlar/korsan-teknesi.jpg"
+            alt=""
+            fetchPriority="high"
+            className="kenburns h-full w-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/85 to-navy/50" />
+        </div>
         <div className="pointer-events-none absolute inset-0" aria-hidden>
           <div
             className="blob-a absolute -right-24 -top-24 h-[420px] w-[420px] rounded-full opacity-30 blur-3xl"
@@ -75,6 +86,15 @@ export default function Home() {
             <span>✓ Ödeme tur günü</span>
             <span>✓ Tüm turlar sigortalı</span>
           </div>
+        </div>
+        {/* Akan dalgalar */}
+        <div className="absolute inset-x-0 bottom-0 h-14 overflow-hidden" aria-hidden>
+          <svg className="wave absolute bottom-0 h-14 w-[200%]" viewBox="0 0 2880 60" preserveAspectRatio="none" fill="var(--color-turq)">
+            <path d="M0,30 C240,55 480,5 720,30 C960,55 1200,5 1440,30 C1680,55 1920,5 2160,30 C2400,55 2640,5 2880,30 L2880,60 L0,60 Z" />
+          </svg>
+          <svg className="wave-slow absolute bottom-0 h-14 w-[200%]" viewBox="0 0 2880 60" preserveAspectRatio="none" fill="var(--color-turq)">
+            <path d="M0,35 C360,10 720,55 1080,35 C1440,10 1800,55 2160,35 C2520,10 2880,55 2880,35 L2880,60 L0,60 Z" />
+          </svg>
         </div>
       </section>
 
