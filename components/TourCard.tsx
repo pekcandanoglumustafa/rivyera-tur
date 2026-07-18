@@ -12,7 +12,7 @@ export default function TourCard({ tour }: { tour: Tour }) {
       <div className={`relative h-44 bg-gradient-to-br ${tour.hue}`}>
         {tour.image && (
           // eslint-disable-next-line @next/next/no-img-element
-          <img src={tour.image} alt={tour.name} className="h-full w-full object-cover" loading="lazy" />
+          <img src={tour.image} alt={tour.name} className="card-img h-full w-full object-cover" loading="lazy" />
         )}
         <span className="absolute left-3 top-3 rounded-full bg-white/90 px-3 py-1 text-xs font-bold text-navy">
           {categories[tour.category]}

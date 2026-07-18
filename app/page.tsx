@@ -1,5 +1,6 @@
 import Link from "next/link";
 import TourCard from "@/components/TourCard";
+import Reveal from "@/components/Reveal";
 import FAQ from "@/components/FAQ";
 import { tours, CONTACT } from "@/data/tours";
 
@@ -30,21 +31,23 @@ export default function Home() {
     <>
       {/* HERO */}
       <section className="relative overflow-hidden bg-navy text-white">
-        <div
-          className="pointer-events-none absolute inset-0 opacity-30"
-          style={{
-            background:
-              "radial-gradient(60% 80% at 80% 10%, #0ea5a4 0%, transparent 60%), radial-gradient(50% 60% at 10% 90%, #ff6b1a33 0%, transparent 60%)",
-          }}
-          aria-hidden
-        />
+        <div className="pointer-events-none absolute inset-0" aria-hidden>
+          <div
+            className="blob-a absolute -right-24 -top-24 h-[420px] w-[420px] rounded-full opacity-30 blur-3xl"
+            style={{ background: "radial-gradient(circle, #0ea5a4 0%, transparent 65%)" }}
+          />
+          <div
+            className="blob-b absolute -bottom-32 -left-24 h-[380px] w-[380px] rounded-full opacity-25 blur-3xl"
+            style={{ background: "radial-gradient(circle, #ff6b1a 0%, transparent 65%)" }}
+          />
+        </div>
         <div className="relative mx-auto max-w-6xl px-4 py-20 md:py-28">
           <p className="mb-4 inline-block rounded-full border border-turq/40 bg-turq/10 px-4 py-1 text-sm font-semibold text-turq">
             Antalya · Side · Manavgat · Belek · Alanya
           </p>
           <h1 className="display max-w-3xl text-4xl font-extrabold leading-tight md:text-6xl">
             Antalya&apos;yı gezmenin
-            <span className="text-turq"> en kestirme yolu.</span>
+            <span className="gradient-text"> en kestirme yolu.</span>
           </h1>
           <p className="mt-5 max-w-xl text-lg text-white/80">
             Rafting&apos;ten tekne turuna, Kapadokya&apos;dan Pamukkale&apos;ye — otelinden
@@ -54,7 +57,7 @@ export default function Home() {
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
               href="/turlar"
-              className="rounded-full bg-cta px-7 py-3.5 font-bold text-white shadow-lg shadow-cta/30 hover:bg-cta-dark"
+              className="pulse rounded-full bg-cta px-7 py-3.5 font-bold text-white shadow-lg shadow-cta/30 transition hover:-translate-y-0.5 hover:bg-cta-dark"
             >
               Turları İncele
             </Link>
@@ -75,6 +78,19 @@ export default function Home() {
         </div>
       </section>
 
+      {/* KAYAN ŞERİT */}
+      <div className="overflow-hidden bg-turq py-3 text-navy" aria-hidden>
+        <div className="marquee-track gap-8 px-4 text-sm font-extrabold uppercase tracking-widest">
+          {[0, 1].map((k) => (
+            <span key={k} className="flex shrink-0 gap-8">
+              {["Rafting", "Tekne Turları", "Jeep Safari", "Yamaç Paraşütü", "Kapadokya", "Korsan Teknesi", "Dalış", "Pamukkale", "Yat Turu", "Hamam"].map((t) => (
+                <span key={t} className="flex items-center gap-8">{t} <span className="text-cta">✦</span></span>
+              ))}
+            </span>
+          ))}
+        </div>
+      </div>
+
       {/* POPÜLER TURLAR */}
       <section id="populer" className="mx-auto max-w-6xl px-4 py-16">
         <div className="mb-8 flex items-end justify-between">
@@ -91,8 +107,10 @@ export default function Home() {
           </Link>
         </div>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {populer.map((t) => (
-            <TourCard key={t.slug} tour={t} />
+          {populer.map((t, i) => (
+            <Reveal key={t.slug} delay={(i % 3) as 0 | 1 | 2}>
+              <TourCard tour={t} />
+            </Reveal>
           ))}
         </div>
       </section>
@@ -135,8 +153,10 @@ export default function Home() {
           Keşfetmeye Devam Et
         </h2>
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {digerleri.map((t) => (
-            <TourCard key={t.slug} tour={t} />
+          {digerleri.map((t, i) => (
+            <Reveal key={t.slug} delay={(i % 3) as 0 | 1 | 2}>
+              <TourCard tour={t} />
+            </Reveal>
           ))}
         </div>
         <div className="mt-8 text-center">
