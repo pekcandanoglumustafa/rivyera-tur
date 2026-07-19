@@ -162,6 +162,7 @@ export const tours: Tour[] = [
     ],
     faq: [{ q: "Şelale girişi dahil mi?", a: "Şelale giriş ücreti ekstradır, sembolik bir tutardır." }],
     hue: "from-sky-500 to-indigo-800",
+    image: "/turlar/manavgat-tekne-turu.jpg",
     popular: true,
   },
   {
