@@ -185,6 +185,7 @@ export const tours: Tour[] = [
     ],
     faq: [{ q: "Yunus görme garantisi var mı?", a: "Doğal yaşamda garanti verilmez; gözlem şansı yaklaşık %50'dir." }],
     hue: "from-blue-500 to-cyan-700",
+    image: "/turlar/dolphin-island-tekne-turu.jpg",
   },
   {
     slug: "kapadokya-turu",
@@ -250,6 +251,7 @@ export const tours: Tour[] = [
     ],
     faq: [{ q: "Yürüyüş zor mu?", a: "Orta seviye; rahat spor ayakkabı yeterli." }],
     hue: "from-lime-600 to-emerald-900",
+    image: "/turlar/kartal-kanyonu-turu.jpg",
   },
   {
     slug: "suluada-tekne-turu",
@@ -295,6 +297,7 @@ export const tours: Tour[] = [
     ],
     faq: [{ q: "Teleferik dahil mi?", a: "Teleferik bileti ekstradır." }],
     hue: "from-rose-400 to-purple-800",
+    image: "/turlar/antalya-sehir-turu.jpg",
   },
   {
     slug: "demre-myra-kekova-turu",
@@ -317,6 +320,7 @@ export const tours: Tour[] = [
     ],
     faq: [{ q: "Kilise girişi dahil mi?", a: "Müze girişleri ekstradır; Müzekart geçerlidir." }],
     hue: "from-indigo-500 to-blue-900",
+    image: "/turlar/demre-myra-kekova-turu.jpg",
   },
   {
     slug: "land-of-legends-turu",
@@ -336,6 +340,7 @@ export const tours: Tour[] = [
     ],
     faq: [{ q: "Yiyecek-içecek dahil mi?", a: "Park içi harcamalar ekstradır." }],
     hue: "from-fuchsia-500 to-violet-800",
+    image: "/turlar/land-of-legends-turu.jpg",
   },
   {
     slug: "yamac-parasutu-alanya",
@@ -377,6 +382,7 @@ export const tours: Tour[] = [
     ],
     faq: [{ q: "Hiç ata binmedim, olur mu?", a: "Olur. Atlar sakin, eğitmen baştan sona yanınızda." }],
     hue: "from-amber-600 to-stone-800",
+    image: "/turlar/at-safari.jpg",
   },
   {
     slug: "turk-hamami",
@@ -396,6 +402,7 @@ export const tours: Tour[] = [
     ],
     faq: [{ q: "Kadın-erkek ayrı mı?", a: "Tesise göre karma veya ayrı seans seçeneği var; rezervasyonda belirtmeniz yeterli." }],
     hue: "from-teal-500 to-slate-800",
+    image: "/turlar/turk-hamami.jpg",
   },
   {
     slug: "ozel-tekne-turu",
@@ -411,6 +418,7 @@ export const tours: Tour[] = [
     program: [{ time: "Siz seçin", text: "Rota ve saatler grubunuza göre planlanır — WhatsApp'tan yazın, birlikte kuralım." }],
     faq: [{ q: "Kaç kişilik?", a: "2 kişilik romantik turdan 20+ kişilik gruplara kadar farklı tekne seçeneklerimiz var." }],
     hue: "from-blue-700 to-slate-900",
+    image: "/turlar/ozel-tekne-turu.jpg",
     popular: true,
   },
   {
@@ -434,6 +442,7 @@ export const tours: Tour[] = [
       { q: "Yunuslarla yüzme dahil mi?", a: "Gösteri bilete dahildir; yüzme seansı opsiyoneldir ve rezervasyonda veya yerinde eklenir." },
     ],
     hue: "from-cyan-400 to-blue-600",
+    image: "/turlar/yunus-gosterisi-ve-yuzme.jpg",
   },
   {
     slug: "tuplu-dalis",
@@ -455,6 +464,7 @@ export const tours: Tour[] = [
     ],
     faq: [{ q: "Sertifika gerekiyor mu?", a: "Hayır, keşif dalışı için sertifika gerekmez; sertifikalılar için ayrı program mevcuttur." }],
     hue: "from-blue-800 to-slate-950",
+    image: "/turlar/tuplu-dalis.jpg",
   },
   {
     slug: "tekneden-balik-avi",
@@ -473,6 +483,7 @@ export const tours: Tour[] = [
     ],
     faq: [{ q: "Balık tutamazsam?", a: "Kaptan noktaları iyi bilir ama av doğa işi; tekne keyfi her durumda garanti." }],
     hue: "from-sky-700 to-blue-950",
+    image: "/turlar/tekneden-balik-avi.jpg",
   },
   {
     slug: "alanya-turu",
@@ -494,6 +505,7 @@ export const tours: Tour[] = [
     ],
     faq: [{ q: "Mağara girişi dahil mi?", a: "Mağara girişi ekstradır, sembolik tutardır." }],
     hue: "from-red-500 to-rose-900",
+    image: "/turlar/alanya-turu.jpg",
   },
   {
     slug: "aquapark",
@@ -513,6 +525,7 @@ export const tours: Tour[] = [
     ],
     faq: [{ q: "Yiyecek dahil mi?", a: "Park içi büfeler ekstradır." }],
     hue: "from-cyan-500 to-sky-700",
+    image: "/turlar/aquapark.jpg",
   },
   {
     slug: "antalya-akvaryum",
@@ -533,6 +546,7 @@ export const tours: Tour[] = [
     ],
     faq: [{ q: "Kar odası dahil mi?", a: "Evet, akvaryum biletine dahildir." }],
     hue: "from-indigo-600 to-blue-950",
+    image: "/turlar/antalya-akvaryum.jpg",
   },
   {
     slug: "legends-gece-gosterisi",
@@ -553,6 +567,7 @@ export const tours: Tour[] = [
     ],
     faq: [{ q: "Çocuklar için uygun mu?", a: "Evet, gösteri her yaşa uygundur." }],
     hue: "from-violet-600 to-fuchsia-900",
+    image: "/turlar/legends-gece-gosterisi.jpg",
   },
   {
     slug: "ormana-altinbesik",
@@ -574,6 +589,7 @@ export const tours: Tour[] = [
     ],
     faq: [{ q: "Mağara zor mu?", a: "Merdivenli iniş-çıkış var; ortalama kondisyon yeterli." }],
     hue: "from-stone-500 to-stone-900",
+    image: "/turlar/ormana-altinbesik.jpg",
   },
   {
     slug: "vip-havalimani-transfer",
@@ -589,6 +605,7 @@ export const tours: Tour[] = [
     program: [{ time: "Uçuşunuza göre", text: "Uçuş kodunuzu WhatsApp'tan gönderin, karşılamayı biz planlayalım." }],
     faq: [{ q: "Uçak rötar yaparsa?", a: "Uçuşunuzu sistemden takip ediyoruz; rötar ek ücret doğurmaz." }],
     hue: "from-zinc-600 to-zinc-950",
+    image: "/turlar/vip-havalimani-transfer.jpg",
     popular: true,
   },
   {
@@ -640,6 +657,7 @@ export const tours: Tour[] = [
     ],
     faq: [{ q: "Toz oluyor mu?", a: "Dağ yollarında toz olur; buff/bandana veririz, beyaz giymemenizi öneririz." }],
     hue: "from-green-700 to-emerald-950",
+    image: "/turlar/jeep-safari.jpg",
   },
   {
     slug: "quad-buggy-safari",
@@ -683,6 +701,7 @@ export const tours: Tour[] = [
     ],
     faq: [{ q: "Islak kıyafetle mi safari?", a: "Rafting sonrası üstünüzü değiştirmeniz için zaman ve soyunma kabini var; yedek kıyafet getirin." }],
     hue: "from-amber-500 to-red-800",
+    image: "/turlar/quad-buggy-rafting.jpg",
   },
   {
     slug: "mix-tur-7-1",
@@ -705,6 +724,7 @@ export const tours: Tour[] = [
     ],
     faq: [{ q: "Şelale girişi dahil mi?", a: "Şelale girişi ekstradır, sembolik tutardır." }],
     hue: "from-teal-600 to-green-900",
+    image: "/turlar/mix-tur-7-1.jpg",
   },
   {
     slug: "akvaryum-legends-kombo",
@@ -726,6 +746,7 @@ export const tours: Tour[] = [
     ],
     faq: [{ q: "Akşam yemeği dahil mi?", a: "Yemek dahil değildir; alandaki restoranlardan dilediğinizi seçebilirsiniz." }],
     hue: "from-purple-600 to-indigo-950",
+    image: "/turlar/akvaryum-legends-kombo.jpg",
   },
   {
     slug: "arac-kiralama",
@@ -743,6 +764,7 @@ export const tours: Tour[] = [
       { q: "Ne gerekiyor?", a: "Ehliyet ve kimlik yeterli; bazı sınıflarda minimum yaş ve ehliyet yılı şartı var, rezervasyonda netleştiririz." },
     ],
     hue: "from-slate-500 to-slate-800",
+    image: "/turlar/arac-kiralama.jpg",
   },
 ];
 
