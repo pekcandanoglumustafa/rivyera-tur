@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import Image from "next/image";
 import FAQ from "@/components/FAQ";
 import { tours, getTour, categories, CONTACT } from "@/data/tours";
 
@@ -78,13 +79,7 @@ export default async function TourPage({
       {/* Başlık bloğu */}
       <header className={`relative overflow-hidden bg-gradient-to-br ${tour.hue} text-white`}>
         {tour.image && (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
-            src={tour.image}
-            alt={tour.name}
-            className="absolute inset-0 h-full w-full object-cover"
-            fetchPriority="high"
-          />
+          <Image src={tour.image} alt={tour.name} fill priority sizes="100vw" className="object-cover" />
         )}
         {tour.image && <div className="absolute inset-0 bg-navy/55" aria-hidden />}
         <div className="relative mx-auto max-w-4xl px-4 py-16">

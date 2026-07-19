@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Tour } from "@/data/tours";
 import { categories } from "@/data/tours";
 
@@ -11,8 +12,13 @@ export default function TourCard({ tour }: { tour: Tour }) {
     >
       <div className={`relative h-44 bg-gradient-to-br ${tour.hue}`}>
         {tour.image && (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img src={tour.image} alt={tour.name} className="card-img h-full w-full object-cover" loading="lazy" />
+          <Image
+            src={tour.image}
+            alt={tour.name}
+            fill
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            className="card-img object-cover"
+          />
         )}
         <span className="absolute left-3 top-3 rounded-full bg-white/90 px-3 py-1 text-xs font-bold text-navy">
           {categories[tour.category]}

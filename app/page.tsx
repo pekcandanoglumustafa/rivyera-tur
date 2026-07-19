@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import TourCard from "@/components/TourCard";
 import Reveal from "@/components/Reveal";
 import FAQ from "@/components/FAQ";
@@ -33,12 +34,13 @@ export default function Home() {
       <section className="relative overflow-hidden bg-navy text-white">
         {/* Sinematik arka plan */}
         <div className="absolute inset-0" aria-hidden>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+          <Image
             src="/turlar/korsan-teknesi.jpg"
             alt=""
-            fetchPriority="high"
-            className="kenburns h-full w-full object-cover"
+            fill
+            priority
+            sizes="100vw"
+            className="kenburns object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/85 to-navy/50" />
         </div>
