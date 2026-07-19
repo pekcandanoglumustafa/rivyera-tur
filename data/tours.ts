@@ -272,6 +272,7 @@ export const tours: Tour[] = [
     ],
     faq: [{ q: "Şnorkel var mı?", a: "Teknede sınırlı sayıda var; kendi şnorkelinizi getirmenizi öneririz." }],
     hue: "from-teal-400 to-blue-700",
+    image: "/turlar/suluada-tekne-turu.jpg",
   },
   {
     slug: "antalya-sehir-turu",
@@ -615,6 +616,7 @@ export const tours: Tour[] = [
       { q: "Buggy ve quad için ehliyet gerekli mi?", a: "Özel parkurda kullanıldığı için ehliyet gerekmez, 16 yaş üzeri tek başına kullanabilir." },
     ],
     hue: "from-orange-600 to-red-900",
+    image: "/turlar/rafting-kombo.jpg",
     popular: true,
   },
   {
