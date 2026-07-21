@@ -40,6 +40,7 @@ export default function Home() {
             fill
             priority
             sizes="100vw"
+            quality={70}
             className="kenburns object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/85 to-navy/50" />
