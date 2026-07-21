@@ -26,7 +26,7 @@ const genelSSS = [
 
 export default function Home() {
   const populer = tours.filter((t) => t.popular);
-  const digerleri = tours.filter((t) => !t.popular).slice(0, 6);
+  const digerleri = tours.filter((t) => !t.popular);
 
   return (
     <>
@@ -192,7 +192,7 @@ export default function Home() {
       {/* DİĞER TURLAR */}
       <section className="mx-auto max-w-6xl px-4 py-16">
         <h2 className="display text-3xl font-extrabold text-navy md:text-4xl">
-          Keşfetmeye Devam Et
+          Tüm Turlar
         </h2>
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {digerleri.map((t, i) => (
