@@ -56,24 +56,24 @@ export default function Home() {
           />
         </div>
         <div className="relative mx-auto max-w-6xl px-4 py-20 md:py-28">
-          <p className="mb-4 inline-block rounded-full border border-turq/40 bg-turq/10 px-4 py-1 text-sm font-semibold text-turq">
-            Antalya · Side · Manavgat · Belek · Alanya
+          <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-turq/40 bg-turq/10 px-4 py-1 text-sm font-semibold text-turq">
+            <span className="h-2 w-2 rounded-full bg-turq" /> Anında Onay · Antalya · Side · Manavgat · Belek · Alanya
           </p>
           <h1 className="display max-w-3xl text-4xl font-extrabold leading-tight md:text-6xl">
-            Antalya&apos;yı gezmenin
-            <span className="gradient-text"> en kestirme yolu.</span>
+            Hayalinizdeki turu bugün ayırtın —
+            <span className="gradient-text"> macera burada başlıyor.</span>
           </h1>
           <p className="mt-5 max-w-xl text-lg text-white/80">
-            Rafting&apos;ten tekne turuna, Kapadokya&apos;dan Pamukkale&apos;ye — otelinden
-            alıyoruz, gününü kurup geri bırakıyoruz. Ön ödeme yok, sürpriz
-            masraf yok.
+            En iyi turlar, en iyi fiyatlar, unutulmaz anılar. Rafting&apos;ten tekne
+            turuna, Kapadokya&apos;dan Pamukkale&apos;ye — bir turdan fazlasını keşfedin.
+            Ödeme yapmadan güvenle rezervasyon: tur günü ücretsiz karşılama ve ödeme.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
               href="/turlar"
               className="pulse rounded-full bg-cta px-7 py-3.5 font-bold text-white shadow-lg shadow-cta/30 transition hover:-translate-y-0.5 hover:bg-cta-dark"
             >
-              Turları İncele
+              Hemen Rezervasyon Yap
             </Link>
             <a
               href={CONTACT.whatsapp}
@@ -84,10 +84,11 @@ export default function Home() {
               WhatsApp&apos;tan Sor
             </a>
           </div>
-          <div className="mt-10 flex flex-wrap gap-x-8 gap-y-3 text-sm text-white/70">
-            <span>✓ Otelden alma-bırakma dahil</span>
-            <span>✓ Ödeme tur günü</span>
-            <span>✓ Tüm turlar sigortalı</span>
+          <div className="mt-10 grid max-w-xl grid-cols-2 gap-x-6 gap-y-3 text-sm text-white/80 sm:grid-cols-4">
+            <span className="flex items-center gap-2"><span className="text-turq">✔</span> Gizli ücret yok</span>
+            <span className="flex items-center gap-2"><span className="text-turq">✔</span> Ücretsiz iptal</span>
+            <span className="flex items-center gap-2"><span className="text-turq">✔</span> Kredi kartı gerekmez</span>
+            <span className="flex items-center gap-2"><span className="text-turq">✔</span> 5000+ mutlu misafir</span>
           </div>
         </div>
         {/* Akan dalgalar */}
@@ -135,6 +136,24 @@ export default function Home() {
               <TourCard tour={t} />
             </Reveal>
           ))}
+        </div>
+      </section>
+
+      {/* GÜVEN ŞERİDİ */}
+      <section className="mx-auto max-w-6xl px-4 pb-4">
+        <div className="grid gap-4 sm:grid-cols-3">
+          <div className="rounded-2xl bg-navy p-6 text-white">
+            <p className="display text-lg font-bold text-turq">Ödeme Yapmadan Güvenli Rezervasyon</p>
+            <p className="mt-1 text-sm text-white/75">Yerini ayırt, kredi kartı verme. Ödeme tur günü, otelden karşılamayla.</p>
+          </div>
+          <div className="rounded-2xl bg-navy p-6 text-white">
+            <p className="display text-lg font-bold text-turq">Anında Onay</p>
+            <p className="mt-1 text-sm text-white/75">WhatsApp&apos;tan yaz, dakikalar içinde yerin kesinleşsin. Bekleme yok.</p>
+          </div>
+          <div className="rounded-2xl bg-navy p-6 text-white">
+            <p className="display text-lg font-bold text-turq">Bir Turdan Fazlası</p>
+            <p className="mt-1 text-sm text-white/75">33 farklı tur, tek adres. Macera, tekne, kültür ve keyif — hepsi burada.</p>
+          </div>
         </div>
       </section>
 
