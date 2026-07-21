@@ -1,15 +1,15 @@
 @import "tailwindcss";
 
 @theme {
-  /* Rivyera Tur — tasarım paleti */
-  --color-navy: #07253a; /* Akdeniz laciverti */
-  --color-deep: #0b3352;
-  --color-turq: #0ea5a4; /* Rivyera turkuazı */
-  --color-turq-soft: #d8f3f2;
-  --color-sand: #f7f3ea; /* kum beyazı */
-  --color-cta: #ff6b1a; /* turuncu ceket */
-  --color-cta-dark: #e35706;
-  --color-ink: #10222e;
+  /* Sonnenklar Reisen Turizm — tasarım paleti */
+  --color-navy: #b0121a; /* Akdeniz laciverti */
+  --color-deep: #8f0e15;
+  --color-turq: #e01f26; /* Sonnenklar turkuazı */
+  --color-turq-soft: #ffe5e6;
+  --color-sand: #ffffff; /* kum beyazı */
+  --color-cta: #e01f26; /* turuncu ceket */
+  --color-cta-dark: #b0121a;
+  --color-ink: #1a1a1a;
 
   --font-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
   --font-body: "Figtree", "Segoe UI", system-ui, sans-serif;
@@ -103,7 +103,7 @@ a, button, summary {
   100% { background-position: 0% 50%; }
 }
 .gradient-text {
-  background: linear-gradient(90deg, #0ea5a4, #5eead4, #ff6b1a, #0ea5a4);
+  background: linear-gradient(90deg, #e01f26, #ff6b6b, #b0121a, #e01f26);
   background-size: 300% 100%;
   -webkit-background-clip: text;
   background-clip: text;
@@ -129,9 +129,9 @@ a, button, summary {
 
 /* CTA butonunda nabız halkası */
 @keyframes pulse-ring {
-  0% { box-shadow: 0 0 0 0 rgba(255, 107, 26, 0.45); }
-  70% { box-shadow: 0 0 0 14px rgba(255, 107, 26, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(255, 107, 26, 0); }
+  0% { box-shadow: 0 0 0 0 rgba(224, 31, 38, 0.45); }
+  70% { box-shadow: 0 0 0 14px rgba(224, 31, 38, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(224, 31, 38, 0); }
 }
 .pulse { animation: pulse-ring 2.4s ease-out infinite; }
 

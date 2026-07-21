@@ -6,7 +6,7 @@ export default function Header() {
     <header className="sticky top-0 z-40 bg-navy/95 backdrop-blur text-white">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
         <Link href="/" className="display text-xl font-extrabold tracking-tight">
-          Rivyera<span className="text-turq">Tur</span>
+          Sonnenklar<span className="text-turq">Tur</span>
         </Link>
         <nav className="hidden gap-6 text-sm font-medium md:flex">
           <Link href="/turlar" className="hover:text-turq">Turlar</Link>

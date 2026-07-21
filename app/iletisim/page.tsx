@@ -4,7 +4,7 @@ import { CONTACT } from "@/data/tours";
 export const metadata: Metadata = {
   title: "İletişim & Rezervasyon",
   description:
-    "Rivyera Tur rezervasyon hattı: 0507 658 42 45. WhatsApp'tan yazın, iki dakikada yerinizi ayırtalım.",
+    "Sonnenklar Reisen Turizm rezervasyon hattı: 0507 658 42 45. WhatsApp'tan yazın, iki dakikada yerinizi ayırtalım.",
   alternates: { canonical: "/iletisim" },
 };
 

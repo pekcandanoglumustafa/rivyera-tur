@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 md:grid-cols-3">
         <div>
           <p className="display text-2xl font-extrabold">
-            Rivyera<span className="text-turq">Tur</span>
+            Sonnenklar<span className="text-turq">Tur</span>
           </p>
           <p className="mt-3 max-w-xs text-sm text-white/70">
             Antalya, Side ve Manavgat merkezli günlük gezi turları. Otelden
@@ -49,7 +49,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t border-white/10 py-5 text-center text-xs text-white/50">
-        © {new Date().getFullYear()} Rivyera Tur — Antalya Gezi Turları
+        © {new Date().getFullYear()} Sonnenklar Reisen Turizm — Antalya Gezi Turları
       </div>
     </footer>
   );

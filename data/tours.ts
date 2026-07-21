@@ -29,8 +29,8 @@ export const CONTACT = {
   phoneDisplay: "0507 658 42 45",
   phoneIntl: "+905076584245",
   whatsapp: "https://wa.me/905076584245",
-  instagram: "https://instagram.com/rivyeratur",
-  email: "info@rivyeratur.com",
+  instagram: "https://instagram.com/sonnenklarreisen",
+  email: "info@sonnenklarreisen.com",
   address: "Side / Manavgat, Antalya",
 };
 

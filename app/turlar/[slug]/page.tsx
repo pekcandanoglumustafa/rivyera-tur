@@ -46,7 +46,7 @@ export default async function TourPage({
         name: tour.name,
         description: tour.description,
         touristType: categories[tour.category],
-        provider: { "@type": "TravelAgency", name: "Rivyera Tur", telephone: CONTACT.phoneIntl },
+        provider: { "@type": "TravelAgency", name: "Sonnenklar Reisen Turizm", telephone: CONTACT.phoneIntl },
         ...(tour.price
           ? {
               offers: {

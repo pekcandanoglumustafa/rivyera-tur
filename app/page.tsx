@@ -161,7 +161,7 @@ export default function Home() {
       <section className="bg-white py-16">
         <div className="mx-auto max-w-6xl px-4">
           <h2 className="display text-3xl font-extrabold text-navy md:text-4xl">
-            Neden Rivyera Tur?
+            Neden Sonnenklar Reisen Turizm?
           </h2>
           <div className="mt-8 grid gap-8 md:grid-cols-3">
             <div>

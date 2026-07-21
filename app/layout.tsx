@@ -6,13 +6,13 @@ import CTABar from "@/components/CTABar";
 import FontLoader from "@/components/FontLoader";
 import { CONTACT } from "@/data/tours";
 
-const SITE = "https://rivyeratur.com";
+const SITE = "https://sonnenklarreisen.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE),
   title: {
-    default: "Rivyera Tur | Antalya Gezi Turları — Rafting, Tekne Turu, Safari",
-    template: "%s | Rivyera Tur",
+    default: "Sonnenklar Reisen Turizm | Antalya Gezi Turları — Rafting, Tekne Turu, Safari",
+    template: "%s | Sonnenklar Reisen Turizm",
   },
   description:
     "Antalya, Side ve Manavgat'ta günlük geziler: rafting, tekne turları, jeep safari, Kapadokya ve Pamukkale turları. Otelden alma-bırakma dahil, WhatsApp'tan hemen rezervasyon: 0507 658 42 45.",
@@ -29,8 +29,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "tr_TR",
-    siteName: "Rivyera Tur",
-    title: "Rivyera Tur | Antalya Gezi Turları",
+    siteName: "Sonnenklar Reisen Turizm",
+    title: "Sonnenklar Reisen Turizm | Antalya Gezi Turları",
     description:
       "Rafting, tekne turları, safari, Kapadokya ve Pamukkale. Otelden alma-bırakma dahil günlük Antalya turları.",
   },
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "TravelAgency",
-  name: "Rivyera Tur",
+  name: "Sonnenklar Reisen Turizm",
   url: SITE,
   telephone: CONTACT.phoneIntl,
   areaServed: ["Antalya", "Side", "Manavgat", "Belek", "Alanya"],
