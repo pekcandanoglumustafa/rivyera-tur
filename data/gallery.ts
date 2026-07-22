@@ -136,6 +136,37 @@ export const GALLERY: Record<string, string[]> = {
     `${B}64b69f5553376.webp`,
     `${B}64b6a07f5dcab.webp`,
   ],
+  "pamukkale-salda-turu": [
+    `${B}64b6a21d02f74.webp`,
+    `${B}64b6a22855064.webp`,
+    `${B}64b6a24566f0b.webp`,
+    `${B}64b6a25027675.webp`,
+    `${B}64b6a27423aa4.webp`,
+  ],
+  "balon-pamukkale-turu": [
+    `${B}64b6a21d02f74.webp`,
+    `${B}64b5a0e7b18e3.webp`,
+    `${B}64b6a24566f0b.webp`,
+  ],
+  "alanya-turu": [
+    `${B}64b5a7625f8f8.webp`,
+    `${B}64b5a762a5b9a.webp`,
+    `${B}64b5a764c3d1f.webp`,
+    `${B}64b5a767eff12.webp`,
+  ],
+  "sapadere-kanyonu": [
+    `${B}64b5a764c3d1f.webp`,
+    `${B}64b5a24eb45eb.webp`,
+    `${B}64b5a767eff12.webp`,
+  ],
+  "antalya-sehir-turu": [
+    `${B}64b5a40c41a8b.webp`,
+    `${B}64b5a40d912fb.webp`,
+    `${B}64b5a40d7a4b7.webp`,
+    `${B}64b5a40ec8279.webp`,
+    `${B}64b5a40ec494b.webp`,
+    `${B}64b5a40f80b8e.webp`,
+  ],
   "quad-safari": [
     `${B}64b5a2edb8d6f.webp`,
     `${B}64b5a2edbb0ba.webp`,
