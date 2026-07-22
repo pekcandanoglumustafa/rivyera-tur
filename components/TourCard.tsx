@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Tour } from "@/data/tours";
-import { categories } from "@/data/tours";
+import { categories, toTL } from "@/data/tours";
 
 /** Büyük, sinematik tur kartı — fotoğraf öne çıkar, altta koyu degrade üzerinde başlık */
 export default function TourCard({ tour }: { tour: Tour }) {
@@ -51,16 +51,23 @@ export default function TourCard({ tour }: { tour: Tour }) {
               Kişi başı
             </span>
             <span className="flex items-center gap-2">
-              <span className="flex items-baseline gap-1.5">
-                {tour.oldPrice && (
-                  <span className="text-sm font-semibold text-white/60 line-through">
-                    €{tour.oldPrice}
+              {tour.price ? (
+                <span className="text-right">
+                  <span className="flex items-baseline justify-end gap-1.5">
+                    {tour.oldPrice && (
+                      <span className="text-sm font-semibold text-white/60 line-through">
+                        €{tour.oldPrice}
+                      </span>
+                    )}
+                    <span className="display text-xl font-extrabold">€{tour.price}</span>
                   </span>
-                )}
-                <span className="display text-xl font-extrabold">
-                  {tour.price ? `€${tour.price}` : "Fiyat Sor"}
+                  <span className="block text-xs font-semibold text-white/75">
+                    {toTL(tour.price)} ₺
+                  </span>
                 </span>
-              </span>
+              ) : (
+                <span className="display text-lg font-extrabold">Fiyat Sor</span>
+              )}
               <span className="rounded-full bg-cta px-3 py-1.5 text-xs font-bold text-white transition group-hover:bg-cta-dark">
                 İncele →
               </span>

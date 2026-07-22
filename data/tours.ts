@@ -25,10 +25,18 @@ export type Tour = {
   popular?: boolean;
 };
 
+/** EUR → TL kuru. Kur değişince SADECE bu satırı güncelle. */
+export const EUR_TRY = 54;
+
+/** EUR fiyatını TL'ye çevirip yuvarlar (ör. 1.030 ₺) */
+export function toTL(eur: number) {
+  return (Math.round((eur * EUR_TRY) / 10) * 10).toLocaleString("tr-TR");
+}
+
 export const CONTACT = {
-  phoneDisplay: "0507 658 42 45",
-  phoneIntl: "+905076584245",
-  whatsapp: "https://wa.me/905076584245",
+  phoneDisplay: "0542 744 01 01",
+  phoneIntl: "+905427440101",
+  whatsapp: "https://wa.me/905427440101",
   instagram: "https://instagram.com/sonnenklarreisen",
   email: "info@sonnenklarreisen.com",
   address: "Side / Manavgat, Antalya",

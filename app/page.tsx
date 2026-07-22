@@ -3,7 +3,7 @@ import Image from "next/image";
 import TourCard from "@/components/TourCard";
 import Reveal from "@/components/Reveal";
 import FAQ from "@/components/FAQ";
-import { tours, CONTACT } from "@/data/tours";
+import { tours, CONTACT, toTL } from "@/data/tours";
 
 const genelSSS = [
   {
@@ -128,7 +128,7 @@ export default function Home() {
                       <span className="text-xs font-semibold text-ink/45 line-through">€{t.oldPrice}</span>
                     )}
                     <span className="display text-lg font-extrabold text-cta">€{t.price}</span>
-                    <span className="text-xs text-ink/60">/ kişi</span>
+                    <span className="text-xs font-semibold text-ink/70">· {toTL(t.price!)} ₺</span>
                   </span>
                 </span>
               </Link>

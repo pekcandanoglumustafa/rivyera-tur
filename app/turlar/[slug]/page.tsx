@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import FAQ from "@/components/FAQ";
-import { tours, getTour, categories, CONTACT } from "@/data/tours";
+import { tours, getTour, categories, CONTACT, toTL } from "@/data/tours";
 
 export function generateStaticParams() {
   return tours.map((t) => ({ slug: t.slug }));
@@ -153,6 +153,9 @@ export default async function TourPage({
                 {tour.price ? `€${tour.price}` : "Fiyat Sor"}
               </span>
             </p>
+            {tour.price && (
+              <p className="text-sm font-semibold text-ink/70">≈ {toTL(tour.price)} ₺</p>
+            )}
             <a
               href={waLink}
               target="_blank"
