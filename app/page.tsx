@@ -103,6 +103,40 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ÖNE ÇIKAN 3 PAKET */}
+      <section className="relative z-10 mx-auto -mt-10 max-w-6xl px-4">
+        <div className="grid gap-4 sm:grid-cols-3">
+          {["quad-safari", "buggy-safari", "koprulu-kanyon-rafting"].map((slug) => {
+            const t = tours.find((x) => x.slug === slug)!;
+            return (
+              <Link
+                key={slug}
+                href={`/turlar/${slug}`}
+                className="group flex items-center gap-4 rounded-2xl bg-white p-4 shadow-xl ring-1 ring-black/5 transition hover:-translate-y-1 hover:shadow-2xl"
+              >
+                <span className={`relative h-16 w-16 shrink-0 overflow-hidden rounded-xl bg-gradient-to-br ${t.hue}`}>
+                  {t.image && (
+                    <Image src={t.image} alt={t.name} fill sizes="64px" className="object-cover" />
+                  )}
+                </span>
+                <span className="min-w-0">
+                  <span className="display block truncate text-base font-extrabold text-navy group-hover:text-cta">
+                    {t.name}
+                  </span>
+                  <span className="mt-0.5 flex items-baseline gap-1.5">
+                    {t.oldPrice && (
+                      <span className="text-xs font-semibold text-ink/45 line-through">€{t.oldPrice}</span>
+                    )}
+                    <span className="display text-lg font-extrabold text-cta">€{t.price}</span>
+                    <span className="text-xs text-ink/60">/ kişi</span>
+                  </span>
+                </span>
+              </Link>
+            );
+          })}
+        </div>
+      </section>
+
       {/* KAYAN ŞERİT */}
       <div className="overflow-hidden border-y-2 border-navy/10 bg-white py-3 text-navy" aria-hidden>
         <div className="marquee-track gap-8 px-4 text-sm font-extrabold uppercase tracking-widest">

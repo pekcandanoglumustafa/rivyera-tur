@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { CONTACT } from "@/data/tours";
 import LangSwitcher from "@/components/LangSwitcher";
 
@@ -6,8 +7,10 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-40 bg-navy/95 backdrop-blur text-white">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
-        <Link href="/" className="display text-xl font-extrabold tracking-tight">
-          Sonnenklar<span className="text-turq">Tur</span>
+        <Link href="/" className="flex items-center" aria-label="Sonnenklar Reisen Turizm ana sayfa">
+          <span className="rounded-lg bg-white px-2.5 py-1.5">
+            <Image src="/logo.png" alt="Sonnenklar Reisen Turizm" width={132} height={33} priority />
+          </span>
         </Link>
         <nav className="hidden gap-6 text-sm font-medium md:flex">
           <Link href="/turlar" className="hover:text-white/85">Turlar</Link>

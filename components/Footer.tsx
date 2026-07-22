@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { CONTACT, tours } from "@/data/tours";
 
 export default function Footer() {
@@ -6,9 +7,9 @@ export default function Footer() {
     <footer className="mt-20 bg-navy text-white">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 md:grid-cols-3">
         <div>
-          <p className="display text-2xl font-extrabold">
-            Sonnenklar<span className="text-turq">Tur</span>
-          </p>
+          <span className="inline-block rounded-lg bg-white px-3 py-2">
+            <Image src="/logo.png" alt="Sonnenklar Reisen Turizm" width={150} height={37} />
+          </span>
           <p className="mt-3 max-w-xs text-sm text-white/85">
             Antalya, Side ve Manavgat merkezli günlük gezi turları. Otelden
             alınış, sigorta ve rehberlik hizmetiyle.
