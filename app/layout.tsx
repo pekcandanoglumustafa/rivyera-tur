@@ -31,7 +31,7 @@ export const metadata: Metadata = {
       "Rafting, tekne turları, safari, Kapadokya ve Pamukkale. Otelden alma-bırakma dahil günlük Antalya turları.",
   },
   robots: { index: true, follow: true },
-  alternates: { canonical: "/", languages: { tr: "/", en: "/en", de: "/de" } },
+  alternates: { canonical: "/", languages: { tr: "/", en: "/en", de: "/de", ru: "/ru", pl: "/pl" } },
 };
 
 const jsonLd = {

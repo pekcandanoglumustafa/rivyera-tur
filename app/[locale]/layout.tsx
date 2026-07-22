@@ -4,7 +4,7 @@ import type { Locale } from "@/data/i18n";
 
 export const dynamicParams = false;
 export function generateStaticParams() {
-  return [{ locale: "en" as const }, { locale: "de" as const }];
+  return [{ locale: "en" as const }, { locale: "de" as const }, { locale: "ru" as const }, { locale: "pl" as const }];
 }
 
 export default async function LocaleLayout({

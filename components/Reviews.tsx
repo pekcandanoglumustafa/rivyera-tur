@@ -5,11 +5,15 @@ const TITLE: Record<string, string> = {
   tr: "Misafirlerimiz Ne Diyor?",
   en: "What Our Guests Say",
   de: "Was unsere Gäste sagen",
+  ru: "Что говорят наши гости",
+  pl: "Co mówią nasi goście",
 };
 const SUB: Record<string, string> = {
   tr: "Google ve site yorumlarımızdan gerçek misafir görüşleri",
   en: "Real guest reviews from Google and our website",
   de: "Echte Gästebewertungen von Google und unserer Website",
+  ru: "Реальные отзывы гостей из Google и с нашего сайта",
+  pl: "Prawdziwe opinie gości z Google i naszej strony",
 };
 
 function Stars({ n }: { n: number }) {
@@ -22,7 +26,10 @@ function Stars({ n }: { n: number }) {
 }
 
 export default function Reviews({ locale = "tr", limit = 6 }: { locale?: Locale; limit?: number }) {
-  const list = REVIEWS.slice(0, limit);
+  // Önce ziyaretçinin dilindeki yorumlar, sonra diğerleri
+  const list = [...REVIEWS]
+    .sort((a, b) => Number(b.lang === locale) - Number(a.lang === locale))
+    .slice(0, limit);
   return (
     <section className="bg-white py-16">
       <div className="mx-auto max-w-6xl px-4">

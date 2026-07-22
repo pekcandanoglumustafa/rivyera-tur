@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     description: `${tour.tagline}. ${tour.description.slice(0, 130)}…`,
     alternates: {
       canonical: `/turlar/${slug}`,
-      languages: { tr: `/turlar/${slug}`, en: `/en/turlar/${slug}`, de: `/de/turlar/${slug}` },
+      languages: { tr: `/turlar/${slug}`, en: `/en/turlar/${slug}`, de: `/de/turlar/${slug}`, ru: `/ru/turlar/${slug}`, pl: `/pl/turlar/${slug}` },
     },
     openGraph: { title: tour.name, description: tour.tagline, images: tour.image ? [tour.image] : undefined },
   };

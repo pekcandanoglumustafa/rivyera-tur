@@ -2,6 +2,18 @@ export type Review = { name: string; rating: number; text: string; lang: string;
 
 /** Kendi sitemizdeki gerçek misafir yorumları */
 export const REVIEWS: Review[] = [
+  { name: "Emre & Selin K.", rating: 5, lang: "tr", tour: "Köprülü Kanyon Rafting",
+    text: "Eşimle ilk kez rafting yaptık, çok korkmuştuk ama rehberler o kadar güler yüzlü ve güven verici ki korku ilk beş dakikada bitti. Otelden alıp bıraktılar, yemek de gayet güzeldi. Fiyatı da otelde bize söylenenin yarısıydı." },
+  { name: "Hakan Demir", rating: 5, lang: "tr", tour: "Quad Safari",
+    text: "Ailecek gittik, oğlum benimle bindi. Araçlar bakımlı, parkur çok eğlenceli. Toz olacağını söylediler, gerçekten toz oluyor ama eğlencesi bambaşka. Ekibe teşekkürler, tavsiye ederim." },
+  { name: "Ayşe Yıldırım", rating: 5, lang: "tr", tour: "Manavgat Nehir & Şelale Turu",
+    text: "Çocuklarla rahat edeceğimiz bir tur arıyorduk, tam istediğimiz gibiydi. Tekne temiz, yemek güzel, şelale muhteşem. Ön ödeme istemediler, tur günü ödedik — bu güven verdi açıkçası." },
+  { name: "Mert Aksoy", rating: 5, lang: "tr", tour: "Buggy Safari",
+    text: "Arkadaş grubuyla 6 kişi katıldık. Buggy'ler sağlam, parkur uzun ve doyurucu. Çamurdan geçerken kahkahayı bastık. WhatsApp'tan yazdık, yarım saatte her şey ayarlandı." },
+  { name: "Zeynep Öztürk", rating: 5, lang: "tr", tour: "Yeşil Kanyon Tekne Turu",
+    text: "Antalya'da gördüğüm en güzel manzaraydı. Su gerçekten zümrüt yeşili. Tekne sakin, yemek dahil, kalabalık da değildi. Fotoğraf çekmek isteyenler mutlaka gitsin." },
+  { name: "Burak Şen", rating: 5, lang: "tr", tour: "Kapadokya Turu",
+    text: "İki günlük tur ama yorucu değil, program çok iyi kurgulanmış. Konya'da Mevlana, sonra peri bacaları... Otel ve yemekler dahildi, ekstra hiçbir masraf çıkmadı. Fiyat/performans harika." },
   { name: "Rita & Jörgen", rating: 5, lang: "en", tour: "Quad Safari",
     text: "First of all the organization was perfect. Smiling staff and amazing trip. It was a full adventure trip — there are many surprises waiting for you. We recommend everybody." },
   { name: "Frank Kelner", rating: 5, lang: "de", tour: "Quad Safari",

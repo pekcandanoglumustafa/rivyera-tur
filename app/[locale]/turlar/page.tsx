@@ -10,7 +10,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: L
   return {
     title: t.title,
     description: t.desc,
-    alternates: { canonical: `/${locale}/turlar`, languages: { tr: "/turlar", en: "/en/turlar", de: "/de/turlar" } },
+    alternates: { canonical: `/${locale}/turlar`, languages: { tr: "/turlar", en: "/en/turlar", de: "/de/turlar", ru: "/ru/turlar", pl: "/pl/turlar" } },
   };
 }
 

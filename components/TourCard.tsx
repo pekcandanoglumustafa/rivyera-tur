@@ -7,11 +7,11 @@ import { translateTour } from "@/data/tours-i18n";
 import { getGallery } from "@/data/gallery";
 
 const CAT_I18N: Record<string, Record<string, string>> = {
-  macera: { en: "Adventure", de: "Abenteuer" },
-  tekne: { en: "Boat Tours", de: "Bootstouren" },
-  kultur: { en: "Culture & Sightseeing", de: "Kultur & Ausflüge" },
-  aile: { en: "Family & Kids", de: "Familie & Kinder" },
-  keyif: { en: "Relax & Spa", de: "Wellness & Spa" },
+  macera: { en: "Adventure", de: "Abenteuer", ru: "Приключения", pl: "Przygoda" },
+  tekne: { en: "Boat Tours", de: "Bootstouren", ru: "Морские туры", pl: "Rejsy" },
+  kultur: { en: "Culture & Sightseeing", de: "Kultur & Ausflüge", ru: "Культура и экскурсии", pl: "Kultura i zwiedzanie" },
+  aile: { en: "Family & Kids", de: "Familie & Kinder", ru: "Семья и дети", pl: "Rodzina i dzieci" },
+  keyif: { en: "Relax & Spa", de: "Wellness & Spa", ru: "Отдых и спа", pl: "Relaks i spa" },
 };
 
 export default function TourCard({ tour, locale = "tr" }: { tour: Tour; locale?: Locale }) {

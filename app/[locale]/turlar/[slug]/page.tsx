@@ -5,7 +5,7 @@ import { translateTour } from "@/data/tours-i18n";
 import type { Locale } from "@/data/i18n";
 
 export function generateStaticParams() {
-  return ["en", "de"].flatMap((locale) => tours.map((t) => ({ locale, slug: t.slug })));
+  return ["en", "de", "ru", "pl"].flatMap((locale) => tours.map((t) => ({ locale, slug: t.slug })));
 }
 
 export async function generateMetadata({
@@ -24,7 +24,7 @@ export async function generateMetadata({
     description: `${tagline}. ${(tr?.desc ?? "").slice(0, 120)}`,
     alternates: {
       canonical: `/${locale}/turlar/${slug}`,
-      languages: { tr: `/turlar/${slug}`, en: `/en/turlar/${slug}`, de: `/de/turlar/${slug}` },
+      languages: { tr: `/turlar/${slug}`, en: `/en/turlar/${slug}`, de: `/de/turlar/${slug}`, ru: `/ru/turlar/${slug}`, pl: `/pl/turlar/${slug}` },
     },
     openGraph: { title: name, description: tagline, images: tour.image ? [tour.image] : undefined },
   };

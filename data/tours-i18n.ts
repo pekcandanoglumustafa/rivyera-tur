@@ -5,138 +5,230 @@ type TourText = { name: string; tagline: string; desc?: string };
 /** Tur adı + tanıtım cümlesi çevirileri. TR kaynak dosyada (data/tours.ts) durur. */
 export const TOUR_I18N: Record<string, Partial<Record<Locale, TourText>>> = {
   "koprulu-kanyon-rafting": {
+    ru: { name: "Рафтинг в каньоне Кёпрюлю", tagline: "15 км бурной воды, обед включён" },
+    pl: { name: "Rafting w kanionie Köprülü", tagline: "15 km wartkiej wody, obiad w cenie" },
     en: { name: "Köprülü Canyon Rafting", tagline: "15 km of whitewater fun, lunch included", desc: "A full day of rafting on the icy waters of Köprülü Canyon National Park. Professional guides, plenty of swim stops and all equipment provided — you just enjoy the ride." },
     de: { name: "Köprülü-Canyon Rafting", tagline: "15 km Wildwasser-Spaß, Mittagessen inklusive", desc: "Ein ganzer Tag Rafting im eiskalten Wasser des Köprülü-Canyon-Nationalparks. Professionelle Guides, viele Badepausen und komplette Ausrüstung inklusive." },
   },
   "super-kombo": {
+    ru: { name: "Супер комбо: рафтинг + джип + квадро + зиплайн", tagline: "Четыре приключения за один день" },
+    pl: { name: "Super Combo: rafting + jeep + quad + zipline", tagline: "Cztery przygody w jeden dzień" },
     en: { name: "Super Combo: Rafting + Jeep + Quad + Zipline", tagline: "Four adventures in one day — Antalya's fullest tour", desc: "Rafting, jeep safari, quad and zipline in a single package. Dusty trails in the Taurus foothills, whitewater in the canyon and a zipline finish above the trees." },
     de: { name: "Super Combo: Rafting + Jeep + Quad + Zipline", tagline: "Vier Abenteuer an einem Tag", desc: "Rafting, Jeep-Safari, Quad und Zipline in einem Paket. Staubige Pisten im Taurusgebirge, Wildwasser im Canyon und zum Abschluss eine Zipline über den Baumwipfeln." },
   },
   "yesil-kanyon-tekne-turu": {
+    ru: { name: "Зелёный каньон — прогулка на лодке", tagline: "3 часа по изумрудному водохранилищу" },
+    pl: { name: "Zielony Kanion — rejs łodzią", tagline: "3 godziny po szmaragdowym zalewie" },
     en: { name: "Green Canyon Boat Tour", tagline: "3 hours on Turkey's largest canyon reservoir", desc: "Three hours of cruising on the emerald waters of Oymapınar Dam between towering Taurus cliffs. Swim stop, lunch and soft drinks included." },
     de: { name: "Green Canyon Bootstour", tagline: "3 Stunden auf dem größten Canyon-Stausee der Türkei", desc: "Drei Stunden auf dem smaragdgrünen Wasser des Oymapınar-Stausees zwischen steilen Taurusfelsen. Badepause, Mittagessen und Softdrinks inklusive." },
   },
   "korsan-teknesi": {
+    ru: { name: "Пиратская лодка", tagline: "Полдня, которые дети запомнят навсегда" },
+    pl: { name: "Rejs pirackim statkiem", tagline: "Pół dnia, którego dzieci nie zapomną" },
     en: { name: "Pirate Boat Trip", tagline: "Half a day the kids will never forget", desc: "A pirate-themed boat trip from the Manavgat River to the river mouth. Children's animation, treasure hunt, swim stop and lunch included." },
     de: { name: "Piratenboot-Tour", tagline: "Ein halber Tag, den die Kinder nie vergessen", desc: "Eine Bootsfahrt im Piraten-Stil vom Manavgat-Fluss zur Flussmündung. Kinderanimation, Schatzsuche, Badepause und Mittagessen inklusive." },
   },
   "manavgat-tekne-turu": {
+    ru: { name: "Река Манавгат и водопад", tagline: "Прогулка по реке, водопад и знаменитый базар" },
+    pl: { name: "Rzeka Manavgat i wodospad", tagline: "Rejs po rzece, wodospad i słynny bazar" },
     en: { name: "Manavgat River & Waterfall Tour", tagline: "River cruise, waterfall and the famous bazaar", desc: "A boat cruise along the Manavgat River with a swim stop, a visit to the waterfall and free time at the famous Manavgat bazaar." },
     de: { name: "Manavgat Fluss & Wasserfall Tour", tagline: "Flussfahrt, Wasserfall und der berühmte Basar", desc: "Bootsfahrt auf dem Manavgat-Fluss mit Badepause, Besuch des Wasserfalls und Freizeit auf dem berühmten Basar von Manavgat." },
   },
   "dolphin-island-tekne-turu": {
+    ru: { name: "Остров дельфинов", tagline: "Шанс увидеть дельфинов, пенная вечеринка и море" },
+    pl: { name: "Wyspa Delfinów", tagline: "Szansa na delfiny, piana party i błękitne morze" },
     en: { name: "Dolphin Island Boat Tour", tagline: "Dolphin sighting chance, foam party and blue sea", desc: "From the Manavgat River out to the open sea: swim stop at Jesus Island, lunch on board and a chance to spot dolphins. Foam party on the way back." },
     de: { name: "Delphin-Insel Bootstour", tagline: "Delphin-Chance, Schaumparty und blaues Meer", desc: "Vom Manavgat-Fluss aufs offene Meer: Badepause an der Jesus-Insel, Mittagessen an Bord und die Chance, Delphine zu sehen. Schaumparty auf dem Rückweg." },
   },
   "kapadokya-turu": {
+    ru: { name: "Каппадокия (2 дня)", tagline: "Дымоходы фей, подземный город, Мевляна" },
+    pl: { name: "Kapadocja (2 dni)", tagline: "Kominy wróżek, podziemne miasto, Mevlana" },
     en: { name: "Cappadocia Tour (2 Days)", tagline: "Fairy chimneys, underground city, Mevlana — all inclusive", desc: "Two days from Antalya: Mevlana Museum in Konya, Sultanhanı Caravanserai, Uçhisar Castle, cave churches and an underground city. All meals and entrance fees included." },
     de: { name: "Kappadokien Tour (2 Tage)", tagline: "Feenkamine, Untergrundstadt, Mevlana — alles inklusive", desc: "Zwei Tage ab Antalya: Mevlana-Museum in Konya, Sultanhanı-Karawanserei, Uçhisar-Burg, Höhlenkirchen und eine Untergrundstadt. Alle Mahlzeiten und Eintritte inklusive." },
   },
   "pamukkale-salda-turu": {
+    ru: { name: "Памуккале и озеро Салда", tagline: "Турецкие Мальдивы и белые террасы" },
+    pl: { name: "Pamukkale i jezioro Salda", tagline: "Tureckie Malediwy i białe tarasy" },
     en: { name: "Pamukkale & Salda Lake Tour", tagline: "The Turkish Maldives and white travertines in one day", desc: "Morning at the white shores of Salda Lake, afternoon at the Pamukkale travertines and Hierapolis Ancient City. Breakfast, lunch and Pamukkale entry included." },
     de: { name: "Pamukkale & Salda-See Tour", tagline: "Die Malediven der Türkei und weiße Kalkterrassen", desc: "Vormittags am weißen Ufer des Salda-Sees, nachmittags an den Kalkterrassen von Pamukkale und in Hierapolis. Frühstück, Mittagessen und Eintritt inklusive." },
   },
   "kartal-kanyonu-turu": {
+    ru: { name: "Орлиный каньон (Тазы)", tagline: "Древний Сельге, римский мост и виды" },
+    pl: { name: "Kanion Orła (Tazı)", tagline: "Antyczne Selge, rzymski most i widoki" },
     en: { name: "Eagle Canyon (Adler Canyon) Tour", tagline: "Selge Ancient City, Roman bridge and eagle views", desc: "The lesser-known side of Köprülü Canyon: the Roman-era Paulus Bridge, Selge Ancient City, underground springs and canyon views where eagles soar. No shopping stops." },
     de: { name: "Adler Canyon Tour", tagline: "Antike Stadt Selge, Römerbrücke und Adlerblick", desc: "Die unbekannte Seite des Köprülü-Canyons: die römische Paulus-Brücke, die antike Stadt Selge, Grundwasserquellen und Canyon-Blicke. Ohne Shopping-Stopps." },
   },
   "suluada-tekne-turu": {
+    ru: { name: "Остров Сулуада", tagline: "Турецкие Мальдивы: 4 бухты, 4 купания" },
+    pl: { name: "Wyspa Suluada", tagline: "Tureckie Malediwy: 4 zatoki, 4 kąpiele" },
     en: { name: "Suluada Island Boat Tour", tagline: "The Turkish Maldives: 4 bays, 4 swim stops", desc: "A boat trip from Adrasan to turquoise bays. Four swim stops, free time on the island, lunch and a fruit plate included." },
     de: { name: "Suluada Bootstour", tagline: "Die Malediven der Türkei: 4 Buchten, 4 Badepausen", desc: "Bootstour ab Adrasan zu türkisfarbenen Buchten. Vier Badepausen, Aufenthalt auf der Insel, Mittagessen und Früchteteller inklusive." },
   },
   "antalya-sehir-turu": {
+    ru: { name: "Обзорная по Анталье", tagline: "Калеичи, водопад Дюден и канатная дорога" },
+    pl: { name: "Antalya — wycieczka po mieście", tagline: "Kaleiçi, wodospad Düden i kolejka linowa" },
     en: { name: "Antalya City Tour", tagline: "Kaleiçi, Düden Waterfall and cable car views", desc: "Antalya in a day: the historic streets of Kaleiçi, Düden Waterfall, cable car views over Tünektepe and free time in the old town." },
     de: { name: "Antalya Stadtrundfahrt", tagline: "Kaleiçi, Düden-Wasserfall und Seilbahn", desc: "Antalya an einem Tag: die Altstadt Kaleiçi, der Düden-Wasserfall, Seilbahnblick vom Tünektepe und Freizeit in der Altstadt." },
   },
   "demre-myra-kekova-turu": {
+    ru: { name: "Демре — Мира — Кекова", tagline: "Затонувший город, гробницы и церковь Николая" },
+    pl: { name: "Demre — Myra — Kekova", tagline: "Zatopione miasto, grobowce i kościół św. Mikołaja" },
     en: { name: "Demre – Myra – Kekova Tour", tagline: "Sunken city, rock tombs and St. Nicholas Church", desc: "The rock-cut tombs of Myra, the Church of St. Nicholas (Santa Claus) in Demre and a boat trip over the sunken city of Kekova. Boat tour and lunch included." },
     de: { name: "Demre – Myra – Kekova Tour", tagline: "Versunkene Stadt, Felsengräber und Nikolauskirche", desc: "Die Felsengräber von Myra, die Nikolauskirche in Demre und eine Bootsfahrt über die versunkene Stadt Kekova. Bootstour und Mittagessen inklusive." },
   },
   "land-of-legends-turu": {
+    ru: { name: "Land of Legends", tagline: "6 часов в крупнейшем парке Турции" },
+    pl: { name: "Land of Legends", tagline: "6 godzin w największym parku Turcji" },
     en: { name: "Land of Legends Tour", tagline: "6 hours in Turkey's biggest theme park", desc: "A full family day at the Land of Legends theme and water park in Belek. Return transfer and park entry included, six hours of free time inside." },
     de: { name: "Land of Legends Tour", tagline: "6 Stunden im größten Themenpark der Türkei", desc: "Ein ganzer Familientag im Land of Legends Themen- und Wasserpark in Belek. Hin- und Rücktransfer sowie Eintritt inklusive, sechs Stunden Freizeit im Park." },
   },
   "yamac-parasutu-alanya": {
+    ru: { name: "Параплан в Аланье", tagline: "Полёт 25-30 мин с высоты 1000 м" },
+    pl: { name: "Paralotnia w Alanyi", tagline: "Lot 25-30 min z wysokości 1000 m" },
     en: { name: "Tandem Paragliding (Alanya)", tagline: "25-30 min flight from 1000 m to Cleopatra Beach", desc: "Take off from Yassı Mountain in Alanya (about 1000 m) and land on Cleopatra Beach. A 25-30 minute tandem flight with licensed pilots." },
     de: { name: "Tandem-Paragliding (Alanya)", tagline: "25-30 Min. Flug aus 1000 m zum Kleopatra-Strand", desc: "Start vom Yassı-Berg in Alanya (ca. 1000 m) und Landung am Kleopatra-Strand. Ein 25-30-minütiger Tandemflug mit lizenzierten Piloten." },
   },
-  "at-safari": { en: { name: "Horse Safari", tagline: "Riding along the beach and through pine forest" }, de: { name: "Pferde-Safari", tagline: "Ausritt am Strand und durch den Pinienwald" } },
+  "at-safari": {
+    ru: { name: "Конное сафари", tagline: "Прогулка верхом по пляжу и сосновому лесу" },
+    pl: { name: "Safari konne", tagline: "Przejażdżka plażą i lasem sosnowym" }, en: { name: "Horse Safari", tagline: "Riding along the beach and through pine forest" }, de: { name: "Pferde-Safari", tagline: "Ausritt am Strand und durch den Pinienwald" } },
   "turk-hamami": {
+    ru: { name: "Турецкая баня и спа", tagline: "Сауна, пилинг, пена, массаж 20 мин" },
+    pl: { name: "Łaźnia turecka i spa", tagline: "Sauna, peeling, piana, masaż 20 min" },
     en: { name: "Turkish Bath & Spa", tagline: "Sauna, scrub, foam, 20-min massage and face mask", desc: "Shake off the travel fatigue: sauna, steam room, salt room, body scrub, foam massage, a 20-minute oil massage and a face mask. Transfer included." },
     de: { name: "Türkisches Bad & Spa", tagline: "Sauna, Peeling, Schaum, 20 Min. Massage, Gesichtsmaske", desc: "Erholung pur: Sauna, Dampfbad, Salzraum, Peeling, Schaummassage, 20 Minuten Ölmassage und Gesichtsmaske. Transfer inklusive." },
   },
   "ozel-tekne-turu": {
+    ru: { name: "Аренда яхты (приват)", tagline: "Вся лодка ваша: семья, праздник или рыбалка" },
+    pl: { name: "Prywatny jacht", tagline: "Cała łódź dla Was: rodzina, święto lub wędkowanie" },
     en: { name: "Private Boat Charter", tagline: "The whole boat is yours: family, celebration or fishing", desc: "For those who prefer no crowds: the boat is only for your group. Route, duration and catering planned around you — birthdays, proposals, family days or fishing." },
     de: { name: "Privates Boot (Charter)", tagline: "Das ganze Boot für Sie: Familie, Feier oder Angeln", desc: "Für alle, die keine Menschenmassen mögen: das Boot gehört nur Ihrer Gruppe. Route, Dauer und Verpflegung ganz nach Wunsch." },
   },
-  "yunus-gosterisi-ve-yuzme": { en: { name: "Dolphin Show + Swim with Dolphins", tagline: "Watch the show, then swim with the dolphins" }, de: { name: "Delphinshow + Schwimmen mit Delphinen", tagline: "Show ansehen und mit Delphinen schwimmen" } },
+  "yunus-gosterisi-ve-yuzme": {
+    ru: { name: "Шоу дельфинов + плавание", tagline: "Смотрите шоу и плавайте с дельфинами" },
+    pl: { name: "Pokaz delfinów + pływanie", tagline: "Obejrzyj pokaz i popływaj z delfinami" }, en: { name: "Dolphin Show + Swim with Dolphins", tagline: "Watch the show, then swim with the dolphins" }, de: { name: "Delphinshow + Schwimmen mit Delphinen", tagline: "Show ansehen und mit Delphinen schwimmen" } },
   "tuplu-dalis": {
+    ru: { name: "Дайвинг", tagline: "2 погружения в подводном музее, обед включён" },
+    pl: { name: "Nurkowanie", tagline: "2 nurkowania w muzeum podwodnym, obiad w cenie" },
     en: { name: "Scuba Diving", tagline: "2 dives at Europe's first underwater museum, lunch included" },
     de: { name: "Tauchen (Scuba Diving)", tagline: "2 Tauchgänge im ersten Unterwassermuseum Europas" },
   },
-  "tekneden-balik-avi": { en: { name: "Fishing Trip", tagline: "All gear provided, the catch is yours" }, de: { name: "Angeltour", tagline: "Ausrüstung inklusive, der Fang gehört Ihnen" } },
-  "alanya-turu": { en: { name: "Alanya City Tour", tagline: "Castle, Damlataş cave, Dim river and a 1-hour boat trip" }, de: { name: "Alanya Stadtrundfahrt", tagline: "Burg, Damlataş-Höhle, Dim-Fluss und 1 Std. Bootsfahrt" } },
-  "aquapark": { en: { name: "Aquapark Tour", tagline: "Slides and pools — 6 hours of family fun" }, de: { name: "Aquapark Tour", tagline: "Rutschen und Pools — 6 Stunden Familienspaß" } },
-  "antalya-akvaryum": { en: { name: "Antalya Aquarium Tour", tagline: "The world's biggest tunnel aquarium + free time" }, de: { name: "Antalya Aquarium Tour", tagline: "Das größte Tunnelaquarium der Welt + Freizeit" } },
-  "legends-gece-gosterisi": { en: { name: "Legends Night Light Show", tagline: "An evening of light and water at Land of Legends" }, de: { name: "Legends Nacht-Lichtshow", tagline: "Ein Abend voller Licht und Wasser im Land of Legends" } },
-  "ormana-altinbesik": { en: { name: "Ormana & Altınbeşik Cave Tour", tagline: "Boat ride inside Turkey's largest cave" }, de: { name: "Ormana & Altınbeşik-Höhle", tagline: "Bootsfahrt in der größten Höhle der Türkei" } },
+  "tekneden-balik-avi": {
+    ru: { name: "Морская рыбалка", tagline: "Снасти наши, улов ваш" },
+    pl: { name: "Wędkowanie z łodzi", tagline: "Sprzęt nasz, połów Wasz" }, en: { name: "Fishing Trip", tagline: "All gear provided, the catch is yours" }, de: { name: "Angeltour", tagline: "Ausrüstung inklusive, der Fang gehört Ihnen" } },
+  "alanya-turu": {
+    ru: { name: "Аланья — день в городе", tagline: "Крепость, пещера, река Дим и прогулка на лодке" },
+    pl: { name: "Alanya — dzień w mieście", tagline: "Twierdza, jaskinia, rzeka Dim i rejs" }, en: { name: "Alanya City Tour", tagline: "Castle, Damlataş cave, Dim river and a 1-hour boat trip" }, de: { name: "Alanya Stadtrundfahrt", tagline: "Burg, Damlataş-Höhle, Dim-Fluss und 1 Std. Bootsfahrt" } },
+  "aquapark": {
+    ru: { name: "Аквапарк", tagline: "Горки и бассейны — 6 часов веселья" },
+    pl: { name: "Aquapark", tagline: "Zjeżdżalnie i baseny — 6 godzin zabawy" }, en: { name: "Aquapark Tour", tagline: "Slides and pools — 6 hours of family fun" }, de: { name: "Aquapark Tour", tagline: "Rutschen und Pools — 6 Stunden Familienspaß" } },
+  "antalya-akvaryum": {
+    ru: { name: "Океанариум Анталии", tagline: "Самый большой тоннельный аквариум в мире" },
+    pl: { name: "Akwarium w Antalyi", tagline: "Największe tunelowe akwarium świata" }, en: { name: "Antalya Aquarium Tour", tagline: "The world's biggest tunnel aquarium + free time" }, de: { name: "Antalya Aquarium Tour", tagline: "Das größte Tunnelaquarium der Welt + Freizeit" } },
+  "legends-gece-gosterisi": {
+    ru: { name: "Ночное шоу Legends", tagline: "Вечер света и воды в Land of Legends" },
+    pl: { name: "Nocny pokaz Legends", tagline: "Wieczór świateł i wody w Land of Legends" }, en: { name: "Legends Night Light Show", tagline: "An evening of light and water at Land of Legends" }, de: { name: "Legends Nacht-Lichtshow", tagline: "Ein Abend voller Licht und Wasser im Land of Legends" } },
+  "ormana-altinbesik": {
+    ru: { name: "Орманa и пещера Алтынбешик", tagline: "Лодка внутри крупнейшей пещеры Турции" },
+    pl: { name: "Ormana i jaskinia Altınbeşik", tagline: "Rejs w największej jaskini Turcji" }, en: { name: "Ormana & Altınbeşik Cave Tour", tagline: "Boat ride inside Turkey's largest cave" }, de: { name: "Ormana & Altınbeşik-Höhle", tagline: "Bootsfahrt in der größten Höhle der Türkei" } },
   "vip-havalimani-transfer": {
+    ru: { name: "VIP трансфер из аэропорта", tagline: "Личный автомобиль до отеля, 24/7" },
+    pl: { name: "Transfer VIP z lotniska", tagline: "Prywatne auto do hotelu, 24/7" },
     en: { name: "VIP Airport Transfer", tagline: "Private car from Antalya Airport to your hotel, 24/7", desc: "Whenever your flight lands: name-board welcome and a comfortable private transfer to your hotel. Child seats and welcome refreshments on request." },
     de: { name: "VIP Flughafentransfer", tagline: "Privatwagen vom Flughafen Antalya zum Hotel, 24/7", desc: "Egal wann Ihr Flug landet: Empfang mit Namensschild und bequemer Privattransfer zum Hotel. Kindersitze und Willkommensgetränke auf Anfrage." },
   },
   "rafting-kombo": {
+    ru: { name: "Рафтинг комбо: 5 в 1", tagline: "Рафтинг, зиплайн, багги, квадро и каньон" },
+    pl: { name: "Rafting Combo: 5 w 1", tagline: "Rafting, zipline, buggy, quad i kanion" },
     en: { name: "Rafting Combo: Rafting + Zipline + Buggy + Quad + Canyon", tagline: "Five adventures in one package, lunch included", desc: "The fullest day we offer: 15 km of rafting in Köprülü Canyon, zipline above the trees, buggy and quad trails, plus a canyon tour. Lunch by the river included." },
     de: { name: "Rafting Combo: Rafting + Zipline + Buggy + Quad + Canyon", tagline: "Fünf Abenteuer in einem Paket, Mittagessen inklusive", desc: "Unser vollster Tag: 15 km Rafting im Köprülü-Canyon, Zipline über den Bäumen, Buggy- und Quad-Parcours sowie eine Canyon-Tour. Mittagessen am Fluss inklusive." },
   },
   "jeep-safari": {
+    ru: { name: "Джип-сафари", tagline: "Плотина, водопад, горная деревня и лодка" },
+    pl: { name: "Jeep Safari", tagline: "Zapora, wodospad, górska wioska i rejs" },
     en: { name: "Jeep Safari", tagline: "Dam, waterfall, mountain village and a 1-hour boat trip", desc: "Open-top jeeps into the Taurus villages: dam and waterfall views, mosque and old bridge stops, a mountain village break and a one-hour boat trip. No shopping stops, lunch included." },
     de: { name: "Jeep Safari", tagline: "Staudamm, Wasserfall, Bergdorf und 1 Std. Bootsfahrt", desc: "Mit offenen Jeeps in die Taurusdörfer: Staudamm- und Wasserfallblicke, Moschee und alte Brücke, Pause im Bergdorf und eine einstündige Bootsfahrt. Ohne Shopping, Mittagessen inklusive." },
   },
-  "quad-buggy-safari": { en: { name: "Quad & Buggy Safari", tagline: "2.5 hours of dust and adrenaline in the Taurus hills" }, de: { name: "Quad & Buggy Safari", tagline: "2,5 Stunden Staub und Adrenalin im Taurus" } },
-  "quad-buggy-rafting": { en: { name: "Quad/Buggy + Rafting Combo", tagline: "15 km rafting plus 2 hours of quad or buggy" }, de: { name: "Quad/Buggy + Rafting Combo", tagline: "15 km Rafting plus 2 Std. Quad oder Buggy" } },
-  "mix-tur-7-1": { en: { name: "Mix Tour 7+1", tagline: "Taurus, dam, waterfall, village + boat on the green lake" }, de: { name: "Mix Tour 7+1", tagline: "Taurus, Staudamm, Wasserfall, Dorf + Bootsfahrt" } },
-  "akvaryum-legends-kombo": { en: { name: "Aquarium + Legends Night Show", tagline: "Tunnel aquarium by day, light show by night" }, de: { name: "Aquarium + Legends Nachtshow", tagline: "Tunnelaquarium am Tag, Lichtshow am Abend" } },
-  "arac-kiralama": { en: { name: "Rent a Car", tagline: "From economy cars to VIP vans — delivered to your hotel" }, de: { name: "Mietwagen", tagline: "Vom Kleinwagen bis zum VIP-Van — Lieferung ans Hotel" } },
+  "quad-buggy-safari": {
+    ru: { name: "Квадро и багги сафари", tagline: "2,5 часа пыли и адреналина в Таврах" },
+    pl: { name: "Quad i buggy safari", tagline: "2,5 godziny kurzu i adrenaliny" }, en: { name: "Quad & Buggy Safari", tagline: "2.5 hours of dust and adrenaline in the Taurus hills" }, de: { name: "Quad & Buggy Safari", tagline: "2,5 Stunden Staub und Adrenalin im Taurus" } },
+  "quad-buggy-rafting": {
+    ru: { name: "Квадро/багги + рафтинг", tagline: "15 км рафтинга и 2 часа квадро" },
+    pl: { name: "Quad/buggy + rafting", tagline: "15 km raftingu i 2 godziny quada" }, en: { name: "Quad/Buggy + Rafting Combo", tagline: "15 km rafting plus 2 hours of quad or buggy" }, de: { name: "Quad/Buggy + Rafting Combo", tagline: "15 km Rafting plus 2 Std. Quad oder Buggy" } },
+  "mix-tur-7-1": {
+    ru: { name: "Микс тур 7+1", tagline: "Тавры, плотина, водопад, деревня и лодка" },
+    pl: { name: "Mix Tour 7+1", tagline: "Taurus, zapora, wodospad, wioska i rejs" }, en: { name: "Mix Tour 7+1", tagline: "Taurus, dam, waterfall, village + boat on the green lake" }, de: { name: "Mix Tour 7+1", tagline: "Taurus, Staudamm, Wasserfall, Dorf + Bootsfahrt" } },
+  "akvaryum-legends-kombo": {
+    ru: { name: "Океанариум + ночное шоу", tagline: "Днём аквариум, вечером шоу света" },
+    pl: { name: "Akwarium + nocny pokaz", tagline: "Dniem akwarium, wieczorem pokaz świateł" }, en: { name: "Aquarium + Legends Night Show", tagline: "Tunnel aquarium by day, light show by night" }, de: { name: "Aquarium + Legends Nachtshow", tagline: "Tunnelaquarium am Tag, Lichtshow am Abend" } },
+  "arac-kiralama": {
+    ru: { name: "Аренда авто", tagline: "От эконом до VIP — доставка в отель" },
+    pl: { name: "Wynajem samochodu", tagline: "Od ekonomicznych po VIP — dostawa do hotelu" }, en: { name: "Rent a Car", tagline: "From economy cars to VIP vans — delivered to your hotel" }, de: { name: "Mietwagen", tagline: "Vom Kleinwagen bis zum VIP-Van — Lieferung ans Hotel" } },
   "quad-safari": {
+    ru: { name: "Квадро сафари", tagline: "2 часа по пыльным трассам Тавров" },
+    pl: { name: "Quad Safari", tagline: "2 godziny po zakurzonych szlakach" },
     en: { name: "Quad Safari", tagline: "2 hours of dusty ATV trails — every day", desc: "A two-hour quad (ATV) trail in the Taurus foothills: dirt roads, stream crossings and hilltop views. No licence needed, helmet and gear provided." },
     de: { name: "Quad Safari", tagline: "2 Stunden staubige ATV-Pisten — täglich", desc: "Zweistündiger Quad-Parcours (ATV) im Taurus: Feldwege, Bachdurchfahrten und Panoramablicke. Kein Führerschein nötig, Helm und Ausrüstung inklusive." },
   },
   "buggy-safari": {
+    ru: { name: "Багги сафари", tagline: "2 часа грязи и адреналина в багги" },
+    pl: { name: "Buggy Safari", tagline: "2 godziny błota i adrenaliny" },
     en: { name: "Buggy Safari", tagline: "2 hours of mud and adrenaline in a caged buggy", desc: "Two-seater caged buggies on the Taurus trail for two hours. Safer and more comfortable than a quad — ideal for couples and groups of friends. Getting dirty is guaranteed." },
     de: { name: "Buggy Safari", tagline: "2 Stunden Schlamm und Adrenalin im Käfig-Buggy", desc: "Zweisitzige Käfig-Buggys auf dem Taurus-Parcours, zwei Stunden lang. Sicherer und komfortabler als ein Quad — ideal für Paare und Freundesgruppen." },
   },
   "aile-buggy-safari": {
+    ru: { name: "Семейное багги (4 места)", tagline: "Вся семья в одном багги — цена за машину" },
+    pl: { name: "Rodzinne buggy (4 osoby)", tagline: "Cała rodzina w jednym buggy — cena za pojazd" },
     en: { name: "Family Buggy Safari (4-Seater)", tagline: "The whole family in one buggy — price per vehicle", desc: "Spacious four-seater buggies for families: parents and children in the same safe caged vehicle. The price is per vehicle, covering the whole family." },
     de: { name: "Familien-Buggy-Safari (4-Sitzer)", tagline: "Die ganze Familie in einem Buggy — Preis pro Fahrzeug", desc: "Geräumige Vier-Sitzer-Buggys für Familien: Eltern und Kinder im selben sicheren Käfigfahrzeug. Der Preis gilt pro Fahrzeug für die ganze Familie." },
   },
   "mega-mix-jeep-tekne-quad": {
+    ru: { name: "Мега микс: джип + лодка + квадро", tagline: "Три приключения за один день" },
+    pl: { name: "Mega Mix: jeep + rejs + quad", tagline: "Trzy przygody w jeden dzień" },
     en: { name: "Mega Mix: Jeep Safari + Boat + Quad", tagline: "Three adventures in one day — land, water and dust", desc: "The fullest package of the day: open-top jeep safari through Taurus villages, a boat tour on the green lake and a quad trail. Lunch included." },
     de: { name: "Mega Mix: Jeep-Safari + Boot + Quad", tagline: "Drei Abenteuer an einem Tag — Land, Wasser und Staub", desc: "Das vollste Paket des Tages: Jeep-Safari durch Taurusdörfer, Bootstour auf dem grünen See und Quad-Parcours. Mittagessen inklusive." },
   },
   "sapadere-kanyonu": {
+    ru: { name: "Каньон Сападере", tagline: "Ледяные купели, помост и водопад" },
+    pl: { name: "Kanion Sapadere", tagline: "Lodowate sadzawki, pomost i wodospad" },
     en: { name: "Sapadere Canyon Tour", tagline: "Icy canyon pools, wooden walkway and a waterfall", desc: "Sapadere Canyon carved into the Taurus mountains behind Alanya. A 750-metre walk on wooden platforms, a swim stop in the ice-cold natural pool, lunch in a mountain village and a huge stalactite cave." },
     de: { name: "Sapadere-Canyon Tour", tagline: "Eiskalte Canyon-Pools, Holzsteg und Wasserfall", desc: "Der Sapadere-Canyon im Taurusgebirge hinter Alanya. 750 Meter Spaziergang auf Holzstegen, Badepause im eiskalten Naturpool, Mittagessen im Bergdorf und eine große Tropfsteinhöhle." },
   },
   "fire-of-anatolia-gosterisi": {
+    ru: { name: "Шоу «Огни Анатолии»", tagline: "Всемирно известное шоу в Аспендосе" },
+    pl: { name: "Pokaz Fire of Anatolia", tagline: "Światowej sławy pokaz w Aspendos" },
     en: { name: "Fire of Anatolia Dance Show", tagline: "The world-famous dance show at Aspendos", desc: "The Guinness record-holding Fire of Anatolia dance company in a spectacular 1.5-hour performance blending dances from every corner of Anatolia." },
     de: { name: "Fire of Anatolia Tanzshow", tagline: "Die weltberühmte Tanzshow in Aspendos", desc: "Die Guinness-Rekord-Tanzgruppe Fire of Anatolia in einer spektakulären 1,5-stündigen Show mit Tänzen aus ganz Anatolien." },
   },
   "gun-batimi-tekne-turu": {
+    ru: { name: "Закатная прогулка на лодке", tagline: "Закат над морем, музыка и купание" },
+    pl: { name: "Rejs o zachodzie słońca", tagline: "Zachód nad morzem, muzyka i kąpiel" },
     en: { name: "Sunset Boat Tour", tagline: "Sunset over the Mediterranean, music and a swim", desc: "We set sail at the best hour of the day: a swim stop, music on board, refreshments and the sun setting on the horizon. Perfect for couples and photographers." },
     de: { name: "Sonnenuntergangs-Bootstour", tagline: "Sonnenuntergang, Musik und ein Bad im Meer", desc: "Wir stechen zur schönsten Stunde des Tages in See: Badepause, Musik an Bord, Snacks und der Sonnenuntergang am Horizont. Perfekt für Paare und Fotografen." },
   },
   "balon-pamukkale-turu": {
+    ru: { name: "Воздушный шар + Памуккале", tagline: "Полёт на рассвете и белые террасы" },
+    pl: { name: "Balon + Pamukkale", tagline: "Lot o świcie i białe tarasy" },
     en: { name: "Hot Air Balloon + Pamukkale Tour", tagline: "Balloon flight at dawn and the white travertines", desc: "A hot air balloon flight over Pamukkale at sunrise, followed by the white travertines and Hierapolis Ancient City. Breakfast and lunch included." },
     de: { name: "Heißluftballon + Pamukkale Tour", tagline: "Ballonflug im Morgengrauen und die Kalkterrassen", desc: "Heißluftballonfahrt über Pamukkale bei Sonnenaufgang, danach die weißen Kalkterrassen und die antike Stadt Hierapolis. Frühstück und Mittagessen inklusive." },
   },
-  "rafting-zipline": { en: { name: "Rafting + Zipline Combo", tagline: "15 km rafting and a zipline over the canyon" }, de: { name: "Rafting + Zipline Combo", tagline: "15 km Rafting und Zipline über dem Canyon" } },
-  "jeep-rafting-kombo": { en: { name: "Jeep Safari + Rafting Combo", tagline: "Safari in the Taurus and rafting on the river" }, de: { name: "Jeep-Safari + Rafting Combo", tagline: "Safari im Taurus und Rafting auf dem Fluss" } },
-  "karacaoren-kanyon-tekne": { en: { name: "Karacaören Canyon Boat Tour", tagline: "Quiet canyon cruising on the Adrasan reservoir" }, de: { name: "Karacaören-Canyon Bootstour", tagline: "Ruhige Canyonfahrt auf dem Adrasan-Stausee" } },
+  "rafting-zipline": {
+    ru: { name: "Рафтинг + зиплайн", tagline: "15 км рафтинга и полёт над каньоном" },
+    pl: { name: "Rafting + zipline", tagline: "15 km raftingu i lot nad kanionem" }, en: { name: "Rafting + Zipline Combo", tagline: "15 km rafting and a zipline over the canyon" }, de: { name: "Rafting + Zipline Combo", tagline: "15 km Rafting und Zipline über dem Canyon" } },
+  "jeep-rafting-kombo": {
+    ru: { name: "Джип-сафари + рафтинг", tagline: "Сафари в Таврах и сплав по реке" },
+    pl: { name: "Jeep Safari + rafting", tagline: "Safari w Taurusie i spływ rzeką" }, en: { name: "Jeep Safari + Rafting Combo", tagline: "Safari in the Taurus and rafting on the river" }, de: { name: "Jeep-Safari + Rafting Combo", tagline: "Safari im Taurus und Rafting auf dem Fluss" } },
+  "karacaoren-kanyon-tekne": {
+    ru: { name: "Каньон Караджаорен на лодке", tagline: "Тихий каньон на водохранилище Адрасан" },
+    pl: { name: "Kanion Karacaören — rejs", tagline: "Cichy kanion na zalewie Adrasan" }, en: { name: "Karacaören Canyon Boat Tour", tagline: "Quiet canyon cruising on the Adrasan reservoir" }, de: { name: "Karacaören-Canyon Bootstour", tagline: "Ruhige Canyonfahrt auf dem Adrasan-Stausee" } },
   "istanbul-gunubirlik": {
+    ru: { name: "Стамбул за один день (самолёт)", tagline: "Айя-София, Босфор — туда и обратно за день" },
+    pl: { name: "Stambuł w jeden dzień (samolot)", tagline: "Hagia Sophia, Bosfor — tam i z powrotem" },
     en: { name: "Istanbul Day Trip (by Plane)", tagline: "Fly out in the morning, back at night — Hagia Sophia, Bosphorus", desc: "Morning flight from Antalya to Istanbul: Hagia Sophia, the Blue Mosque, the Grand Bazaar area and a Bosphorus cruise, returning by evening flight." },
     de: { name: "Istanbul Tagesausflug (mit Flug)", tagline: "Morgens hin, abends zurück — Hagia Sophia, Bosporus", desc: "Morgenflug von Antalya nach Istanbul: Hagia Sophia, Blaue Moschee, Großer Basar und eine Bosporus-Rundfahrt, Rückflug am Abend." },
   },
   "side-tekne-turu": {
+    ru: { name: "Прогулка на лодке из Сиде", tagline: "Море, музыка и купание — лучшая цена" },
+    pl: { name: "Rejs z Side", tagline: "Morze, muzyka i kąpiele — najlepsza cena" },
     en: { name: "Side Boat Tour", tagline: "Sea, music and swimming — our best value boat trip", desc: "A full day on the Mediterranean from Side harbour. Plenty of swim stops, music and animation on board, lunch included — the best value way to enjoy the sea." },
     de: { name: "Side Bootstour", tagline: "Meer, Musik und Baden — bestes Preis-Leistungs-Verhältnis", desc: "Ein ganzer Tag auf dem Mittelmeer ab dem Hafen von Side. Viele Badepausen, Musik und Animation an Bord, Mittagessen inklusive." },
   },

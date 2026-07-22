@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { LOCALE_META, LOCALES, type Locale } from "@/data/i18n";
 
-const READY: Locale[] = ["tr", "en", "de"];
+const READY: Locale[] = ["tr", "en", "de", "ru", "pl"];
 
 export default function LangSwitcher({ locale }: { locale: Locale }) {
   const [open, setOpen] = useState(false);

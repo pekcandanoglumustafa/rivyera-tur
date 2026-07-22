@@ -11,6 +11,14 @@ const META: Record<string, { title: string; desc: string }> = {
     title: "Sonnenklar Reisen | Ausflüge in Antalya — Rafting, Bootstouren, Safari",
     desc: "Tagesausflüge ab Antalya, Side und Manavgat: Rafting, Bootstouren, Jeep- und Quad-Safari, Kappadokien und Pamukkale. Kostenlose Abholung, Zahlung am Tourtag.",
   },
+  ru: {
+    title: "Sonnenklar Reisen | Экскурсии в Анталье — рафтинг, лодки, сафари",
+    desc: "Однодневные экскурсии из Антальи, Сиде и Манавгата: рафтинг, морские прогулки, джип- и квадро-сафари, Каппадокия и Памуккале. Бесплатный трансфер, оплата в день тура.",
+  },
+  pl: {
+    title: "Sonnenklar Reisen | Wycieczki w Antalyi — rafting, rejsy, safari",
+    desc: "Wycieczki jednodniowe z Antalyi, Side i Manavgat: rafting, rejsy, jeep i quad safari, Kapadocja i Pamukkale. Darmowy transfer, płatność w dniu wycieczki.",
+  },
 };
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }): Promise<Metadata> {
@@ -19,7 +27,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: L
   return {
     title: m.title,
     description: m.desc,
-    alternates: { canonical: `/${locale}`, languages: { tr: "/", en: "/en", de: "/de" } },
+    alternates: { canonical: `/${locale}`, languages: { tr: "/", en: "/en", de: "/de", ru: "/ru", pl: "/pl" } },
   };
 }
 
