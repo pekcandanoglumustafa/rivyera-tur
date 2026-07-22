@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { CONTACT } from "@/data/tours";
+import LangSwitcher from "@/components/LangSwitcher";
 
 export default function Header() {
   return (
@@ -21,6 +22,7 @@ export default function Header() {
           >
             {CONTACT.phoneDisplay}
           </a>
+          <LangSwitcher />
           <a
             href={CONTACT.whatsapp}
             target="_blank"

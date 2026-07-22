@@ -103,7 +103,7 @@ a, button, summary {
   100% { background-position: 0% 50%; }
 }
 .gradient-text {
-  background: linear-gradient(90deg, #e01f26, #ff6b6b, #b0121a, #e01f26);
+  background: linear-gradient(90deg, #ffffff, #ffd9db, #ffffff, #ffd9db);
   background-size: 300% 100%;
   -webkit-background-clip: text;
   background-clip: text;
