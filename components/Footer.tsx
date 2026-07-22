@@ -20,7 +20,7 @@ export default function Footer() {
           <ul className="space-y-2 text-sm text-white/70">
             {tours.filter((t) => t.popular).map((t) => (
               <li key={t.slug}>
-                <Link href={`/turlar/${t.slug}`} className="hover:text-turq">
+                <Link href={`/turlar/${t.slug}`} className="hover:text-white">
                   {t.name}
                 </Link>
               </li>
@@ -31,17 +31,17 @@ export default function Footer() {
           <p className="mb-3 font-bold">Rezervasyon</p>
           <ul className="space-y-2 text-sm text-white/70">
             <li>
-              <a href={`tel:${CONTACT.phoneIntl}`} className="hover:text-turq">
+              <a href={`tel:${CONTACT.phoneIntl}`} className="hover:text-white">
                 Telefon: {CONTACT.phoneDisplay}
               </a>
             </li>
             <li>
-              <a href={CONTACT.whatsapp} target="_blank" rel="noopener" className="hover:text-turq">
+              <a href={CONTACT.whatsapp} target="_blank" rel="noopener" className="hover:text-white">
                 WhatsApp ile yazın
               </a>
             </li>
             <li>
-              <a href={CONTACT.instagram} target="_blank" rel="noopener" className="hover:text-turq">
+              <a href={CONTACT.instagram} target="_blank" rel="noopener" className="hover:text-white">
                 Instagram
               </a>
             </li>

@@ -111,11 +111,11 @@ export default async function TourPage({
             {tour.program.map((p, i) => (
               <li key={i} className="relative flex gap-4 pb-6 last:pb-0">
                 <div className="flex flex-col items-center">
-                  <span className="h-3 w-3 shrink-0 rounded-full bg-turq" />
-                  {i < tour.program.length - 1 && <span className="w-px flex-1 bg-turq/30" />}
+                  <span className="h-3 w-3 shrink-0 rounded-full bg-cta" />
+                  {i < tour.program.length - 1 && <span className="w-px flex-1 bg-cta/30" />}
                 </div>
                 <div>
-                  <p className="text-sm font-bold uppercase tracking-wide text-turq">{p.time}</p>
+                  <p className="text-sm font-bold uppercase tracking-wide text-deep">{p.time}</p>
                   <p className="text-ink/85">{p.text}</p>
                 </div>
               </li>

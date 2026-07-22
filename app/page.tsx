@@ -57,8 +57,8 @@ export default function Home() {
           />
         </div>
         <div className="relative mx-auto max-w-6xl px-4 py-20 md:py-28">
-          <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-turq/40 bg-turq/10 px-4 py-1 text-sm font-semibold text-turq">
-            <span className="h-2 w-2 rounded-full bg-turq" /> Anında Onay · Antalya · Side · Manavgat · Belek · Alanya
+          <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/15 px-4 py-1.5 text-sm font-semibold text-white backdrop-blur">
+            <span className="h-2 w-2 rounded-full bg-white" /> Anında Onay · Antalya · Side · Manavgat · Belek · Alanya
           </p>
           <h1 className="display max-w-3xl text-4xl font-extrabold leading-tight md:text-6xl">
             Hayalinizdeki turu bugün ayırtın —
@@ -86,30 +86,30 @@ export default function Home() {
             </a>
           </div>
           <div className="mt-10 grid max-w-xl grid-cols-2 gap-x-6 gap-y-3 text-sm text-white/80 sm:grid-cols-4">
-            <span className="flex items-center gap-2"><span className="text-turq">✔</span> Gizli ücret yok</span>
-            <span className="flex items-center gap-2"><span className="text-turq">✔</span> Ücretsiz iptal</span>
-            <span className="flex items-center gap-2"><span className="text-turq">✔</span> Kredi kartı gerekmez</span>
-            <span className="flex items-center gap-2"><span className="text-turq">✔</span> 5000+ mutlu misafir</span>
+            <span className="flex items-center gap-2"><span className="text-white">✔</span> Gizli ücret yok</span>
+            <span className="flex items-center gap-2"><span className="text-white">✔</span> Ücretsiz iptal</span>
+            <span className="flex items-center gap-2"><span className="text-white">✔</span> Kredi kartı gerekmez</span>
+            <span className="flex items-center gap-2"><span className="text-white">✔</span> 5000+ mutlu misafir</span>
           </div>
         </div>
         {/* Akan dalgalar */}
         <div className="absolute inset-x-0 bottom-0 h-14 overflow-hidden" aria-hidden>
-          <svg className="wave absolute bottom-0 h-14 w-[200%]" viewBox="0 0 2880 60" preserveAspectRatio="none" fill="var(--color-turq)">
+          <svg className="wave absolute bottom-0 h-14 w-[200%]" viewBox="0 0 2880 60" preserveAspectRatio="none" fill="#ffffff">
             <path d="M0,30 C240,55 480,5 720,30 C960,55 1200,5 1440,30 C1680,55 1920,5 2160,30 C2400,55 2640,5 2880,30 L2880,60 L0,60 Z" />
           </svg>
-          <svg className="wave-slow absolute bottom-0 h-14 w-[200%]" viewBox="0 0 2880 60" preserveAspectRatio="none" fill="var(--color-turq)">
+          <svg className="wave-slow absolute bottom-0 h-14 w-[200%]" viewBox="0 0 2880 60" preserveAspectRatio="none" fill="#ffffff">
             <path d="M0,35 C360,10 720,55 1080,35 C1440,10 1800,55 2160,35 C2520,10 2880,55 2880,35 L2880,60 L0,60 Z" />
           </svg>
         </div>
       </section>
 
       {/* KAYAN ŞERİT */}
-      <div className="overflow-hidden bg-turq py-3 text-navy" aria-hidden>
+      <div className="overflow-hidden border-y-2 border-navy/10 bg-white py-3 text-navy" aria-hidden>
         <div className="marquee-track gap-8 px-4 text-sm font-extrabold uppercase tracking-widest">
           {[0, 1].map((k) => (
             <span key={k} className="flex shrink-0 gap-8">
               {["Rafting", "Tekne Turları", "Jeep Safari", "Yamaç Paraşütü", "Kapadokya", "Korsan Teknesi", "Dalış", "Pamukkale", "Yat Turu", "Hamam"].map((t) => (
-                <span key={t} className="flex items-center gap-8">{t} <span className="text-cta">✦</span></span>
+                <span key={t} className="flex items-center gap-8">{t} <span className="text-navy/40">✦</span></span>
               ))}
             </span>
           ))}
@@ -120,14 +120,14 @@ export default function Home() {
       <section id="populer" className="mx-auto max-w-6xl px-4 py-16">
         <div className="mb-8 flex items-end justify-between">
           <div>
-            <p className="text-sm font-bold uppercase tracking-widest text-turq">
+            <p className="text-sm font-bold uppercase tracking-widest text-deep">
               En çok satanlar
             </p>
             <h2 className="display mt-1 text-3xl font-extrabold text-navy md:text-4xl">
               Popüler Turlar
             </h2>
           </div>
-          <Link href="/turlar" className="hidden font-semibold text-turq hover:underline md:block">
+          <Link href="/turlar" className="hidden font-semibold text-deep hover:underline md:block">
             Tümünü gör →
           </Link>
         </div>
@@ -144,15 +144,15 @@ export default function Home() {
       <section className="mx-auto max-w-6xl px-4 pb-4">
         <div className="grid gap-4 sm:grid-cols-3">
           <div className="rounded-2xl bg-navy p-6 text-white">
-            <p className="display text-lg font-bold text-turq">Ödeme Yapmadan Güvenli Rezervasyon</p>
+            <p className="display text-lg font-bold text-white">Ödeme Yapmadan Güvenli Rezervasyon</p>
             <p className="mt-1 text-sm text-white/75">Yerini ayırt, kredi kartı verme. Ödeme tur günü, otelden karşılamayla.</p>
           </div>
           <div className="rounded-2xl bg-navy p-6 text-white">
-            <p className="display text-lg font-bold text-turq">Anında Onay</p>
+            <p className="display text-lg font-bold text-white">Anında Onay</p>
             <p className="mt-1 text-sm text-white/75">WhatsApp&apos;tan yaz, dakikalar içinde yerin kesinleşsin. Bekleme yok.</p>
           </div>
           <div className="rounded-2xl bg-navy p-6 text-white">
-            <p className="display text-lg font-bold text-turq">Bir Turdan Fazlası</p>
+            <p className="display text-lg font-bold text-white">Bir Turdan Fazlası</p>
             <p className="mt-1 text-sm text-white/75">33 farklı tur, tek adres. Macera, tekne, kültür ve keyif — hepsi burada.</p>
           </div>
         </div>
