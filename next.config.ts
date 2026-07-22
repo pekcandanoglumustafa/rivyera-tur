@@ -6,6 +6,9 @@ const nextConfig: NextConfig = {
   compress: true,
   images: {
     formats: ["image/avif", "image/webp"],
+    remotePatterns: [
+      { protocol: "https", hostname: "toursfromowner.com", pathname: "/panel/dimg/**" },
+    ],
     // Gereksiz büyük varyantları üretme -> daha küçük dosya, daha hızlı LCP
     deviceSizes: [360, 480, 640, 828, 1080, 1200],
     imageSizes: [96, 160, 256, 384],

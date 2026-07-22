@@ -25,6 +25,8 @@ type Dict = {
   trust2: string;
   trust3: string;
   trust4: string;
+  badgeAgency: string;
+  bestSellersTitle: string;
   strip1Title: string;
   strip1Text: string;
   strip2Title: string;
@@ -75,7 +77,9 @@ export const T: Record<Locale, Dict> = {
     heroTitle2: "macera burada başlıyor.",
     heroText: "En iyi turlar, en iyi fiyatlar, unutulmaz anılar. Ödeme yapmadan güvenle rezervasyon: tur günü ücretsiz karşılama ve ödeme.",
     ctaBook: "Hemen Rezervasyon Yap", ctaWhats: "WhatsApp'tan Sor",
-    trust1: "Gizli ücret yok", trust2: "Ücretsiz iptal", trust3: "Kredi kartı gerekmez", trust4: "5000+ mutlu misafir",
+    trust1: "Gizli ücret yok", trust2: "Ücretsiz iptal", trust3: "Otelden ücretsiz transfer", trust4: "TÜRSAB belgeli acente",
+    badgeAgency: "A Grubu Seyahat Acentası · 9030",
+    bestSellersTitle: "En Çok Satan 3 Tur",
     strip1Title: "Ödeme Yapmadan Güvenli Rezervasyon", strip1Text: "Yerini ayırt, kredi kartı verme. Ödeme tur günü, otelden karşılamayla.",
     strip2Title: "Anında Onay", strip2Text: "WhatsApp'tan yaz, dakikalar içinde yerin kesinleşsin.",
     strip3Title: "Bir Turdan Fazlası", strip3Text: "46 farklı tur, tek adres. Macera, tekne, kültür ve keyif.",
@@ -110,7 +114,9 @@ export const T: Record<Locale, Dict> = {
     heroTitle2: "the adventure starts here.",
     heroText: "Best tours, best prices, unforgettable memories. Reserve safely with no payment: free hotel pick-up and payment on the tour day.",
     ctaBook: "Book Now", ctaWhats: "Ask on WhatsApp",
-    trust1: "No hidden fees", trust2: "Free cancellation", trust3: "No credit card needed", trust4: "5000+ happy guests",
+    trust1: "No hidden fees", trust2: "Free cancellation", trust3: "Free hotel transfer", trust4: "TÜRSAB licensed agency",
+    badgeAgency: "A-Class Travel Agency · 9030",
+    bestSellersTitle: "Top 3 Best Sellers",
     strip1Title: "Reserve Safely Without Paying", strip1Text: "Reserve your spot, no card required. Pay on the tour day at hotel pick-up.",
     strip2Title: "Instant Confirmation", strip2Text: "Message us on WhatsApp and your spot is confirmed within minutes.",
     strip3Title: "More Than a Tour", strip3Text: "46 different tours in one place. Adventure, boats, culture and relaxation.",
@@ -145,7 +151,9 @@ export const T: Record<Locale, Dict> = {
     heroTitle2: "das Abenteuer beginnt hier.",
     heroText: "Beste Touren, beste Preise, unvergessliche Erinnerungen. Sicher reservieren ohne Anzahlung: kostenlose Abholung und Zahlung am Tourtag.",
     ctaBook: "Jetzt buchen", ctaWhats: "Per WhatsApp fragen",
-    trust1: "Keine versteckten Kosten", trust2: "Kostenlose Stornierung", trust3: "Keine Kreditkarte nötig", trust4: "5000+ zufriedene Gäste",
+    trust1: "Keine versteckten Kosten", trust2: "Kostenlose Stornierung", trust3: "Kostenloser Hoteltransfer", trust4: "TÜRSAB-lizenziertes Büro",
+    badgeAgency: "Reisebüro Klasse A · 9030",
+    bestSellersTitle: "Top 3 Bestseller",
     strip1Title: "Sicher reservieren ohne Zahlung", strip1Text: "Platz sichern ohne Karte. Zahlung am Tourtag bei der Abholung.",
     strip2Title: "Sofortige Bestätigung", strip2Text: "Schreiben Sie uns auf WhatsApp — Ihr Platz ist in Minuten bestätigt.",
     strip3Title: "Mehr als eine Tour", strip3Text: "46 verschiedene Touren an einem Ort. Abenteuer, Boote, Kultur und Erholung.",
@@ -180,7 +188,9 @@ export const T: Record<Locale, Dict> = {
     heroTitle2: "приключение начинается здесь.",
     heroText: "Лучшие туры, лучшие цены, незабываемые впечатления. Бронирование без предоплаты: бесплатный трансфер и оплата в день тура.",
     ctaBook: "Забронировать", ctaWhats: "Спросить в WhatsApp",
-    trust1: "Без скрытых доплат", trust2: "Бесплатная отмена", trust3: "Карта не нужна", trust4: "5000+ довольных гостей",
+    trust1: "Без скрытых доплат", trust2: "Бесплатная отмена", trust3: "Бесплатный трансфер", trust4: "Лицензия TÜRSAB",
+    badgeAgency: "Турагентство класса А · 9030",
+    bestSellersTitle: "Топ-3 хита продаж",
     strip1Title: "Бронирование без оплаты", strip1Text: "Забронируйте место без карты. Оплата в день тура при встрече.",
     strip2Title: "Мгновенное подтверждение", strip2Text: "Напишите в WhatsApp — место подтвердим за пару минут.",
     strip3Title: "Больше, чем тур", strip3Text: "46 разных туров в одном месте. Приключения, лодки, культура и отдых.",
@@ -215,7 +225,9 @@ export const T: Record<Locale, Dict> = {
     heroTitle2: "przygoda zaczyna się tutaj.",
     heroText: "Najlepsze wycieczki, najlepsze ceny, niezapomniane wspomnienia. Rezerwacja bez zaliczki: darmowy odbiór z hotelu i płatność w dniu wycieczki.",
     ctaBook: "Rezerwuj teraz", ctaWhats: "Zapytaj na WhatsApp",
-    trust1: "Bez ukrytych opłat", trust2: "Darmowe anulowanie", trust3: "Karta niepotrzebna", trust4: "5000+ zadowolonych gości",
+    trust1: "Bez ukrytych opłat", trust2: "Darmowe anulowanie", trust3: "Darmowy transfer z hotelu", trust4: "Licencja TÜRSAB",
+    badgeAgency: "Biuro podróży klasy A · 9030",
+    bestSellersTitle: "Top 3 bestsellery",
     strip1Title: "Rezerwacja bez płatności", strip1Text: "Zarezerwuj miejsce bez karty. Płatność w dniu wycieczki przy odbiorze.",
     strip2Title: "Natychmiastowe potwierdzenie", strip2Text: "Napisz na WhatsApp — potwierdzimy miejsce w kilka minut.",
     strip3Title: "Więcej niż wycieczka", strip3Text: "46 różnych wycieczek w jednym miejscu. Przygoda, rejsy, kultura i relaks.",

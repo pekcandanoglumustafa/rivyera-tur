@@ -1,7 +1,10 @@
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import FAQ from "@/components/FAQ";
+import Gallery from "@/components/Gallery";
+import Reviews from "@/components/Reviews";
 import { getTour, categories, CONTACT, toTL } from "@/data/tours";
+import { getGallery } from "@/data/gallery";
 import { T, type Locale } from "@/data/i18n";
 import { translateTour, translatePhrase } from "@/data/tours-i18n";
 
@@ -21,6 +24,7 @@ export default function TourDetail({ slug, locale }: { slug: string; locale: Loc
   const name = tr?.name ?? tour.name;
   const tagline = tr?.tagline ?? tour.tagline;
   const desc = locale === "tr" ? tour.description : tr?.desc ?? tagline;
+  const gallery = getGallery(slug);
   const cat = locale === "tr" ? categories[tour.category] : CAT_I18N[tour.category]?.[locale] ?? categories[tour.category];
 
   const waText = encodeURIComponent(
@@ -71,6 +75,8 @@ export default function TourDetail({ slug, locale }: { slug: string; locale: Loc
           <p className="mt-3 max-w-xl text-lg text-white/90">{tagline}</p>
         </div>
       </header>
+
+      <Gallery images={gallery} alt={name} />
 
       <div className="mx-auto grid max-w-4xl gap-10 px-4 py-12 md:grid-cols-[1fr_280px]">
         <div>
@@ -144,6 +150,8 @@ export default function TourDetail({ slug, locale }: { slug: string; locale: Loc
           </div>
         </aside>
       </div>
+
+      <Reviews locale={locale} limit={3} />
     </article>
   );
 }
