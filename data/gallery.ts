@@ -39,9 +39,10 @@ export const GALLERY: Record<string, string[]> = {
     `${B}64b6a43c7a26b.webp`,
   ],
   "jeep-rafting-kombo": [
-    `${B}64b5a24eb45eb.webp`,
+    `${B}64b5a013759b6.webp`,
     `${B}64b59fdb9cd20.webp`,
-    `${B}64b5a2503b2dc.webp`,
+    `${B}64b5a0140e269.webp`,
+    `${B}64b59fdc74760.webp`,
   ],
   "manavgat-tekne-turu": [
     `${B}64b5a53857efb.webp`,
@@ -56,9 +57,11 @@ export const GALLERY: Record<string, string[]> = {
     `${B}64b5a54131233.webp`,
   ],
   "korsan-teknesi": [
-    `${B}64b5a53857efb.webp`,
-    `${B}64b5a53edfed5.webp`,
-    `${B}64b5a538ed3c2.webp`,
+    `${B}64b5a083d08ec.webp`,
+    `${B}64b5a084018e4.webp`,
+    `${B}64b5a0853bf5d.webp`,
+    `${B}64b5a08587212.webp`,
+    `${B}64b5a08601389.webp`,
   ],
   "yesil-kanyon-tekne-turu": [
     `${B}64b5a6a5657f2.webp`,
@@ -96,6 +99,30 @@ export const GALLERY: Record<string, string[]> = {
     `${B}64b5a29409627.webp`,
     `${B}64b5a292ceccf.webp`,
     `${B}66a4fd0e3fa15.webp`,
+  ],
+  "jeep-safari": [
+    `${B}64b5a013759b6.webp`,
+    `${B}64b5a0136bb74.webp`,
+    `${B}64b5a0140e269.webp`,
+    `${B}64b5a014c733f.webp`,
+    `${B}64b5a03bef235.webp`,
+    `${B}64b5a03c21519.webp`,
+  ],
+  "mega-mix-jeep-tekne-quad": [
+    `${B}64b5a013759b6.webp`,
+    `${B}64b5a6a5657f2.webp`,
+    `${B}64b5a2edb8d6f.webp`,
+    `${B}64b5a03bef235.webp`,
+  ],
+  "dolphin-island-tekne-turu": [
+    `${B}64b5a084018e4.webp`,
+    `${B}64b5a08601389.webp`,
+    `${B}64b5a0853bf5d.webp`,
+  ],
+  "gun-batimi-tekne-turu": [
+    `${B}64b5a08587212.webp`,
+    `${B}64b5a53edfed5.webp`,
+    `${B}64b5a54131233.webp`,
   ],
   "quad-safari": [
     `${B}64b5a2edb8d6f.webp`,
