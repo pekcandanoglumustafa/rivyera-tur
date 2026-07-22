@@ -55,7 +55,7 @@ export default function LangSwitcher() {
                 {l.label}
               </span>
               {!l.ready && (
-                <span className="rounded-full bg-ink/10 px-2 py-0.5 text-[10px] font-semibold text-ink/50">
+                <span className="rounded-full bg-ink/10 px-2 py-0.5 text-[10px] font-semibold text-ink/70">
                   yakında
                 </span>
               )}

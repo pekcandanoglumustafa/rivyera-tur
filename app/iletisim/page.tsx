@@ -40,7 +40,7 @@ export default function IletisimPage() {
           Instagram
         </a>
       </div>
-      <p className="mt-10 text-sm text-ink/60">{CONTACT.address}</p>
+      <p className="mt-10 text-sm text-ink/75">{CONTACT.address}</p>
     </div>
   );
 }

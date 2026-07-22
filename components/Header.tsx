@@ -10,10 +10,10 @@ export default function Header() {
           Sonnenklar<span className="text-turq">Tur</span>
         </Link>
         <nav className="hidden gap-6 text-sm font-medium md:flex">
-          <Link href="/turlar" className="hover:text-white/70">Turlar</Link>
-          <Link href="/#populer" className="hover:text-white/70">Popüler</Link>
-          <Link href="/#sss" className="hover:text-white/70">S.S.S.</Link>
-          <Link href="/iletisim" className="hover:text-white/70">İletişim</Link>
+          <Link href="/turlar" className="hover:text-white/85">Turlar</Link>
+          <Link href="/#populer" className="hover:text-white/85">Popüler</Link>
+          <Link href="/#sss" className="hover:text-white/85">S.S.S.</Link>
+          <Link href="/iletisim" className="hover:text-white/85">İletişim</Link>
         </nav>
         <div className="flex items-center gap-2">
           <a

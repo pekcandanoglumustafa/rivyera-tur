@@ -144,7 +144,7 @@ export default async function TourPage({
         {/* Rezervasyon kutusu */}
         <aside className="h-fit md:sticky md:top-24">
           <div className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-black/5">
-            <p className="text-xs font-semibold uppercase tracking-wide text-ink/50">Kişi başı</p>
+            <p className="text-xs font-semibold uppercase tracking-wide text-ink/70">Kişi başı</p>
             <p className="display text-3xl font-extrabold text-navy">
               {tour.price ? `${tour.price.toLocaleString("tr-TR")} ₺` : "Fiyat Sor"}
             </p>
@@ -162,7 +162,7 @@ export default async function TourPage({
             >
               Ara: {CONTACT.phoneDisplay}
             </a>
-            <p className="mt-3 text-center text-xs text-ink/60">
+            <p className="mt-3 text-center text-xs text-ink/75">
               Ön ödeme yok · Ödeme tur günü · Ücretsiz otel transferi
             </p>
           </div>

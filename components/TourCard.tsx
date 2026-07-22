@@ -47,7 +47,7 @@ export default function TourCard({ tour }: { tour: Tour }) {
           <p className="mt-1 line-clamp-2 text-sm text-white/85">{tour.tagline}</p>
 
           <div className="mt-4 flex items-center justify-between border-t border-white/20 pt-3">
-            <span className="text-xs font-semibold uppercase tracking-wide text-white/60">
+            <span className="text-xs font-semibold uppercase tracking-wide text-white/80">
               Kişi başı
             </span>
             <span className="flex items-center gap-2">

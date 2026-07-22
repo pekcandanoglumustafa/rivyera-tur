@@ -40,7 +40,7 @@ export default function Home() {
             fill
             priority
             sizes="100vw"
-            quality={70}
+            quality={60}
             className="kenburns object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-navy/90 via-navy/55 to-navy/25" />
@@ -108,7 +108,7 @@ export default function Home() {
         <div className="marquee-track gap-8 px-4 text-sm font-extrabold uppercase tracking-widest">
           {[0, 1].map((k) => (
             <span key={k} className="flex shrink-0 gap-8">
-              {["Rafting", "Tekne Turları", "Jeep Safari", "Yamaç Paraşütü", "Kapadokya", "Korsan Teknesi", "Dalış", "Pamukkale", "Yat Turu", "Hamam"].map((t) => (
+              {["Rafting", "Tekne Turları", "Jeep Safari", "Kapadokya", "Yat Turu", "Hamam"].map((t) => (
                 <span key={t} className="flex items-center gap-8">{t} <span className="text-navy/40">✦</span></span>
               ))}
             </span>
@@ -145,15 +145,15 @@ export default function Home() {
         <div className="grid gap-4 sm:grid-cols-3">
           <div className="rounded-2xl bg-navy p-6 text-white">
             <p className="display text-lg font-bold text-white">Ödeme Yapmadan Güvenli Rezervasyon</p>
-            <p className="mt-1 text-sm text-white/75">Yerini ayırt, kredi kartı verme. Ödeme tur günü, otelden karşılamayla.</p>
+            <p className="mt-1 text-sm text-white/85">Yerini ayırt, kredi kartı verme. Ödeme tur günü, otelden karşılamayla.</p>
           </div>
           <div className="rounded-2xl bg-navy p-6 text-white">
             <p className="display text-lg font-bold text-white">Anında Onay</p>
-            <p className="mt-1 text-sm text-white/75">WhatsApp&apos;tan yaz, dakikalar içinde yerin kesinleşsin. Bekleme yok.</p>
+            <p className="mt-1 text-sm text-white/85">WhatsApp&apos;tan yaz, dakikalar içinde yerin kesinleşsin. Bekleme yok.</p>
           </div>
           <div className="rounded-2xl bg-navy p-6 text-white">
             <p className="display text-lg font-bold text-white">Bir Turdan Fazlası</p>
-            <p className="mt-1 text-sm text-white/75">33 farklı tur, tek adres. Macera, tekne, kültür ve keyif — hepsi burada.</p>
+            <p className="mt-1 text-sm text-white/85">33 farklı tur, tek adres. Macera, tekne, kültür ve keyif — hepsi burada.</p>
           </div>
         </div>
       </section>
@@ -228,7 +228,7 @@ export default function Home() {
           <h2 className="display text-3xl font-extrabold md:text-4xl">
             Tatil planı iki dakika sürer.
           </h2>
-          <p className="mx-auto mt-3 max-w-xl text-white/75">
+          <p className="mx-auto mt-3 max-w-xl text-white/85">
             Hangi güne, kaç kişi, hangi tur — yaz yeter. Gerisini biz kurarız.
           </p>
           <div className="mt-7 flex flex-wrap justify-center gap-3">

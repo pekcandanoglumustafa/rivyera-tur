@@ -1,7 +1,26 @@
 "use client";
 import { useEffect, useRef } from "react";
 
-/** Scroll ile görünüme girince .in-view ekler — kütüphanesiz animasyon */
+/** Tek IntersectionObserver ile scroll animasyonu — düzen hesaplaması minimum */
+let shared: IntersectionObserver | null = null;
+function getObserver() {
+  if (typeof window === "undefined") return null;
+  if (!shared) {
+    shared = new IntersectionObserver(
+      (entries) => {
+        for (const e of entries) {
+          if (e.isIntersecting) {
+            e.target.classList.add("in-view");
+            shared!.unobserve(e.target);
+          }
+        }
+      },
+      { threshold: 0.1, rootMargin: "80px" }
+    );
+  }
+  return shared;
+}
+
 export default function Reveal({
   children,
   delay = 0,
@@ -14,20 +33,10 @@ export default function Reveal({
   const ref = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const el = ref.current;
-    if (!el) return;
-    const obs = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((e) => {
-          if (e.isIntersecting) {
-            e.target.classList.add("in-view");
-            obs.unobserve(e.target);
-          }
-        });
-      },
-      { threshold: 0.12 }
-    );
+    const obs = getObserver();
+    if (!el || !obs) return;
     obs.observe(el);
-    return () => obs.disconnect();
+    return () => obs.unobserve(el);
   }, []);
   const d = delay ? ` reveal-delay-${delay}` : "";
   return (

@@ -9,15 +9,15 @@ export default function Footer() {
           <p className="display text-2xl font-extrabold">
             Sonnenklar<span className="text-turq">Tur</span>
           </p>
-          <p className="mt-3 max-w-xs text-sm text-white/70">
+          <p className="mt-3 max-w-xs text-sm text-white/85">
             Antalya, Side ve Manavgat merkezli günlük gezi turları. Otelden
             alınış, sigorta ve rehberlik hizmetiyle.
           </p>
-          <p className="mt-4 text-sm text-white/70">{CONTACT.address}</p>
+          <p className="mt-4 text-sm text-white/85">{CONTACT.address}</p>
         </div>
         <div>
           <p className="mb-3 font-bold">Popüler Turlar</p>
-          <ul className="space-y-2 text-sm text-white/70">
+          <ul className="space-y-2 text-sm text-white/85">
             {tours.filter((t) => t.popular).map((t) => (
               <li key={t.slug}>
                 <Link href={`/turlar/${t.slug}`} className="hover:text-white">
@@ -29,7 +29,7 @@ export default function Footer() {
         </div>
         <div>
           <p className="mb-3 font-bold">Rezervasyon</p>
-          <ul className="space-y-2 text-sm text-white/70">
+          <ul className="space-y-2 text-sm text-white/85">
             <li>
               <a href={`tel:${CONTACT.phoneIntl}`} className="hover:text-white">
                 Telefon: {CONTACT.phoneDisplay}
@@ -48,7 +48,7 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      <div className="border-t border-white/10 py-5 text-center text-xs text-white/50">
+      <div className="border-t border-white/10 py-5 text-center text-xs text-white/85">
         © {new Date().getFullYear()} Sonnenklar Reisen Turizm — Antalya Gezi Turları
       </div>
     </footer>
