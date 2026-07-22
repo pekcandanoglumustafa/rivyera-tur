@@ -60,6 +60,43 @@ export const GALLERY: Record<string, string[]> = {
     `${B}64b5a53edfed5.webp`,
     `${B}64b5a538ed3c2.webp`,
   ],
+  "yesil-kanyon-tekne-turu": [
+    `${B}64b5a6a5657f2.webp`,
+    `${B}64b5a6a5cdfdd.webp`,
+    `${B}64b5a6a602ee4.webp`,
+    `${B}64b5a6a6883ef.webp`,
+    `${B}64b5a6a738d0a.webp`,
+  ],
+  "mix-tur-7-1": [
+    `${B}64b5a6a5cdfdd.webp`,
+    `${B}64b5a6a602ee4.webp`,
+    `${B}64b5a6a738d0a.webp`,
+  ],
+  "karacaoren-kanyon-tekne": [
+    `${B}64b5a6a5657f2.webp`,
+    `${B}64b5a6a6883ef.webp`,
+    `${B}64b5a6a602ee4.webp`,
+  ],
+  "legends-gece-gosterisi": [
+    `${B}64b5a2914cb97.webp`,
+    `${B}64b5a2916afab.webp`,
+    `${B}64b5a291d5156.webp`,
+    `${B}64b5a292ceccf.webp`,
+    `${B}64b5a292e720a.webp`,
+    `${B}64b5a293c72a4.webp`,
+  ],
+  "land-of-legends-turu": [
+    `${B}66a4fcfd95430.webp`,
+    `${B}66a4fcfe725a8.webp`,
+    `${B}66a4fd05b45d0.webp`,
+    `${B}66a4fd06156b8.webp`,
+    `${B}66a4fd0e3fa15.webp`,
+  ],
+  "akvaryum-legends-kombo": [
+    `${B}64b5a29409627.webp`,
+    `${B}64b5a292ceccf.webp`,
+    `${B}66a4fd0e3fa15.webp`,
+  ],
   "quad-safari": [
     `${B}64b5a2edb8d6f.webp`,
     `${B}64b5a2edbb0ba.webp`,
