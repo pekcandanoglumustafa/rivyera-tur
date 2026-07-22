@@ -207,6 +207,19 @@ export const GALLERY: Record<string, string[]> = {
     `${B}64b5a7a6431d5.webp`,
     `${B}64b5a7a8d56d6.webp`,
   ],
+  "at-safari": [
+    `${B}64b5a4f30f35c.webp`,
+    `${B}64b5a4f34cbce.webp`,
+    `${B}64b5a4f446700.webp`,
+    `${B}64b5a4f44c5a5.webp`,
+  ],
+  "aquapark": [
+    `${B}64b5a4be1b015.webp`,
+    `${B}64b5a4be286fc.webp`,
+    `${B}64b5a4bf03812.webp`,
+    `${B}64b5a4bf7bfb0.webp`,
+    `${B}64b5a4c01d26f.webp`,
+  ],
   "quad-safari": [
     `${B}64b5a2edb8d6f.webp`,
     `${B}64b5a2edbb0ba.webp`,
