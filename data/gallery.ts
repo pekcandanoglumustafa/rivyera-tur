@@ -96,6 +96,7 @@ export const GALLERY: Record<string, string[]> = {
     `${B}66a4fd0e3fa15.webp`,
   ],
   "akvaryum-legends-kombo": [
+    `${B}64b5a51b7bb70.webp`,
     `${B}64b5a29409627.webp`,
     `${B}64b5a292ceccf.webp`,
     `${B}66a4fd0e3fa15.webp`,
@@ -166,6 +167,25 @@ export const GALLERY: Record<string, string[]> = {
     `${B}64b5a40ec8279.webp`,
     `${B}64b5a40ec494b.webp`,
     `${B}64b5a40f80b8e.webp`,
+  ],
+  "antalya-akvaryum": [
+    `${B}64b5a51b7bb70.webp`,
+    `${B}64b5a51c01be9.webp`,
+    `${B}64b5a51cc04db.webp`,
+    `${B}64b6ac51aa188.webp`,
+  ],
+  "tuplu-dalis": [
+    `${B}64b5a6178bd57.webp`,
+    `${B}64b5a6178361a.webp`,
+    `${B}64b5a618a1dbc.webp`,
+    `${B}64b5a61883f7d.webp`,
+    `${B}64b5a61936e88.webp`,
+    `${B}64b5a6197d328.webp`,
+  ],
+  "yunus-gosterisi-ve-yuzme": [
+    `${B}64b5a51cc04db.webp`,
+    `${B}64b5a619b3bc4.webp`,
+    `${B}64b5a51c01be9.webp`,
   ],
   "quad-safari": [
     `${B}64b5a2edb8d6f.webp`,
