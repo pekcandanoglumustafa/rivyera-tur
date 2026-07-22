@@ -25,12 +25,12 @@ export default function HomePage({ locale }: { locale: Locale }) {
       <section className="relative overflow-hidden bg-navy text-white">
         <div className="absolute inset-0" aria-hidden>
           <Image
-            src="https://toursfromowner.com/panel/dimg/rooms/64b59fdb9cd20.webp"
+            src="/turlar/korsan-teknesi.jpg"
             alt=""
             fill
             priority
             sizes="100vw"
-            quality={60}
+            quality={75}
             className="kenburns object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-navy/85 via-navy/45 to-transparent" />
