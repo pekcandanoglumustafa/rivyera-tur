@@ -187,6 +187,26 @@ export const GALLERY: Record<string, string[]> = {
     `${B}64b5a619b3bc4.webp`,
     `${B}64b5a51c01be9.webp`,
   ],
+  "tekneden-balik-avi": [
+    `${B}64b5a64267ecf.webp`,
+    `${B}64b5a64279d74.webp`,
+    `${B}64b5a643be323.webp`,
+    `${B}64b5a64493eb1.webp`,
+    `${B}64b5a644b0ad4.webp`,
+    `${B}64b5a645242cb.webp`,
+  ],
+  "ozel-tekne-turu": [
+    `${B}64b5a64267ecf.webp`,
+    `${B}64b5a643be323.webp`,
+    `${B}64b5a54131233.webp`,
+  ],
+  "yamac-parasutu-alanya": [
+    `${B}64b5a7a51e1b0.webp`,
+    `${B}64b5a7a51b0d3.webp`,
+    `${B}64b5a7a641608.webp`,
+    `${B}64b5a7a6431d5.webp`,
+    `${B}64b5a7a8d56d6.webp`,
+  ],
   "quad-safari": [
     `${B}64b5a2edb8d6f.webp`,
     `${B}64b5a2edbb0ba.webp`,
