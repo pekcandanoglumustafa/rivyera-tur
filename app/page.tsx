@@ -80,7 +80,7 @@ export default function Home() {
               href={CONTACT.whatsapp}
               target="_blank"
               rel="noopener"
-              className="rounded-full border border-white/25 px-7 py-3.5 font-bold hover:bg-white/10"
+              className="rounded-full bg-[#25d366] px-7 py-3.5 font-bold text-white hover:bg-[#1da851]"
             >
               WhatsApp&apos;tan Sor
             </a>

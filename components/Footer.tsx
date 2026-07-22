@@ -37,7 +37,7 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a href={CONTACT.whatsapp} target="_blank" rel="noopener" className="hover:text-white">
+              <a href={CONTACT.whatsapp} target="_blank" rel="noopener" className="font-semibold text-[#4ade80] hover:text-[#25d366]">
                 WhatsApp ile yazın
               </a>
             </li>

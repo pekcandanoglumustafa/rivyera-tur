@@ -30,7 +30,7 @@ export default function Header() {
             href={CONTACT.whatsapp}
             target="_blank"
             rel="noopener"
-            className="rounded-full bg-cta px-4 py-2 text-sm font-bold text-white hover:bg-cta-dark"
+            className="flex items-center gap-1.5 rounded-full bg-[#25d366] px-4 py-2 text-sm font-bold text-white hover:bg-[#1da851]"
           >
             Rezervasyon
           </a>

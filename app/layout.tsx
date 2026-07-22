@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CTABar from "@/components/CTABar";
+import DesktopCTA from "@/components/DesktopCTA";
 import { CONTACT } from "@/data/tours";
 
 const SITE = "https://sonnenklarreisen.com";
@@ -73,6 +74,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main>{children}</main>
         <Footer />
         <CTABar />
+        <DesktopCTA />
       </body>
     </html>
   );
