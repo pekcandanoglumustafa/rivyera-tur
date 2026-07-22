@@ -52,7 +52,7 @@ export default async function TourPage({
               offers: {
                 "@type": "Offer",
                 price: tour.price,
-                priceCurrency: "TRY",
+                priceCurrency: "EUR",
                 availability: "https://schema.org/InStock",
               },
             }
@@ -145,14 +145,19 @@ export default async function TourPage({
         <aside className="h-fit md:sticky md:top-24">
           <div className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-black/5">
             <p className="text-xs font-semibold uppercase tracking-wide text-ink/70">Kişi başı</p>
-            <p className="display text-3xl font-extrabold text-navy">
-              {tour.price ? `${tour.price.toLocaleString("tr-TR")} ₺` : "Fiyat Sor"}
+            <p className="flex items-baseline gap-2">
+              {tour.oldPrice && (
+                <span className="text-lg font-semibold text-ink/45 line-through">€{tour.oldPrice}</span>
+              )}
+              <span className="display text-3xl font-extrabold text-cta">
+                {tour.price ? `€${tour.price}` : "Fiyat Sor"}
+              </span>
             </p>
             <a
               href={waLink}
               target="_blank"
               rel="noopener"
-              className="mt-4 block rounded-full bg-cta py-3.5 text-center font-bold text-white hover:bg-cta-dark"
+              className="mt-4 block rounded-full bg-[#25d366] py-3.5 text-center font-bold text-white hover:bg-[#1da851]"
             >
               WhatsApp&apos;tan Rezervasyon
             </a>

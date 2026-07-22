@@ -13,7 +13,7 @@ export type Tour = {
   category: "macera" | "tekne" | "kultur" | "aile" | "keyif";
   duration: string;
   days: string;
-  price?: number;
+  price?: number;   // EUR
   oldPrice?: number;
   description: string;
   highlights: string[];
@@ -37,6 +37,8 @@ export const CONTACT = {
 export const tours: Tour[] = [
   {
     slug: "koprulu-kanyon-rafting",
+    price: 15,
+    oldPrice: 25,
     name: "Köprülü Kanyon Rafting",
     tagline: "15 km köpüklü macera, öğle yemeği dahil",
     category: "macera",
@@ -68,6 +70,8 @@ export const tours: Tour[] = [
   },
   {
     slug: "super-kombo",
+    price: 30,
+    oldPrice: 40,
     name: "Süper Kombo: Rafting + Jeep + Quad + Zipline",
     tagline: "Dört macera tek günde — Antalya'nın en dolu turu",
     category: "macera",
@@ -94,6 +98,7 @@ export const tours: Tour[] = [
   },
   {
     slug: "yesil-kanyon-tekne-turu",
+    price: 28,
     name: "Yeşil Kanyon (Green Canyon) Tekne Turu",
     tagline: "Türkiye'nin en büyük kanyon barajında 3 saat",
     category: "tekne",
@@ -118,6 +123,8 @@ export const tours: Tour[] = [
   },
   {
     slug: "korsan-teknesi",
+    price: 16,
+    oldPrice: 25,
     name: "Korsan Teknesi Turu",
     tagline: "Manavgat Nehri'nde çocukların bayılacağı yarım gün",
     category: "aile",
@@ -143,6 +150,7 @@ export const tours: Tour[] = [
   },
   {
     slug: "manavgat-tekne-turu",
+    price: 15,
     name: "Manavgat Nehir & Şelale Turu",
     tagline: "Nehirde tekne, şelale ve Manavgat pazarı bir arada",
     category: "tekne",
@@ -167,6 +175,7 @@ export const tours: Tour[] = [
   },
   {
     slug: "dolphin-island-tekne-turu",
+    price: 20,
     name: "Dolphin Island Tekne Turu",
     tagline: "Yunus görme şansı, köpük partisi ve masmavi deniz",
     category: "tekne",
@@ -190,6 +199,8 @@ export const tours: Tour[] = [
   },
   {
     slug: "kapadokya-turu",
+    price: 55,
+    oldPrice: 70,
     name: "Kapadokya Turu (2 Gün)",
     tagline: "Peri bacaları, yeraltı şehri, Mevlana — her şey dahil",
     category: "kultur",
@@ -211,6 +222,8 @@ export const tours: Tour[] = [
   },
   {
     slug: "pamukkale-salda-turu",
+    price: 34,
+    oldPrice: 45,
     name: "Pamukkale & Salda Gölü Turu",
     tagline: "Türkiye'nin Maldivleri ve beyaz travertenler aynı günde",
     category: "kultur",
@@ -233,6 +246,8 @@ export const tours: Tour[] = [
   },
   {
     slug: "kartal-kanyonu-turu",
+    price: 23,
+    oldPrice: 30,
     name: "Kartal Kanyonu (Adler Canyon) Turu",
     tagline: "Selge Antik Kenti, Pavlus Köprüsü ve kartal manzarası",
     category: "kultur",
@@ -256,6 +271,7 @@ export const tours: Tour[] = [
   },
   {
     slug: "suluada-tekne-turu",
+    price: 40,
     name: "Suluada Tekne Turu",
     tagline: "Türkiye'nin Maldivleri: 4 koy, 4 yüzme molası",
     category: "tekne",
@@ -279,6 +295,8 @@ export const tours: Tour[] = [
   },
   {
     slug: "antalya-sehir-turu",
+    price: 27,
+    oldPrice: 30,
     name: "Antalya Şehir Turu",
     tagline: "Kaleiçi, Düden Şelalesi ve teleferikle şehrin zirvesi",
     category: "kultur",
@@ -302,6 +320,8 @@ export const tours: Tour[] = [
   },
   {
     slug: "demre-myra-kekova-turu",
+    price: 35,
+    oldPrice: 45,
     name: "Demre – Myra – Kekova Turu",
     tagline: "Batık şehir, kaya mezarları ve Noel Baba Kilisesi",
     category: "kultur",
@@ -325,6 +345,8 @@ export const tours: Tour[] = [
   },
   {
     slug: "land-of-legends-turu",
+    price: 55,
+    oldPrice: 82,
     name: "Land of Legends Turu",
     tagline: "Türkiye'nin en büyük tema parkında 6 saat",
     category: "aile",
@@ -345,6 +367,8 @@ export const tours: Tour[] = [
   },
   {
     slug: "yamac-parasutu-alanya",
+    price: 24,
+    oldPrice: 30,
     name: "Yamaç Paraşütü (Alanya)",
     tagline: "1000 metreden Kleopatra Plajı'na 25-30 dakika uçuş",
     category: "macera",
@@ -368,6 +392,7 @@ export const tours: Tour[] = [
   },
   {
     slug: "at-safari",
+    price: 35,
     name: "At Safari (Horse Riding)",
     tagline: "Sahilde ve çam ormanında atlı doğa yürüyüşü",
     category: "keyif",
@@ -387,6 +412,8 @@ export const tours: Tour[] = [
   },
   {
     slug: "turk-hamami",
+    price: 14,
+    oldPrice: 20,
     name: "Türk Hamamı & Spa",
     tagline: "Sauna, kese-köpük, 20 dk masaj ve yüz maskesi",
     category: "keyif",
@@ -424,6 +451,8 @@ export const tours: Tour[] = [
   },
   {
     slug: "yunus-gosterisi-ve-yuzme",
+    price: 112,
+    oldPrice: 140,
     name: "Yunus Gösterisi + Yunuslarla Yüzme",
     tagline: "Gösteriyi izle, istersen havuza gir yunuslarla yüz",
     category: "aile",
@@ -447,6 +476,8 @@ export const tours: Tour[] = [
   },
   {
     slug: "tuplu-dalis",
+    price: 26,
+    oldPrice: 30,
     name: "Tüplü Dalış (Scuba Diving)",
     tagline: "Avrupa'nın ilk sualtı müzesinde 2 dalış + yemek",
     category: "macera",
@@ -469,6 +500,7 @@ export const tours: Tour[] = [
   },
   {
     slug: "tekneden-balik-avi",
+    price: 35,
     name: "Tekneden Balık Avı Turu",
     tagline: "Ekipman bizden, avlanan balık sizin",
     category: "keyif",
@@ -488,6 +520,8 @@ export const tours: Tour[] = [
   },
   {
     slug: "alanya-turu",
+    price: 25,
+    oldPrice: 30,
     name: "Alanya Şehir Turu",
     tagline: "Kale, Damlataş, Dim Çayı ve 1 saat tekne turu",
     category: "kultur",
@@ -510,6 +544,7 @@ export const tours: Tour[] = [
   },
   {
     slug: "aquapark",
+    price: 35,
     name: "Aquapark Turu",
     tagline: "Kaydıraklar, havuzlar — ailecek 6 saat serbest",
     category: "aile",
@@ -530,6 +565,8 @@ export const tours: Tour[] = [
   },
   {
     slug: "antalya-akvaryum",
+    price: 50,
+    oldPrice: 60,
     name: "Antalya Akvaryum Turu",
     tagline: "Dünyanın en büyük tünel akvaryumu + serbest zaman",
     category: "aile",
@@ -551,6 +588,8 @@ export const tours: Tour[] = [
   },
   {
     slug: "legends-gece-gosterisi",
+    price: 13,
+    oldPrice: 15,
     name: "Legends Gece Gösterisi (Light Show)",
     tagline: "Land of Legends'ta ışık ve su gösterisi gecesi",
     category: "keyif",
@@ -572,6 +611,7 @@ export const tours: Tour[] = [
   },
   {
     slug: "ormana-altinbesik",
+    price: 35,
     name: "Ormana & Altınbeşik Mağarası Turu",
     tagline: "Türkiye'nin en büyük mağarasında tekneyle gezinti",
     category: "kultur",
@@ -611,6 +651,8 @@ export const tours: Tour[] = [
   },
   {
     slug: "rafting-kombo",
+    price: 30,
+    oldPrice: 40,
     name: "Rafting Kombo: Rafting + Zipline + Buggy + Quad + Kanyon",
     tagline: "Beş macera tek pakette, öğle yemeği dahil",
     category: "macera",
@@ -639,6 +681,8 @@ export const tours: Tour[] = [
   },
   {
     slug: "jeep-safari",
+    price: 18,
+    oldPrice: 25,
     name: "Jeep Safari",
     tagline: "Toroslar'da baraj, şelale, köy ve 1 saat tekne turu",
     category: "macera",
@@ -662,6 +706,8 @@ export const tours: Tour[] = [
   },
   {
     slug: "quad-buggy-safari",
+    price: 22,
+    oldPrice: 40,
     name: "Quad - Buggy Safari",
     tagline: "Toros eteklerinde 2,5 saat toz duman parkur",
     category: "macera",
@@ -684,6 +730,8 @@ export const tours: Tour[] = [
   },
   {
     slug: "quad-buggy-rafting",
+    price: 27,
+    oldPrice: 35,
     name: "Quad - Buggy + Rafting Kombo",
     tagline: "15 km rafting + 2 saat quad veya buggy, yemek dahil",
     category: "macera",
@@ -706,6 +754,8 @@ export const tours: Tour[] = [
   },
   {
     slug: "mix-tur-7-1",
+    price: 18,
+    oldPrice: 22,
     name: "Mix Tur 7+1",
     tagline: "Toroslar, baraj, şelale, köy, cami + yeşil gölde tekne",
     category: "kultur",
@@ -729,6 +779,7 @@ export const tours: Tour[] = [
   },
   {
     slug: "akvaryum-legends-kombo",
+    price: 50,
     name: "Akvaryum + Legends Gece Gösterisi",
     tagline: "Gündüz tünel akvaryum, akşam ışık gösterisi",
     category: "aile",
@@ -766,6 +817,101 @@ export const tours: Tour[] = [
     ],
     hue: "from-slate-500 to-slate-800",
     image: "/turlar/arac-kiralama.jpg",
+  },
+  {
+    slug: "quad-safari",
+    name: "Quad Safari",
+    tagline: "2 saatlik toz duman ATV parkuru — her gün",
+    category: "macera",
+    duration: "2 saat",
+    days: "Her gün",
+    price: 19,
+    oldPrice: 30,
+    description:
+      "Toros eteklerinde 2 saatlik quad (ATV) parkuru. Toprak yollar, dere geçişleri, tepe manzaraları. Ehliyet gerekmez, kask ve ekipman bizden. Sabah ve öğleden sonra seansları mevcut.",
+    highlights: ["2 saat quad parkuru", "Ehliyet gerekmez", "Otelden alma-bırakma", "Rehber eşliğinde"],
+    includes: ["Otelden alma-bırakma", "Quad ve kask", "Rehberlik", "Sigorta"],
+    program: [
+      { time: "Seans 1", text: "Sabah alınış — serin saat turu" },
+      { time: "Seans 2", text: "Öğleden sonra alınış" },
+    ],
+    faq: [{ q: "Tek başıma sürebilir miyim?", a: "16 yaş üzeri tek başına sürebilir; küçükler eğitmen/ebeveyn arkasında biner." }],
+    hue: "from-orange-500 to-amber-800",
+    image: "/turlar/quad-buggy-safari.jpg",
+    popular: true,
+  },
+  {
+    slug: "buggy-safari",
+    name: "Buggy Safari",
+    tagline: "Kafesli buggy ile 2 saat çamur ve adrenalin",
+    category: "macera",
+    duration: "2 saat",
+    days: "Her gün",
+    price: 22,
+    oldPrice: 40,
+    description:
+      "Çift kişilik kafesli buggy araçlarla Toros parkurunda 2 saat. Quad'a göre daha güvenli ve konforlu, çiftler ve arkadaş grupları için ideal. Kirlenme garantili.",
+    highlights: ["Çift kişilik buggy", "2 saat parkur", "Kafesli, güvenli", "Ehliyet gerekmez"],
+    includes: ["Otelden alma-bırakma", "Buggy ve kask", "Rehberlik", "Sigorta"],
+    program: [
+      { time: "Seans 1", text: "Sabah alınış" },
+      { time: "Seans 2", text: "Öğleden sonra alınış" },
+    ],
+    faq: [{ q: "Kaç kişi biner?", a: "Standart buggy 2 kişiliktir; aileler için 4 kişilik buggy seçeneğimiz de var." }],
+    hue: "from-amber-600 to-orange-900",
+    image: "/turlar/quad-buggy-rafting.jpg",
+    popular: true,
+  },
+  {
+    slug: "aile-buggy-safari",
+    name: "Aile Buggy Safari (4 Kişilik)",
+    tagline: "Tüm aile tek araçta — 4 kişilik buggy ile safari",
+    category: "aile",
+    duration: "3-4 saat",
+    days: "Her gün",
+    price: 75,
+    description:
+      "Ailece maceraya çıkmak isteyenler için 4 kişilik geniş buggy araçlar. Anne, baba ve çocuklar aynı araçta, güvenli kafes içinde. Fiyat araç başıdır — tüm aile için tek ücret.",
+    highlights: ["4 kişilik tek araç", "Aile başı fiyat", "Kafesli ve güvenli", "Çocuklar için uygun"],
+    includes: ["Otelden alma-bırakma", "4 kişilik buggy", "Kasklar", "Rehberlik", "Sigorta"],
+    program: [
+      { time: "09:00", text: "Otelinizden alınış" },
+      { time: "10:30", text: "Parkur brifingi ve safari başlangıcı" },
+      { time: "12:30", text: "Dönüş" },
+    ],
+    faq: [
+      { q: "Fiyat kişi başı mı?", a: "Hayır, 75 € araç başıdır — 4 kişilik ailenin tamamı bu ücrete dahildir." },
+      { q: "Çocuk yaş sınırı var mı?", a: "Kafesli araç ve emniyet kemeriyle 6 yaş üzeri çocuklar rahatlıkla katılabilir." },
+    ],
+    hue: "from-orange-400 to-red-700",
+    image: "/turlar/super-kombo.jpg",
+    popular: true,
+  },
+  {
+    slug: "mega-mix-jeep-tekne-quad",
+    name: "Mega Mix: Jeep Safari + Tekne + Quad",
+    tagline: "Üç macera tek günde — kara, su ve toz",
+    category: "macera",
+    duration: "Tam gün",
+    days: "Her gün",
+    price: 25,
+    oldPrice: 40,
+    description:
+      "Günün en dolu paketi: üstü açık jeeple Toros köylerine safari, yeşil gölde tekne turu ve quad parkuru. Kara, su ve toz aynı günde. Öğle yemeği dahil.",
+    highlights: ["Jeep safari", "Göl tekne turu", "Quad parkuru", "Öğle yemeği dahil"],
+    includes: ["Otelden alma-bırakma", "Tüm aktivite ekipmanları", "Tekne turu", "Öğle yemeği", "Sigorta"],
+    program: [
+      { time: "08:30", text: "Otelinizden alınış" },
+      { time: "10:00", text: "Jeep safari — köy ve manzara durakları" },
+      { time: "12:00", text: "Öğle yemeği" },
+      { time: "13:30", text: "Yeşil gölde tekne turu" },
+      { time: "15:30", text: "Quad parkuru" },
+      { time: "17:30", text: "Dönüş" },
+    ],
+    faq: [{ q: "Üçü tek güne sığıyor mu?", a: "Evet, tüm aktiviteler aynı bölgede ve program buna göre kurgulanıyor." }],
+    hue: "from-emerald-600 to-orange-800",
+    image: "/turlar/jeep-safari.jpg",
+    popular: true,
   },
 ];
 

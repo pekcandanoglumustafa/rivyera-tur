@@ -51,8 +51,15 @@ export default function TourCard({ tour }: { tour: Tour }) {
               Kişi başı
             </span>
             <span className="flex items-center gap-2">
-              <span className="display text-lg font-extrabold">
-                {tour.price ? `${tour.price.toLocaleString("tr-TR")} ₺` : "Fiyat Sor"}
+              <span className="flex items-baseline gap-1.5">
+                {tour.oldPrice && (
+                  <span className="text-sm font-semibold text-white/60 line-through">
+                    €{tour.oldPrice}
+                  </span>
+                )}
+                <span className="display text-xl font-extrabold">
+                  {tour.price ? `€${tour.price}` : "Fiyat Sor"}
+                </span>
               </span>
               <span className="rounded-full bg-cta px-3 py-1.5 text-xs font-bold text-white transition group-hover:bg-cta-dark">
                 İncele →

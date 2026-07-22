@@ -236,7 +236,7 @@ export default function Home() {
               href={CONTACT.whatsapp}
               target="_blank"
               rel="noopener"
-              className="rounded-full bg-cta px-7 py-3.5 font-bold hover:bg-cta-dark"
+              className="rounded-full bg-[#25d366] px-7 py-3.5 font-bold hover:bg-[#1da851]"
             >
               WhatsApp: {CONTACT.phoneDisplay}
             </a>

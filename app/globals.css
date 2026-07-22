@@ -2,14 +2,16 @@
 
 @theme {
   /* Sonnenklar Reisen Turizm — tasarım paleti */
-  --color-navy: #b0121a; /* Akdeniz laciverti */
-  --color-deep: #8f0e15;
-  --color-turq: #e01f26; /* Sonnenklar turkuazı */
-  --color-turq-soft: #ffe5e6;
+  --color-navy: #034ea2; /* Akdeniz laciverti */
+  --color-deep: #023a78;
+  --color-turq: #ff622b; /* Sonnenklar turkuazı */
+  --color-turq-soft: #fff0e8;
   --color-sand: #ffffff; /* kum beyazı */
-  --color-cta: #e01f26; /* turuncu ceket */
-  --color-cta-dark: #b0121a;
-  --color-ink: #1a1a1a;
+  --color-cta: #ff622b; /* turuncu ceket */
+  --color-cta-dark: #e04d15;
+  --color-ink: #16202b;
+  --color-wa: #25d366;
+  --color-wa-dark: #1da851;
 
   --font-display: ui-rounded, "SF Pro Rounded", "Segoe UI Variable Display", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
   --font-body: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -103,7 +105,7 @@ a, button, summary {
   100% { background-position: 0% 50%; }
 }
 .gradient-text {
-  background: linear-gradient(90deg, #ffffff, #ffd9db, #ffffff, #ffd9db);
+  background: linear-gradient(90deg, #ff9a6b, #ffd9c4, #ff622b, #ff9a6b);
   background-size: 300% 100%;
   -webkit-background-clip: text;
   background-clip: text;
@@ -129,9 +131,9 @@ a, button, summary {
 
 /* CTA butonunda nabız halkası */
 @keyframes pulse-ring {
-  0% { box-shadow: 0 0 0 0 rgba(224, 31, 38, 0.45); }
-  70% { box-shadow: 0 0 0 14px rgba(224, 31, 38, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(224, 31, 38, 0); }
+  0% { box-shadow: 0 0 0 0 rgba(255, 98, 43, 0.5); }
+  70% { box-shadow: 0 0 0 14px rgba(255, 98, 43, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 98, 43, 0); }
 }
 .pulse { animation: pulse-ring 2.4s ease-out infinite; }
 

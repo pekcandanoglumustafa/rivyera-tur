@@ -21,7 +21,7 @@ export default function IletisimPage() {
           href={CONTACT.whatsapp}
           target="_blank"
           rel="noopener"
-          className="w-full max-w-sm rounded-full bg-cta py-4 text-lg font-bold text-white hover:bg-cta-dark"
+          className="w-full max-w-sm rounded-full bg-[#25d366] py-4 text-lg font-bold text-white hover:bg-[#1da851]"
         >
           WhatsApp&apos;tan Yaz
         </a>
