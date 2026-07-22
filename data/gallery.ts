@@ -124,6 +124,18 @@ export const GALLERY: Record<string, string[]> = {
     `${B}64b5a53edfed5.webp`,
     `${B}64b5a54131233.webp`,
   ],
+  "kapadokya-turu": [
+    `${B}64b5a0e7b18e3.webp`,
+    `${B}64b69f5553376.webp`,
+    `${B}64b69f7cc94a1.webp`,
+    `${B}64b69ff503e50.webp`,
+    `${B}64b6a07f5dcab.webp`,
+    `${B}64b6a0c1b2df7.webp`,
+  ],
+  "istanbul-gunubirlik": [
+    `${B}64b69f5553376.webp`,
+    `${B}64b6a07f5dcab.webp`,
+  ],
   "quad-safari": [
     `${B}64b5a2edb8d6f.webp`,
     `${B}64b5a2edbb0ba.webp`,
