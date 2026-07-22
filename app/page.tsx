@@ -43,7 +43,8 @@ export default function Home() {
             quality={70}
             className="kenburns object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/85 to-navy/50" />
+          <div className="absolute inset-0 bg-gradient-to-r from-navy/90 via-navy/55 to-navy/25" />
+          <div className="absolute inset-0 bg-gradient-to-t from-navy/70 via-transparent to-navy/20" />
         </div>
         <div className="pointer-events-none absolute inset-0" aria-hidden>
           <div
