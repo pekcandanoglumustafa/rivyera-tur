@@ -247,8 +247,32 @@ export const GALLERY: Record<string, string[]> = {
     `${B}64b5a499bdae1.webp`,
     `${B}64b5a49694171.webp`,
   ],
-  "turk-hamami": [`${B}64b55ccac8f50.webp`],
-  "demre-myra-kekova-turu": [`${B}64b55c595aae3.webp`],
+  "turk-hamami": [
+    `${B}64b5a85a929ba.webp`,
+    `${B}64b5a85b0b486.webp`,
+    `${B}64b5a85b96815.webp`,
+    `${B}64b5a85b8d2d6.webp`,
+    `${B}64b5a85d60e13.webp`,
+    `${B}64b5a85da762c.webp`,
+  ],
+  "demre-myra-kekova-turu": [
+    `${B}64b5a83856417.webp`,
+    `${B}64b5a838e4143.webp`,
+    `${B}64b5a838d6b24.webp`,
+    `${B}64b5a839a72dc.webp`,
+    `${B}64b5a839d1c94.webp`,
+    `${B}64b5a83a91935.webp`,
+  ],
+  "suluada-tekne-turu": [
+    `${B}64b5a839a72dc.webp`,
+    `${B}64b5a83a91935.webp`,
+    `${B}64b5a839d1c94.webp`,
+  ],
+  "ormana-altinbesik": [
+    `${B}64b5a6a5657f2.webp`,
+    `${B}64b5a838d6b24.webp`,
+    `${B}64b5a6a602ee4.webp`,
+  ],
 };
 
 export function getGallery(slug: string) {
