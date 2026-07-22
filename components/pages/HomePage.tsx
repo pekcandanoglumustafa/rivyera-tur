@@ -25,7 +25,7 @@ export default function HomePage({ locale }: { locale: Locale }) {
       <section className="relative overflow-hidden bg-navy text-white">
         <div className="absolute inset-0" aria-hidden>
           <Image
-            src="/turlar/korsan-teknesi.jpg"
+            src="https://toursfromowner.com/panel/dimg/rooms/64b59fdb9cd20.webp"
             alt=""
             fill
             priority

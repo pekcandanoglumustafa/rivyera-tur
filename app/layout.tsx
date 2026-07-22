@@ -57,7 +57,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link
           rel="preload"
           as="image"
-          href="/_next/image?url=%2Fturlar%2Fkorsan-teknesi.jpg&w=1200&q=60"
+          href="/_next/image?url=https%3A%2F%2Ftoursfromowner.com%2Fpanel%2Fdimg%2Frooms%2F64b59fdb9cd20.webp&w=1200&q=60"
           fetchPriority="high"
         />
         <script
