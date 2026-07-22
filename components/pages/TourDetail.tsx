@@ -25,6 +25,7 @@ export default function TourDetail({ slug, locale }: { slug: string; locale: Loc
   const tagline = tr?.tagline ?? tour.tagline;
   const desc = locale === "tr" ? tour.description : tr?.desc ?? tagline;
   const gallery = getGallery(slug);
+  const cover = gallery[0] ?? tour.image;
   const cat = locale === "tr" ? categories[tour.category] : CAT_I18N[tour.category]?.[locale] ?? categories[tour.category];
 
   const waText = encodeURIComponent(
@@ -65,8 +66,8 @@ export default function TourDetail({ slug, locale }: { slug: string; locale: Loc
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <header className={`relative overflow-hidden bg-gradient-to-br ${tour.hue} text-white`}>
-        {tour.image && <Image src={tour.image} alt={name} fill priority sizes="100vw" className="object-cover" />}
-        {tour.image && <div className="absolute inset-0 bg-navy/60" aria-hidden />}
+        {cover && <Image src={cover} alt={name} fill priority sizes="100vw" className="object-cover" />}
+        {cover && <div className="absolute inset-0 bg-navy/60" aria-hidden />}
         <div className="relative mx-auto max-w-4xl px-4 py-16">
           <p className="mb-3 inline-block rounded-full bg-white/20 px-4 py-1 text-sm font-bold backdrop-blur">
             {cat} · {tour.duration} · {tour.days}

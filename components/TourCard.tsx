@@ -4,6 +4,7 @@ import type { Tour } from "@/data/tours";
 import { categories, toTL } from "@/data/tours";
 import { T, type Locale } from "@/data/i18n";
 import { translateTour } from "@/data/tours-i18n";
+import { getGallery } from "@/data/gallery";
 
 const CAT_I18N: Record<string, Record<string, string>> = {
   macera: { en: "Adventure", de: "Abenteuer" },
@@ -20,6 +21,8 @@ export default function TourCard({ tour, locale = "tr" }: { tour: Tour; locale?:
   const tagline = tr?.tagline ?? tour.tagline;
   const cat = locale === "tr" ? categories[tour.category] : CAT_I18N[tour.category]?.[locale] ?? categories[tour.category];
   const base = locale === "tr" ? "" : `/${locale}`;
+  // Gerçek tur fotoğrafı varsa onu kullan, yoksa yedek görsel
+  const cover = getGallery(tour.slug)[0] ?? tour.image;
 
   return (
     <Link
@@ -27,9 +30,9 @@ export default function TourCard({ tour, locale = "tr" }: { tour: Tour; locale?:
       className="group relative block overflow-hidden rounded-3xl bg-navy shadow-md ring-1 ring-black/5 transition hover:-translate-y-1 hover:shadow-2xl"
     >
       <div className={`relative aspect-[4/5] bg-gradient-to-br ${tour.hue}`}>
-        {tour.image && (
+        {cover && (
           <Image
-            src={tour.image}
+            src={cover}
             alt={name}
             fill
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
