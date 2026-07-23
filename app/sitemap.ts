@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { tours } from "@/data/tours";
 
-const SITE = "https://sonnenklarreisen.com";
+const SITE = "https://www.nergistour.com";
 const LOCALES = ["", "/en", "/de", "/ru", "/pl"];
 
 export default function sitemap(): MetadataRoute.Sitemap {

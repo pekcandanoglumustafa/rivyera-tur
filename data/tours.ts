@@ -37,8 +37,8 @@ export const CONTACT = {
   phoneDisplay: "0542 744 01 01",
   phoneIntl: "+905427440101",
   whatsapp: "https://wa.me/905427440101",
-  instagram: "https://instagram.com/sonnenklarreisen",
-  email: "info@sonnenklarreisen.com",
+  instagram: "https://instagram.com/nergistour",
+  email: "info@nergistour.com",
   address: "Side / Manavgat, Antalya",
 };
 

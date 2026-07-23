@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { CONTACT } from "@/data/tours";
 
-const SITE = "https://sonnenklarreisen.com";
+const SITE = "https://www.nergistour.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE),
