@@ -1,4 +1,4 @@
-/** Sonnenklar Reisen — kendi tur fotoğraf arşivimiz */
+/** Sonnenklar Reisen — kendi tur fotoğraf arşivimiz (her fotoğraf yalnızca tek turda) */
 
 export const GALLERY: Record<string, string[]> = {
   "aile-buggy-safari": [
@@ -6,11 +6,6 @@ export const GALLERY: Record<string, string[]> = {
     "/turlar/g/aile-buggy-safari/2.jpg",
     "/turlar/g/aile-buggy-safari/3.jpg",
     "/turlar/g/aile-buggy-safari/4.jpg",
-  ],
-  "akvaryum-legends-kombo": [
-    "/turlar/g/akvaryum-legends-kombo/1.jpg",
-    "/turlar/g/akvaryum-legends-kombo/2.jpg",
-    "/turlar/g/akvaryum-legends-kombo/3.jpg",
   ],
   "alanya-turu": [
     "/turlar/g/alanya-turu/1.jpg",
@@ -62,43 +57,11 @@ export const GALLERY: Record<string, string[]> = {
     "/turlar/g/demre-myra-kekova-turu/3.jpg",
     "/turlar/g/demre-myra-kekova-turu/4.jpg",
     "/turlar/g/demre-myra-kekova-turu/5.jpg",
-    "/turlar/g/demre-myra-kekova-turu/6.jpg",
-  ],
-  "dolphin-island-tekne-turu": [
-    "/turlar/g/dolphin-island-tekne-turu/1.jpg",
-    "/turlar/g/dolphin-island-tekne-turu/2.jpg",
-    "/turlar/g/dolphin-island-tekne-turu/3.jpg",
-    "/turlar/g/dolphin-island-tekne-turu/4.jpg",
-    "/turlar/g/dolphin-island-tekne-turu/5.jpg",
   ],
   "fire-of-anatolia-gosterisi": [
     "/turlar/g/fire-of-anatolia-gosterisi/1.jpg",
     "/turlar/g/fire-of-anatolia-gosterisi/2.jpg",
     "/turlar/g/fire-of-anatolia-gosterisi/3.jpg",
-  ],
-  "gun-batimi-tekne-turu": [
-    "/turlar/g/gun-batimi-tekne-turu/1.jpg",
-    "/turlar/g/gun-batimi-tekne-turu/2.jpg",
-    "/turlar/g/gun-batimi-tekne-turu/3.jpg",
-    "/turlar/g/gun-batimi-tekne-turu/4.jpg",
-    "/turlar/g/gun-batimi-tekne-turu/5.jpg",
-    "/turlar/g/gun-batimi-tekne-turu/6.jpg",
-  ],
-  "istanbul-gunubirlik": [
-    "/turlar/g/istanbul-gunubirlik/1.jpg",
-    "/turlar/g/istanbul-gunubirlik/2.jpg",
-    "/turlar/g/istanbul-gunubirlik/3.jpg",
-    "/turlar/g/istanbul-gunubirlik/4.jpg",
-    "/turlar/g/istanbul-gunubirlik/5.jpg",
-    "/turlar/g/istanbul-gunubirlik/6.jpg",
-  ],
-  "jeep-rafting-kombo": [
-    "/turlar/g/jeep-rafting-kombo/1.jpg",
-    "/turlar/g/jeep-rafting-kombo/2.jpg",
-    "/turlar/g/jeep-rafting-kombo/3.jpg",
-    "/turlar/g/jeep-rafting-kombo/4.jpg",
-    "/turlar/g/jeep-rafting-kombo/5.jpg",
-    "/turlar/g/jeep-rafting-kombo/6.jpg",
   ],
   "kapadokya-turu": [
     "/turlar/g/kapadokya-turu/1.jpg",
@@ -114,7 +77,6 @@ export const GALLERY: Record<string, string[]> = {
     "/turlar/g/karacaoren-kanyon-tekne/3.jpg",
     "/turlar/g/karacaoren-kanyon-tekne/4.jpg",
     "/turlar/g/karacaoren-kanyon-tekne/5.jpg",
-    "/turlar/g/karacaoren-kanyon-tekne/6.jpg",
   ],
   "kartal-kanyonu-turu": [
     "/turlar/g/kartal-kanyonu-turu/1.jpg",
@@ -143,11 +105,6 @@ export const GALLERY: Record<string, string[]> = {
     "/turlar/g/land-of-legends-turu/2.jpg",
     "/turlar/g/land-of-legends-turu/3.jpg",
   ],
-  "legends-gece-gosterisi": [
-    "/turlar/g/legends-gece-gosterisi/1.jpg",
-    "/turlar/g/legends-gece-gosterisi/2.jpg",
-    "/turlar/g/legends-gece-gosterisi/3.jpg",
-  ],
   "manavgat-tekne-turu": [
     "/turlar/g/manavgat-tekne-turu/1.jpg",
     "/turlar/g/manavgat-tekne-turu/2.jpg",
@@ -155,13 +112,6 @@ export const GALLERY: Record<string, string[]> = {
     "/turlar/g/manavgat-tekne-turu/4.jpg",
     "/turlar/g/manavgat-tekne-turu/5.jpg",
     "/turlar/g/manavgat-tekne-turu/6.jpg",
-  ],
-  "mega-mix-jeep-tekne-quad": [
-    "/turlar/g/mega-mix-jeep-tekne-quad/1.jpg",
-    "/turlar/g/mega-mix-jeep-tekne-quad/2.jpg",
-    "/turlar/g/mega-mix-jeep-tekne-quad/3.jpg",
-    "/turlar/g/mega-mix-jeep-tekne-quad/4.jpg",
-    "/turlar/g/mega-mix-jeep-tekne-quad/5.jpg",
   ],
   "mix-tur-7-1": [
     "/turlar/g/mix-tur-7-1/1.jpg",
@@ -175,14 +125,6 @@ export const GALLERY: Record<string, string[]> = {
     "/turlar/g/ormana-altinbesik/2.jpg",
     "/turlar/g/ormana-altinbesik/3.jpg",
   ],
-  "ozel-tekne-turu": [
-    "/turlar/g/ozel-tekne-turu/1.jpg",
-    "/turlar/g/ozel-tekne-turu/2.jpg",
-    "/turlar/g/ozel-tekne-turu/3.jpg",
-    "/turlar/g/ozel-tekne-turu/4.jpg",
-    "/turlar/g/ozel-tekne-turu/5.jpg",
-    "/turlar/g/ozel-tekne-turu/6.jpg",
-  ],
   "pamukkale-salda-turu": [
     "/turlar/g/pamukkale-salda-turu/1.jpg",
     "/turlar/g/pamukkale-salda-turu/2.jpg",
@@ -191,45 +133,12 @@ export const GALLERY: Record<string, string[]> = {
     "/turlar/g/pamukkale-salda-turu/5.jpg",
     "/turlar/g/pamukkale-salda-turu/6.jpg",
   ],
-  "quad-buggy-rafting": [
-    "/turlar/g/quad-buggy-rafting/1.jpg",
-    "/turlar/g/quad-buggy-rafting/2.jpg",
-    "/turlar/g/quad-buggy-rafting/3.jpg",
-    "/turlar/g/quad-buggy-rafting/4.jpg",
-    "/turlar/g/quad-buggy-rafting/5.jpg",
-    "/turlar/g/quad-buggy-rafting/6.jpg",
-  ],
-  "quad-buggy-safari": [
-    "/turlar/g/quad-buggy-safari/1.jpg",
-    "/turlar/g/quad-buggy-safari/2.jpg",
-    "/turlar/g/quad-buggy-safari/3.jpg",
-    "/turlar/g/quad-buggy-safari/4.jpg",
-    "/turlar/g/quad-buggy-safari/5.jpg",
-    "/turlar/g/quad-buggy-safari/6.jpg",
-  ],
   "quad-safari": [
     "/turlar/g/quad-safari/1.jpg",
     "/turlar/g/quad-safari/2.jpg",
     "/turlar/g/quad-safari/3.jpg",
     "/turlar/g/quad-safari/4.jpg",
     "/turlar/g/quad-safari/5.jpg",
-    "/turlar/g/quad-safari/6.jpg",
-  ],
-  "rafting-kombo": [
-    "/turlar/g/rafting-kombo/1.jpg",
-    "/turlar/g/rafting-kombo/2.jpg",
-    "/turlar/g/rafting-kombo/3.jpg",
-    "/turlar/g/rafting-kombo/4.jpg",
-    "/turlar/g/rafting-kombo/5.jpg",
-    "/turlar/g/rafting-kombo/6.jpg",
-  ],
-  "rafting-zipline": [
-    "/turlar/g/rafting-zipline/1.jpg",
-    "/turlar/g/rafting-zipline/2.jpg",
-    "/turlar/g/rafting-zipline/3.jpg",
-    "/turlar/g/rafting-zipline/4.jpg",
-    "/turlar/g/rafting-zipline/5.jpg",
-    "/turlar/g/rafting-zipline/6.jpg",
   ],
   "sapadere-kanyonu": [
     "/turlar/g/sapadere-kanyonu/1.jpg",
@@ -237,15 +146,6 @@ export const GALLERY: Record<string, string[]> = {
     "/turlar/g/sapadere-kanyonu/3.jpg",
     "/turlar/g/sapadere-kanyonu/4.jpg",
     "/turlar/g/sapadere-kanyonu/5.jpg",
-    "/turlar/g/sapadere-kanyonu/6.jpg",
-  ],
-  "side-tekne-turu": [
-    "/turlar/g/side-tekne-turu/1.jpg",
-    "/turlar/g/side-tekne-turu/2.jpg",
-    "/turlar/g/side-tekne-turu/3.jpg",
-    "/turlar/g/side-tekne-turu/4.jpg",
-    "/turlar/g/side-tekne-turu/5.jpg",
-    "/turlar/g/side-tekne-turu/6.jpg",
   ],
   "suluada-tekne-turu": [
     "/turlar/g/suluada-tekne-turu/1.jpg",
@@ -254,19 +154,6 @@ export const GALLERY: Record<string, string[]> = {
     "/turlar/g/suluada-tekne-turu/4.jpg",
     "/turlar/g/suluada-tekne-turu/5.jpg",
     "/turlar/g/suluada-tekne-turu/6.jpg",
-  ],
-  "super-kombo": [
-    "/turlar/g/super-kombo/1.jpg",
-    "/turlar/g/super-kombo/2.jpg",
-    "/turlar/g/super-kombo/3.jpg",
-    "/turlar/g/super-kombo/4.jpg",
-    "/turlar/g/super-kombo/5.jpg",
-    "/turlar/g/super-kombo/6.jpg",
-  ],
-  "tekneden-balik-avi": [
-    "/turlar/g/tekneden-balik-avi/1.jpg",
-    "/turlar/g/tekneden-balik-avi/2.jpg",
-    "/turlar/g/tekneden-balik-avi/3.jpg",
   ],
   "tuplu-dalis": [
     "/turlar/g/tuplu-dalis/1.jpg",
@@ -279,7 +166,6 @@ export const GALLERY: Record<string, string[]> = {
     "/turlar/g/yesil-kanyon-tekne-turu/3.jpg",
     "/turlar/g/yesil-kanyon-tekne-turu/4.jpg",
     "/turlar/g/yesil-kanyon-tekne-turu/5.jpg",
-    "/turlar/g/yesil-kanyon-tekne-turu/6.jpg",
   ],
   "yunus-gosterisi-ve-yuzme": [
     "/turlar/g/yunus-gosterisi-ve-yuzme/1.jpg",
